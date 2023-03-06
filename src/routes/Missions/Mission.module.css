@@ -1,0 +1,40 @@
+.missions {
+  border: solid 1px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mission,
+.titles {
+  display: flex;
+  border-bottom: solid 1px;
+}
+
+.titles {
+  font-weight: 600;
+}
+
+.mission div,
+.title {
+  margin: 0;
+  padding: 1rem;
+}
+
+.mission div:not(:last-child),
+.title:not(:last-child) {
+  border-right: solid 1px;
+}
+
+.mission div:not(:nth-child(2)),
+.title:not(:nth-child(2)) {
+  flex: 1;
+}
+
+.mission div:nth-child(2),
+.title:nth-child(2) {
+  flex: 2;
+}
