@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { fetchMissions } from './redux/missions/missionsSlice';
-import Missions from './routes/Missions/Missions';
+import Missions from './routes/missions/Missions';
 
 function App() {
   const dispatch = useDispatch();
