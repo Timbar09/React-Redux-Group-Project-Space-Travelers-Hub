@@ -3,8 +3,8 @@ import { BrowserRouter } from 'react-router-dom';
 import '@testing-library/jest-dom';
 import Navbar from '../components/Navbar';
 
-describe('Header tests', () => {
-  test('should render', () => {
+describe('Navbar tests', () => {
+  test('should render Navbar', () => {
     const header = render(
       <BrowserRouter>
         <Navbar />
