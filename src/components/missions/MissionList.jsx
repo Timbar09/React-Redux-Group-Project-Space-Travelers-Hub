@@ -19,6 +19,7 @@ function MissionList() {
         {missions.map((mission) => (
           <MissionItem
             key={mission.id}
+            id={mission.id}
             name={mission.name}
             description={mission.description}
             reserved={mission.reserved}

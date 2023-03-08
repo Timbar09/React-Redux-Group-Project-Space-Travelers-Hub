@@ -1,9 +1,15 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
 
 import Button from 'react-bootstrap/Button';
 
-function MissionItem({ name, description, reserved }) {
+import { joinMission } from '../../redux/missions/missionsSlice';
+
+function MissionItem({
+  id, name, description, reserved,
+}) {
+  const dispatch = useDispatch();
+
   return (
     <tr>
       <td>{name}</td>
@@ -19,7 +25,11 @@ function MissionItem({ name, description, reserved }) {
           </Button>
         )}
         {!reserved && (
-          <Button style={{ width: 'max-content' }} variant="outline-secondary">
+          <Button
+            style={{ width: 'max-content' }}
+            variant="outline-secondary"
+            onClick={() => dispatch(joinMission(id))}
+          >
             Join Mission
           </Button>
         )}
@@ -29,6 +39,7 @@ function MissionItem({ name, description, reserved }) {
 }
 
 MissionItem.propTypes = {
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   reserved: PropTypes.bool.isRequired,
