@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import Container from 'react-bootstrap/Container';
 
-import MissionList from '../../components/missions/MissionList';
+import MissionList from '../components/missions/MissionList';
 import styles from './Missions.module.css';
 
 function Missions() {
@@ -10,7 +10,6 @@ function Missions() {
   if (isLoading) {
     return (
       <div className={`${styles.loading} container padding`}>
-        <div>Loading...</div>
         <div className={styles.spinner}>
           <span />
           <span />
