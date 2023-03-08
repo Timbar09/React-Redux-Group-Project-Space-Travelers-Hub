@@ -69,6 +69,7 @@ a {
 
 .main {
   padding-top: 2rem;
+  background-color: var(--clr-light);
 }
 
 /* :root {

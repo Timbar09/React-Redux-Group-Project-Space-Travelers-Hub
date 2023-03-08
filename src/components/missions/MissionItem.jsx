@@ -4,18 +4,24 @@ import { useDispatch } from 'react-redux';
 import Button from 'react-bootstrap/Button';
 
 import { joinLeaveToggle } from '../../redux/missions/missionsSlice';
+import styles from './MissionItem.module.css';
 
-function MissionItem({
-  id, name, description, reserved,
-}) {
+function MissionItem({ id, name, description, reserved }) {
   const dispatch = useDispatch();
 
   return (
     <tr>
-      <td>{name}</td>
+      <td className={styles.missionName}>{name}</td>
       <td>{description}</td>
       <td>
-        {reserved && <p style={{ width: 'max-content' }}>Active Member</p>}
+        {reserved && (
+          <p
+            style={{ width: 'max-content' }}
+            className={`${styles.activeMember} p-1 rounded bg-primary color-white`}
+          >
+            Active Member
+          </p>
+        )}
         {!reserved && <p style={{ width: 'max-content' }}>NOT A MEMBER</p>}
       </td>
       <td>

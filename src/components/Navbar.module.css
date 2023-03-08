@@ -1,7 +1,6 @@
 .header {
   background-color: var(--clr-white);
   margin-bottom: 1rem;
-  border-bottom: solid 1px var(--clr-light-grey);
 }
 
 .nav {

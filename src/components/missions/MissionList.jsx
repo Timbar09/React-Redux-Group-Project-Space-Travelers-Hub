@@ -6,7 +6,7 @@ function MissionList() {
   const { missions } = useSelector((state) => state.missions);
 
   return (
-    <table className="table">
+    <table className="table bg-white rounded">
       <thead>
         <tr>
           <th className="head">Mission</th>

@@ -12,7 +12,7 @@ const links = [
 
 function Navbar() {
   return (
-    <header className="border-bottom">
+    <header className={`${styles.header} border-bottom`}>
       <Container className={styles.nav}>
         <NavLink to={links[0].path} className={styles.logo} style={{ border: 0, color: '#1b1b1b' }}>
           <img src={logo} alt="logo" />
