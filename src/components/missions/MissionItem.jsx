@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 
 import Button from 'react-bootstrap/Button';
 
-import { joinMission } from '../../redux/missions/missionsSlice';
+import { joinLeaveToggle } from '../../redux/missions/missionsSlice';
 
 function MissionItem({
   id, name, description, reserved,
@@ -20,7 +20,11 @@ function MissionItem({
       </td>
       <td>
         {reserved && (
-          <Button style={{ width: 'max-content' }} variant="outline-danger">
+          <Button
+            style={{ width: 'max-content' }}
+            variant="outline-danger"
+            onClick={() => dispatch(joinLeaveToggle(id))}
+          >
             Leave Mission
           </Button>
         )}
@@ -28,7 +32,7 @@ function MissionItem({
           <Button
             style={{ width: 'max-content' }}
             variant="outline-secondary"
-            onClick={() => dispatch(joinMission(id))}
+            onClick={() => dispatch(joinLeaveToggle(id))}
           >
             Join Mission
           </Button>
