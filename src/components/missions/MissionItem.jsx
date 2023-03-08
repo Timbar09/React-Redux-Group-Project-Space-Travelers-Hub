@@ -9,7 +9,9 @@ import Button from 'react-bootstrap/Button';
 import { joinLeaveToggle } from '../../redux/missions/missionsSlice';
 import styles from './MissionItem.module.css';
 
-function MissionItem({ id, name, description, reserved }) {
+function MissionItem({
+  id, name, description, reserved,
+}) {
   const dispatch = useDispatch();
 
   return (
