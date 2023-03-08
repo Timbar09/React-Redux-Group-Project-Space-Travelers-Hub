@@ -12,7 +12,7 @@ function MyProfile() {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col sm={12} lg={6} className="mb-4">
           <h2 className="mb-4">My Missions</h2>
           <ul className="border rounded">
             {missions
@@ -24,7 +24,7 @@ function MyProfile() {
               ))}
           </ul>
         </Col>
-        <Col>
+        <Col sm={12} lg={6}>
           <h2 className="mb-4">My Rockets</h2>
           <ul className="border rounded">A list of rockets</ul>
         </Col>

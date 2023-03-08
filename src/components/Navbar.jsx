@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 
+import logo from '../Images/planet.png';
+
 import styles from './Navbar.module.css';
 
 const links = [
@@ -10,17 +12,12 @@ const links = [
 
 function Navbar() {
   return (
-    <header>
+    <header className="border-bottom">
       <Container className={styles.nav}>
-        <span>
-          <NavLink
-            to={links[0].path}
-            className={styles.logo}
-            style={{ border: 0, color: '#1b1b1b' }}
-          >
-            Space Traveler&apos;s Hub
-          </NavLink>
-        </span>
+        <NavLink to={links[0].path} className={styles.logo} style={{ border: 0, color: '#1b1b1b' }}>
+          <img src={logo} alt="logo" />
+          <span className={styles.logoName}>Space Traveler&apos;s Hub</span>
+        </NavLink>
         <ul className={styles.links}>
           {links.map((link) => (
             <li key={link.text}>
