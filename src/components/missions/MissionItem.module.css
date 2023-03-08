@@ -1,8 +1,8 @@
-.missionName {
+.missionTitle {
   font-size: 1.125em;
   font-weight: 600;
 }
 
-.activeMember {
+.member {
   color: var(--clr-white);
 }
