@@ -1,0 +1,51 @@
+.loading {
+  max-height: 200px;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.spinner {
+  --gap: 5px;
+  --clr: rgba(27, 27, 27, 0.7);
+  --height: 23px;
+
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.spinner span {
+  background: var(--clr);
+  width: 4px;
+  border-radius: var(--height);
+  height: var(--height);
+  animation: grow 1s ease-in-out infinite;
+}
+
+.spinner span:nth-child(2) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.spinner span:nth-child(3) {
+  animation: grow 1s ease-in-out 0.3s infinite;
+}
+
+.spinner span:nth-child(4) {
+  animation: grow 1s ease-in-out 0.475s infinite;
+}
+
+@keyframes grow {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(1.8);
+    background: var(--clr-blue);
+  }
+}

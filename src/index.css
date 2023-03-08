@@ -1,4 +1,77 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@400;500;600;800&display=swap');
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  --clr-dark: rgb(27, 27, 27);
+  --clr-dark-grey: rgb(81, 81, 81);
+  --clr-grey: rgb(139, 139, 139);
+  --clr-light-grey: rgb(230, 230, 230);
+  --clr-light: rgb(249, 249, 249);
+  --clr-white: rgb(255, 255, 255);
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Mukta Vaani', 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 0.95em;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--clr-grey);
+  background-color: var(--clr-light);
+}
+
+@media (min-width: 64em) {
+  body {
+    font-size: 1em;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: var(--clr-dark);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.active {
+  border-bottom: solid 3px var(--clr-dark);
+  color: var(--clr-dark);
+}
+
+.main {
+  padding-top: 2rem;
+}
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -23,10 +96,15 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
+  background-color: white;
   min-width: 320px;
-  min-height: 100vh;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 h1 {
@@ -53,4 +131,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */

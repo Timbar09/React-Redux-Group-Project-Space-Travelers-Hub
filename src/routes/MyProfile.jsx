@@ -1,7 +1,7 @@
-import React from 'react';
+import Container from 'react-bootstrap/Container';
 
 function MyProfile() {
-  return <div>MyProfile</div>;
+  return <Container>MyProfile</Container>;
 }
 
 export default MyProfile;
