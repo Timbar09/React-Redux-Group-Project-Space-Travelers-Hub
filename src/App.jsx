@@ -8,6 +8,8 @@ import MyProfile from './routes/MyProfile';
 import NotMatch from './routes/NotMatch';
 
 import { fetchMissions } from './redux/missions/missionsSlice';
+import { getRockets } from './redux/Rockets/rocketSlice';
+import Rockets from './routes/Rockets';
 
 function App() {
   const dispatch = useDispatch();
@@ -16,10 +18,15 @@ function App() {
     dispatch(fetchMissions());
   }, [dispatch]);
 
+  useEffect(() => {
+    dispatch(getRockets());
+  }, [dispatch]);
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Missions />} />
+        <Route index element={<Rockets />} />
+        <Route path="/missions" element={<Missions />} />
         <Route path="myprofile" element={<MyProfile />} />
         <Route path="*" element={<NotMatch />} />
       </Route>

@@ -37,6 +37,12 @@
   line-height: 1.7;
 }
 
+.links li:nth-child(3)::before {
+  content: '|';
+  padding-inline-end: 10%;
+  margin-left: -15%;
+}
+
 .links a {
   padding: 1.5rem 0.5rem;
   transition: color 150ms ease-in-out;
