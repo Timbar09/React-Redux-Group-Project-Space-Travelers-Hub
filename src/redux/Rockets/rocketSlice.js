@@ -6,8 +6,18 @@ const url = 'https://api.spacexdata.com/v4/rockets';
 
 export const getRockets = createAsyncThunk('Rockets/getRockets', async () => {
   try {
+    const items = [];
     const res = await axios(url);
-    return res.data;
+    res.data.map((item) => {
+      items.push({
+        id: item.id,
+        name: item.name,
+        description: item.description,
+        images: item.flickr_images,
+      });
+      return items;
+    });
+    return items;
   } catch (error) {
     return error;
   }

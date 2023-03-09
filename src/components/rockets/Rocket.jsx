@@ -9,14 +9,14 @@ import styles from './Rockets.module.css';
 
 function Rocket({ myrockets }) {
   const {
-    id, description, name, isReserved,
+    id, description, name, images, isReserved,
   } = myrockets;
   const dispatch = useDispatch();
 
   const slideShow = () => {
     let check = 'Abcdef1g';
     const content = [];
-    myrockets.flickr_images.map((image) => {
+    images.map((image) => {
       check += 1;
       content.push(
         <Carousel.Item key={check}>
@@ -62,7 +62,7 @@ Rocket.defaultProps = {
     id: '',
     name: '',
     description: '',
-    flickr_images: '',
+    images: '',
     isReserved: '',
   },
 };
@@ -73,6 +73,6 @@ Rocket.propTypes = {
     name: PropTypes.string,
     description: PropTypes.string,
     isReserved: PropTypes.bool,
-    flickr_images: PropTypes.oneOfType([PropTypes.array]),
+    images: PropTypes.oneOfType([PropTypes.array]),
   }),
 };
