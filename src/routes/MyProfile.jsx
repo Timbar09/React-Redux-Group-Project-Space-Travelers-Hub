@@ -8,6 +8,7 @@ import styles from './MyProfile.module.css';
 
 function MyProfile() {
   const { missions } = useSelector((state) => state.missions);
+  const { rocketList } = useSelector((store) => store.Rockets);
 
   return (
     <Container>
@@ -26,7 +27,15 @@ function MyProfile() {
         </Col>
         <Col sm={12} lg={6}>
           <h2 className="mb-4">My Rockets</h2>
-          <ul className="border rounded">A list of rockets</ul>
+          <ul className="border rounded">
+            {rocketList
+              .filter((rocket) => rocket.isReserved === true)
+              .map((rocket) => (
+                <li className={`${styles.missionItem} p-4`} key={rocket.id}>
+                  {rocket.name}
+                </li>
+              ))}
+          </ul>
         </Col>
       </Row>
     </Container>

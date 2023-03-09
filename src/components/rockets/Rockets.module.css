@@ -1,0 +1,17 @@
+.listitem {
+  display: flex;
+  gap: 2%;
+}
+
+.card {
+  border: none;
+}
+
+.image {
+  width: 50%;
+}
+
+.badge {
+  padding: 3%;
+  margin-inline-end: 2%;
+}

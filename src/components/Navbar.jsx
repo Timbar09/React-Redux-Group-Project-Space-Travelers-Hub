@@ -8,6 +8,7 @@ import styles from './Navbar.module.css';
 const links = [
   { path: '/', text: 'Missions' },
   { path: 'myprofile', text: 'My Profile' },
+  { path: '/rockets', text: 'Rockets' },
 ];
 
 function Navbar() {
