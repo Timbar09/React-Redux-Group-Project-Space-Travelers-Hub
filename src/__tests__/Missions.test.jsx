@@ -12,7 +12,6 @@ describe('Missions test', () => {
         <BrowserRouter>
           <Missions />
         </BrowserRouter>
-        ,
       </Provider>,
     );
 

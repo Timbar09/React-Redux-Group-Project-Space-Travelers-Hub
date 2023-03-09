@@ -1,36 +1,26 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Missions test > should render Missions 1`] = `
+exports[`Rockets test > should render Rockets 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="_loading_aeebc7 container padding"
+        class="rocket-container container"
       >
         <div
-          class="_spinner_aeebc7"
-        >
-          <span />
-          <span />
-          <span />
-          <span />
-        </div>
+          class="list-group list-group-flush"
+        />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="_loading_aeebc7 container padding"
+      class="rocket-container container"
     >
       <div
-        class="_spinner_aeebc7"
-      >
-        <span />
-        <span />
-        <span />
-        <span />
-      </div>
+        class="list-group list-group-flush"
+      />
     </div>
   </div>,
   "debug": [Function],
