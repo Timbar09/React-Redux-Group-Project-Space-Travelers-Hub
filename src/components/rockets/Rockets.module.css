@@ -5,13 +5,18 @@
 
 .card {
   border: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .image {
-  width: 50%;
+  width: 40%;
 }
 
 .badge {
-  padding: 3%;
-  margin-inline-end: 2%;
+  padding: 1%;
+  margin-inline-end: 1%;
+}
+
+.mybtn {
+  margin: 2% 0;
 }

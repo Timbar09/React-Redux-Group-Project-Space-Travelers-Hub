@@ -6,9 +6,9 @@ import logo from '../Images/planet.png';
 import styles from './Navbar.module.css';
 
 const links = [
-  { path: '/', text: 'Missions' },
+  { path: '/', text: 'Rockets' },
+  { path: '/missions', text: 'Missions' },
   { path: 'myprofile', text: 'My Profile' },
-  { path: '/rockets', text: 'Rockets' },
 ];
 
 function Navbar() {

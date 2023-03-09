@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Button, Card, ListGroup, Badge,
+  Button, Card, ListGroup, Badge, Carousel,
 } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
@@ -13,20 +13,41 @@ function Rocket({ myrockets }) {
   } = myrockets;
   const dispatch = useDispatch();
 
+  const slideShow = () => {
+    let check = 'Abcdef1g';
+    const content = [];
+    myrockets.flickr_images.map((image) => {
+      check += 1;
+      content.push(
+        <Carousel.Item key={check}>
+          <img
+            className="img-thumbnail"
+            src={image}
+            alt="Rocket"
+          />
+        </Carousel.Item>,
+      );
+      return content;
+    });
+    return content;
+  };
+
   return (
     <ListGroup.Item className={styles.listitem}>
       <div className={styles.image}>
-        <img alt="none" className="img-thumbnail" src={myrockets.flickr_images[0]} />
+        <Carousel fade>
+          {slideShow()}
+        </Carousel>
       </div>
-      <Card style={{ width: '18rem' }} className={styles.card}>
+      <Card style={{ width: '70%' }} className={styles.card}>
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>
-            {isReserved && <Badge bg="primary" className={styles.badge}>Reserved</Badge>}
+            {isReserved && <Badge bg="info" className={styles.badge}>Reserved</Badge>}
             {description}
           </Card.Text>
           {
-            isReserved ? <Button variant="outline-secondary" onClick={() => dispatch(remReservation(id))}>Cancel Reservation</Button> : <Button variant="primary" onClick={() => dispatch(addReservation(id))}>Reserve Rocket</Button>
+            isReserved ? <Button className={styles.mybtn} variant="outline-secondary" onClick={() => dispatch(remReservation(id))}>Cancel Reservation</Button> : <Button className={styles.mybtn} variant="primary" onClick={() => dispatch(addReservation(id))}>Reserve Rocket</Button>
           }
         </Card.Body>
       </Card>
