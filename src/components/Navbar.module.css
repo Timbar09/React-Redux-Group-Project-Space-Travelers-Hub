@@ -1,7 +1,6 @@
 .header {
   background-color: var(--clr-white);
   margin-bottom: 1rem;
-  border-bottom: solid 1px var(--clr-light-grey);
 }
 
 .nav {
@@ -16,6 +15,17 @@
   line-height: 1.4;
   color: var(--clr-blue);
   padding-bottom: 0.25em;
+}
+
+.logoName {
+  display: none;
+}
+
+@media (min-width: 64em) {
+  .logoName {
+    display: inline-block;
+    margin-left: 1rem;
+  }
 }
 
 .links {

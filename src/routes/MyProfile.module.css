@@ -1,0 +1,7 @@
+.missionItem {
+  font-size: 1.25em;
+}
+
+.missionItem:not(:last-child) {
+  border-bottom: solid 1px lightgray;
+}

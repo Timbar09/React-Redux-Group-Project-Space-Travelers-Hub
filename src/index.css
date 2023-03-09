@@ -14,7 +14,7 @@ html {
 body {
   --clr-dark: rgb(27, 27, 27);
   --clr-dark-grey: rgb(81, 81, 81);
-  --clr-grey: rgb(139, 139, 139);
+  --clr-grey: rgb(128, 128, 128);
   --clr-light-grey: rgb(230, 230, 230);
   --clr-light: rgb(249, 249, 249);
   --clr-white: rgb(255, 255, 255);
@@ -28,6 +28,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   color: var(--clr-grey);
+  min-width: 400px;
   background-color: var(--clr-light);
 }
 
@@ -69,6 +70,7 @@ a {
 
 .main {
   padding-top: 2rem;
+  background-color: var(--clr-light);
 }
 
 /* :root {

@@ -159,6 +159,8 @@ If you like this project, give it a ⭐️ and let me know what you like in part
 
 We would like to thank the whole Microverse community for their help and contributions towards this project.
 
+We would also like to appreciate [Flaticon](https://www.flaticon.com/free-icon/planet_3212567?term=space&page=1&position=19&related_id=3212567&origin=style&k=1678277223176&log-in=google) for the website logo
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
