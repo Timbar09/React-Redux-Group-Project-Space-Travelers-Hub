@@ -5,3 +5,10 @@
 .missionItem:not(:last-child) {
   border-bottom: solid 1px lightgray;
 }
+
+.emptyListMessage {
+  height: 25vh;
+  max-height: 10rem;
+  display: grid;
+  place-items: center;
+}
