@@ -1,7 +1,5 @@
 import { useSelector } from 'react-redux';
-import {
-  Container, ListGroup,
-} from 'react-bootstrap';
+import { Container, ListGroup } from 'react-bootstrap';
 import Rocket from '../components/rockets/Rocket';
 import styles from './Missions.module.css';
 
@@ -24,11 +22,9 @@ function Rockets() {
   return (
     <Container className="rocket-container">
       <ListGroup variant="flush">
-        {
-          rocketList.map((rocket) => (
-            <Rocket key={rocket.id} myrockets={rocket} />
-          ))
-        }
+        {rocketList.map((rocket) => (
+          <Rocket key={rocket.id} myrockets={rocket} />
+        ))}
       </ListGroup>
     </Container>
   );
