@@ -30,6 +30,9 @@ function MyProfile() {
                   <Row>
                     <Col>
                       <p>{mission.name}</p>
+                      <a href={mission.wikipedia} target="_balnk" className={styles.readMore}>
+                        Read more
+                      </a>
                     </Col>
                     <Col className={styles.cancelBtn}>
                       <Button
@@ -58,6 +61,9 @@ function MyProfile() {
                   <Row>
                     <Col>
                       <p>{rocket.name}</p>
+                      <a href={rocket.wikipedia} target="_balnk" className={styles.readMore}>
+                        Read more
+                      </a>
                     </Col>
                     <Col className={styles.cancelBtn}>
                       <Button

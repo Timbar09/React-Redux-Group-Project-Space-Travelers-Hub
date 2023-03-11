@@ -14,6 +14,7 @@ export const fetchMissions = createAsyncThunk('missions/fetchMissions', async ()
     name: item.mission_name,
     description: item.description,
     reserved: false,
+    wikipedia: item.wikipedia,
   }));
   return processedData;
 });
