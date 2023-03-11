@@ -12,3 +12,7 @@
   display: grid;
   place-items: center;
 }
+
+.cancelBtn {
+  text-align: right;
+}
