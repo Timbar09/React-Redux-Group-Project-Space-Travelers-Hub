@@ -37,8 +37,8 @@
 
 <summary>Client</summary>
 <ul>
-  <li><a href="https://reactjs.org/">React</a></li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS">CSS</a></li>
+  <li><a href="https://reactjs.org/">React.js</a></li>
+  <li><a href="https://react-bootstrap.github.io/">React Bootstrap</a></li>
   <li><a href="https://vitejs.dev/">Vite</a></li>
 </ul>
 
@@ -46,9 +46,15 @@
 
 - **Single Page App**
 
+- **Redux toolkit**
+
+- **Redux thunk**
+
 - **ES6**
 
 - **Gitflow**
+
+- **REST APIs**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
