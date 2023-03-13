@@ -1,56 +1,89 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@400;500;600;800&display=swap');
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
+  --clr-dark: rgb(27, 27, 27);
+  --clr-dark-grey: rgb(81, 81, 81);
+  --clr-grey: rgb(128, 128, 128);
+  --clr-light-grey: rgb(230, 230, 230);
+  --clr-light: rgb(249, 249, 249);
+  --clr-white: rgb(255, 255, 255);
+
+  position: relative;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  font-family: 'Mukta Vaani', 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 0.95em;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--clr-grey);
+  min-width: 400px;
+  background-color: var(--clr-light);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+@media (min-width: 64em) {
+  body {
+    font-size: 1em;
+  }
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.no-scroll {
+  overflow: hidden;
 }
 
-button:hover {
-  border-color: #646cff;
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: var(--clr-dark);
 }
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .active {
+    border-bottom: solid 3px var(--clr-dark);
+    color: var(--clr-dark);
+  }
+}
+
+.main {
+  padding-top: 7rem;
+  background-color: var(--clr-light);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
 }
