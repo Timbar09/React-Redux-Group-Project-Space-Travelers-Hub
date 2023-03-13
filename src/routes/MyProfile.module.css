@@ -1,7 +1,30 @@
 .missionItem {
   font-size: 1.25em;
+  line-height: 1;
 }
 
 .missionItem:not(:last-child) {
   border-bottom: solid 1px lightgray;
+}
+
+.readMore {
+  text-decoration: none;
+  font-size: 0.65em;
+  font-weight: 600;
+  color: rgb(10, 169, 201);
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+
+.emptyListMessage {
+  height: 25vh;
+  max-height: 10rem;
+  display: grid;
+  place-items: center;
+}
+
+.cancelBtn {
+  text-align: right;
 }

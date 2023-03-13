@@ -20,11 +20,7 @@ function Rocket({ myrockets }) {
       check += 1;
       content.push(
         <Carousel.Item key={check}>
-          <img
-            className="img-thumbnail"
-            src={image}
-            alt="Rocket"
-          />
+          <img className="img-thumbnail" src={image} alt="Rocket" />
         </Carousel.Item>,
       );
       return content;
@@ -35,20 +31,36 @@ function Rocket({ myrockets }) {
   return (
     <ListGroup.Item className={styles.listitem}>
       <div className={styles.image}>
-        <Carousel fade>
-          {slideShow()}
-        </Carousel>
+        <Carousel fade>{slideShow()}</Carousel>
       </div>
       <Card style={{ width: '70%' }} className={styles.card}>
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>
-            {isReserved && <Badge bg="info" className={styles.badge}>Reserved</Badge>}
+            {isReserved && (
+              <Badge bg="info" className={styles.badge}>
+                Reserved
+              </Badge>
+            )}
             {description}
           </Card.Text>
-          {
-            isReserved ? <Button className={styles.mybtn} variant="outline-secondary" onClick={() => dispatch(remReservation(id))}>Cancel Reservation</Button> : <Button className={styles.mybtn} variant="primary" onClick={() => dispatch(addReservation(id))}>Reserve Rocket</Button>
-          }
+          {isReserved ? (
+            <Button
+              className={styles.mybtn}
+              variant="outline-secondary"
+              onClick={() => dispatch(remReservation(id))}
+            >
+              Cancel Reservation
+            </Button>
+          ) : (
+            <Button
+              className={styles.mybtn}
+              variant="primary"
+              onClick={() => dispatch(addReservation(id))}
+            >
+              Reserve Rocket
+            </Button>
+          )}
         </Card.Body>
       </Card>
     </ListGroup.Item>

@@ -1,6 +1,11 @@
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   background-color: var(--clr-white);
   margin-bottom: 1rem;
+  z-index: 1000;
 }
 
 .nav {
@@ -50,4 +55,75 @@
 
 .links a:hover {
   color: var(--clr-dark);
+}
+
+.mobileNav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--clr-white);
+}
+
+.option {
+  font-size: 1.5em;
+  color: var(--clr-dark);
+  width: 100%;
+}
+
+.option:hover {
+  color: var(--clr-dark);
+  background-color: var(--clr-light-grey);
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+}
+
+.option:active {
+  color: var(--clr-white);
+  background-color: var(--clr-dark);
+}
+
+.hamburger {
+  border: 0;
+  background-color: transparent;
+}
+
+.hamburger span {
+  display: block;
+  position: relative;
+  width: 2rem;
+  height: 0.25rem;
+  background-color: var(--clr-dark);
+}
+
+.hamburger span:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+.open .stroke1 {
+  top: 0.5rem;
+  rotate: -45deg;
+}
+
+.open .stroke2 {
+  opacity: 0;
+}
+
+.open .stroke3 {
+  top: -0.5rem;
+  rotate: 45deg;
+}
+
+.close .stroke1 {
+  top: 0;
+  rotate: 0deg;
+}
+
+.close .stroke2 {
+  opacity: 1;
+}
+
+.close .stroke3 {
+  top: 0;
+  rotate: 0deg;
 }

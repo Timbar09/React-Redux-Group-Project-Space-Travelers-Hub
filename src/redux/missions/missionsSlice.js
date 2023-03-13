@@ -9,7 +9,14 @@ const initialState = {
 
 export const fetchMissions = createAsyncThunk('missions/fetchMissions', async () => {
   const response = await getData(MISSIONS_URL);
-  return response;
+  const processedData = response.map((item) => ({
+    id: item.mission_id,
+    name: item.mission_name,
+    description: item.description,
+    reserved: false,
+    wikipedia: item.wikipedia,
+  }));
+  return processedData;
 });
 
 export const missionsSlice = createSlice({

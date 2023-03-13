@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 
@@ -11,7 +12,7 @@ const links = [
   { path: 'myprofile', text: 'My Profile' },
 ];
 
-function Navbar() {
+function Navbar({ menu, handleMenu }) {
   return (
     <header className={`${styles.header} border-bottom`}>
       <Container className={styles.nav}>
@@ -19,7 +20,7 @@ function Navbar() {
           <img src={logo} alt="logo" />
           <span className={styles.logoName}>Space Traveler&apos;s Hub</span>
         </NavLink>
-        <ul className={styles.links}>
+        <ul className={`${styles.links} d-none d-md-flex`}>
           {links.map((link) => (
             <li key={link.text}>
               <NavLink
@@ -31,9 +32,42 @@ function Navbar() {
             </li>
           ))}
         </ul>
+        {menu && (
+          <ul className={`${styles.mobileNav} d-md-none py-4`}>
+            <Container>
+              {links.map((link) => (
+                <li key={link.text}>
+                  <NavLink
+                    to={link.path}
+                    className={`${({ isActive }) => (isActive ? 'active' : undefined)} ${
+                      styles.option
+                    } border p-2 mb-2 rounded`}
+                    onClick={handleMenu}
+                  >
+                    {link.text}
+                  </NavLink>
+                </li>
+              ))}
+            </Container>
+          </ul>
+        )}
+        <button
+          className={`${styles.hamburger} ${menu ? styles.open : styles.close} d-md-none`}
+          type="button"
+          onClick={handleMenu}
+        >
+          <span className={`${styles.stroke} ${styles.stroke1}`} />
+          <span className={`${styles.stroke} ${styles.stroke2}`} />
+          <span className={`${styles.stroke} ${styles.stroke3}`} />
+        </button>
       </Container>
     </header>
   );
 }
+
+Navbar.propTypes = {
+  menu: PropTypes.bool.isRequired,
+  handleMenu: PropTypes.func.isRequired,
+};
 
 export default Navbar;

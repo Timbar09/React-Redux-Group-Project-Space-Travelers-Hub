@@ -29,7 +29,7 @@
 
 # 📖 React & Redux Group Project Space Traveler's Hub<a name="about-project"></a>
 
-**React & Redux Group Project Space Traveler's Hub** is a react web appliation.
+**React & Redux Group Project Space Traveler's Hub** is a web application that displays commercial and scientific space travel services. The application fetches real live data from the SpaceX API. The application allows users to interact with it by booking rockets and joining selected space missions. It was built using React.js, Redux-toolkit, Bootstrap, React-Bootstrap, and Rest APIs.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -37,8 +37,8 @@
 
 <summary>Client</summary>
 <ul>
-  <li><a href="https://reactjs.org/">React</a></li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS">CSS</a></li>
+  <li><a href="https://reactjs.org/">React.js</a></li>
+  <li><a href="https://react-bootstrap.github.io/">React Bootstrap</a></li>
   <li><a href="https://vitejs.dev/">Vite</a></li>
 </ul>
 
@@ -46,15 +46,21 @@
 
 - **Single Page App**
 
+- **Redux toolkit**
+
+- **Redux thunk**
+
 - **ES6**
 
 - **Gitflow**
+
+- **REST APIs**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Comming soon.
+- Visit [live site](https://spacetravelershub-react.onrender.com/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

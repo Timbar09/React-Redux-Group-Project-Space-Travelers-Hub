@@ -1,25 +1,22 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
 
+import getData from '../../api';
 import { ROCKETS_URL } from '../../config';
 
 export const getRockets = createAsyncThunk('Rockets/getRockets', async () => {
-  try {
-    const items = [];
-    const res = await axios(ROCKETS_URL);
-    res.data.map((item) => {
-      items.push({
-        id: item.id,
-        name: item.name,
-        description: item.description,
-        images: item.flickr_images,
-      });
-      return items;
+  const items = [];
+  const res = await getData(ROCKETS_URL);
+  res.map((item) => {
+    items.push({
+      id: item.id,
+      name: item.name,
+      description: item.description,
+      images: item.flickr_images,
+      wikipedia: item.wikipedia,
     });
     return items;
-  } catch (error) {
-    return error;
-  }
+  });
+  return items;
 });
 
 const initialState = {
