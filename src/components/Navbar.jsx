@@ -55,6 +55,7 @@ function Navbar({ menu, handleMenu }) {
           className={`${styles.hamburger} ${menu ? styles.open : styles.close} d-md-none`}
           type="button"
           onClick={handleMenu}
+          aria-label="Menu"
         >
           <span className={`${styles.stroke} ${styles.stroke1}`} />
           <span className={`${styles.stroke} ${styles.stroke2}`} />
