@@ -23,7 +23,7 @@ function Navbar({ menu, handleMenu }) {
             <span>Traveler&apos;s Hub</span>
           </span>
         </NavLink>
-        <ul className={`${styles.links} d-none d-md-flex`}>
+        <ul className={`${styles.navList} d-none d-md-flex`}>
           {links.map((link) => (
             <li key={link.text}>
               <NavLink
