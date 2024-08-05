@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 
-import logo from '../Images/planet.png';
+import logo from '../assets/images/logo.png';
 
 import styles from './Navbar.module.css';
 
@@ -18,7 +18,10 @@ function Navbar({ menu, handleMenu }) {
       <Container className={styles.nav}>
         <NavLink to={links[0].path} className={styles.logo} style={{ border: 0, color: '#1b1b1b' }}>
           <img src={logo} alt="logo" />
-          <span className={styles.logoName}>Space Traveler&apos;s Hub</span>
+          <span className={styles.logoName}>
+            <span>Space</span>
+            <span>Traveler&apos;s Hub</span>
+          </span>
         </NavLink>
         <ul className={`${styles.links} d-none d-md-flex`}>
           {links.map((link) => (

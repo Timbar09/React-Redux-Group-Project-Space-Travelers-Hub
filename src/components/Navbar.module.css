@@ -16,21 +16,30 @@
 }
 
 .logo {
-  font-size: 2em;
-  line-height: 1.4;
+  font-size: 1.75em;
+  line-height: 1;
   color: var(--clr-blue);
-  padding-bottom: 0.25em;
+  padding: 0.25em 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 1.75em;
 }
 
 .logoName {
-  display: none;
+  display: inline-block;
+  margin-left: 1rem;
 }
 
-@media (min-width: 64em) {
-  .logoName {
-    display: inline-block;
-    margin-left: 1rem;
-  }
+.logoName span:first-child {
+  letter-spacing: 0.125em;
+}
+
+.logoName span:last-child {
+  display: block;
+  font-size: 0.5em;
 }
 
 .links {
