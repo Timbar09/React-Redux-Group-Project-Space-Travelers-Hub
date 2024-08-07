@@ -70,8 +70,12 @@ a {
 
 @media (min-width: 768px) {
   .active {
-    border-bottom: 0.15rem solid var(--clr-dark);
     color: var(--clr-dark);
+  }
+
+  .active::before {
+    background-color: var(--clr-dark);
+    width: 100%;
   }
 
   .active .myProfile svg {
@@ -79,6 +83,27 @@ a {
     outline: solid 0.075rem var(--clr-dark);
     outline-offset: 3px;
     transition: outline-offset 100ms ease-in-out;
+  }
+
+  .myProfile {
+    display: inline-block;
+    position: relative;
+  }
+
+  .myProfileText {
+    font-size: 0.35em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 0;
+    width: max-content;
+    opacity: 0;
+    transition: bottom 100ms ease-in-out;
+  }
+
+  .active .myProfileText {
+    bottom: -1.25em;
+    opacity: 1;
   }
 }
 

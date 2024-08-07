@@ -7,15 +7,16 @@ import styles from './Navbar.module.css';
 
 function MyProfile() {
   return (
-    <span className="myProfile " title="My Profile" aria-label="My Profile">
+    <span className="myProfile" title="My Profile" aria-label="My Profile">
       <UserIcon />
+      <span className="myProfileText">My Profile</span>
     </span>
   );
 }
 
 function NavList() {
   return (
-    <ul className={`${styles.navList} d-none d-md-flex`}>
+    <ul className={`${styles.navList} d-none d-md-flex py-2`}>
       {links.map((link) => (
         <li key={link.text}>
           <NavLink to={link.path} className={styles.link}>

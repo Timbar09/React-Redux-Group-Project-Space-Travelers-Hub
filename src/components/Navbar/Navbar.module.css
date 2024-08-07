@@ -64,9 +64,22 @@
 }
 
 .link {
-  padding: 1.5em 0.25em;
-  border-bottom: solid 0.15rem transparent;
+  position: relative;
+  padding: 0 0.25em;
   transition: color 100ms ease-in-out;
+}
+
+.link::before {
+  --dimension: 0.125rem;
+
+  content: '';
+  position: absolute;
+  bottom: -1em;
+  left: 50%;
+  translate: -50% 0;
+  width: var(--dimension);
+  height: var(--dimension);
+  transition: background-color 100ms ease-in-out, width 100ms ease-in-out;
 }
 
 .link:hover {
@@ -74,8 +87,11 @@
 }
 
 .navList li:last-child .link {
-  padding: 0.725em 0;
   font-size: 1.5em;
+}
+
+.navList li:last-child .link:last-child::before {
+  display: none;
 }
 
 .mobileNav {
