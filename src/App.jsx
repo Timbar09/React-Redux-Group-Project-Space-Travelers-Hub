@@ -27,7 +27,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Rockets />} />
         <Route path="/missions" element={<Missions />} />
-        <Route path="myprofile" element={<MyProfile />} />
+        <Route path="my-profile" element={<MyProfile />} />
         <Route path="*" element={<NotMatch />} />
       </Route>
     </Routes>

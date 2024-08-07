@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
+// import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
+import { FaCircleUser as UserIcon } from 'react-icons/fa6';
 
 import logo from '../assets/images/logo.png';
 
@@ -9,8 +11,16 @@ import styles from './Navbar.module.css';
 const links = [
   { path: '/', text: 'Rockets' },
   { path: '/missions', text: 'Missions' },
-  { path: 'myprofile', text: 'My Profile' },
+  { path: '/my-profile', text: 'My MyProfile' },
 ];
+
+function MyProfile() {
+  return (
+    <span className="myProfile " title="My Profile" aria-label="My Profile">
+      <UserIcon />
+    </span>
+  );
+}
 
 function Navbar({ menu, handleMenu }) {
   return (
@@ -23,14 +33,12 @@ function Navbar({ menu, handleMenu }) {
             <span>Traveler&apos;s Hub</span>
           </span>
         </NavLink>
+
         <ul className={`${styles.navList} d-none d-md-flex`}>
           {links.map((link) => (
             <li key={link.text}>
-              <NavLink
-                to={link.path}
-                className={({ isActive }) => (isActive ? 'active' : undefined)}
-              >
-                {link.text}
+              <NavLink to={link.path} className={styles.link}>
+                {link.path === '/my-profile' ? <MyProfile /> : link.text}
               </NavLink>
             </li>
           ))}

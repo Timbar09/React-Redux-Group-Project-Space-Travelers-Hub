@@ -45,25 +45,37 @@
 .navList {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 1.5rem;
   font-size: 1.05em;
   font-weight: 500;
   line-height: 1.7;
 }
 
+.navList li:nth-child(3) {
+  position: relative;
+}
+
 .navList li:nth-child(3)::before {
   content: '|';
-  padding-inline-end: 10%;
-  margin-left: -15%;
+  position: absolute;
+  left: -0.775rem;
+  top: 50%;
+  translate: 0 -50%;
 }
 
-.navList a {
-  padding: 1.5rem 0.5rem;
-  transition: color 150ms ease-in-out;
+.link {
+  padding: 1.5em 0;
+  border-bottom: solid 0.15rem transparent;
+  transition: color 100ms ease-in-out;
 }
 
-.navList a:hover {
+.link:hover {
   color: var(--clr-dark);
+}
+
+.navList li:last-child .link {
+  padding: 0.725em 0;
+  font-size: 1.5em;
 }
 
 .mobileNav {
@@ -97,7 +109,7 @@
   background-color: transparent;
 }
 
-.hamburger span {
+.stroke {
   display: block;
   position: relative;
   width: 2rem;
@@ -105,7 +117,7 @@
   background-color: var(--clr-dark);
 }
 
-.hamburger span:not(:last-child) {
+.stroke:not(:last-child) {
   margin-bottom: 0.25rem;
 }
 

@@ -70,8 +70,15 @@ a {
 
 @media (min-width: 768px) {
   .active {
-    border-bottom: solid 3px var(--clr-dark);
+    border-bottom: 0.15rem solid var(--clr-dark);
     color: var(--clr-dark);
+  }
+
+  .active .myProfile svg {
+    border-radius: 50%;
+    outline: solid 0.075rem var(--clr-dark);
+    outline-offset: 3px;
+    transition: outline-offset 100ms ease-in-out;
   }
 }
 
