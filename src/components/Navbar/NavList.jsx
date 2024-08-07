@@ -1,0 +1,30 @@
+import { NavLink } from 'react-router-dom';
+
+import { FaCircleUser as UserIcon } from 'react-icons/fa6';
+
+import links from './links';
+import styles from './Navbar.module.css';
+
+function MyProfile() {
+  return (
+    <span className="myProfile " title="My Profile" aria-label="My Profile">
+      <UserIcon />
+    </span>
+  );
+}
+
+function NavList() {
+  return (
+    <ul className={`${styles.navList} d-none d-md-flex`}>
+      {links.map((link) => (
+        <li key={link.text}>
+          <NavLink to={link.path} className={styles.link}>
+            {link.path === '/my-profile' ? <MyProfile /> : link.text}
+          </NavLink>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export default NavList;

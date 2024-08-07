@@ -45,7 +45,7 @@
 .navList {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.75rem;
   font-size: 1.05em;
   font-weight: 500;
   line-height: 1.7;
@@ -58,13 +58,13 @@
 .navList li:nth-child(3)::before {
   content: '|';
   position: absolute;
-  left: -0.775rem;
+  left: -1em;
   top: 50%;
   translate: 0 -50%;
 }
 
 .link {
-  padding: 1.5em 0;
+  padding: 1.5em 0.25em;
   border-bottom: solid 0.15rem transparent;
   transition: color 100ms ease-in-out;
 }
