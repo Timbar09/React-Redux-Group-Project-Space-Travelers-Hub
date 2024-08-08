@@ -4,9 +4,12 @@
   --transition: background-color 100ms ease-in-out;
   --dimension: 2em;
 
-  border: 0;
-  font-size: 0.75em;
+  border: solid 0.125em var(--clr-dark-opaque-200);
+  padding: 0;
+  display: grid;
+  font-size: 0.65em;
   background-color: transparent;
+  border-radius: 50%;
 }
 
 .themeToggleContainer {
@@ -14,7 +17,7 @@
   display: inline-block;
   width: var(--dimension);
   height: var(--dimension);
-  border-radius: 50%;
+  border-radius: inherit;
   background-color: var(--sun-bg);
   -webkit-box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61) inset,
     0em -0.062em 0.062em 0em #a1872a inset;
@@ -28,13 +31,6 @@
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
-}
-
-.themeToggleContainer:hover .themeToggleMoon {
-  -webkit-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-  transform: translateX(0%);
-  transition: transform 0.5s;
 }
 
 .themeToggleMoon {
@@ -54,7 +50,13 @@
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
-  position: relative;
+  transition: transform 0.5s;
+}
+
+.themeToggle[data-theme='dark'] .themeToggleMoon {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .themeToggleCrater {

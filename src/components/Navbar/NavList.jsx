@@ -18,6 +18,7 @@ function MyProfile() {
 function NavList() {
   return (
     <>
+      <ThemeToggleButton />
       <ul className={`${styles.navList} d-none d-md-flex py-2`}>
         {links.map((link) => (
           <li key={link.text}>
@@ -27,8 +28,6 @@ function NavList() {
           </li>
         ))}
       </ul>
-
-      <ThemeToggleButton />
     </>
   );
 }

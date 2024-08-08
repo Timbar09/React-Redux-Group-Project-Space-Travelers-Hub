@@ -79,7 +79,7 @@
   translate: -50% 0;
   width: var(--dimension);
   height: var(--dimension);
-  transition: background-color 100ms ease-in-out, width 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out, width 200ms ease-in-out;
 }
 
 .link:hover {

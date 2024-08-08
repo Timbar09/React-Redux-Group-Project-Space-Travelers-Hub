@@ -19,6 +19,12 @@ body {
   --clr-light: rgb(249, 249, 249);
   --clr-white: rgb(255, 255, 255);
 
+  --clr-dark-opaque-100: rgba(27, 27, 27, 0.1);
+  --clr-dark-opaque-200: rgba(27, 27, 27, 0.3);
+  --clr-dark-opaque-300: rgba(27, 27, 27, 0.5);
+  --clr-dark-opaque-400: rgba(27, 27, 27, 0.7);
+  --clr-dark-opaque-500: rgba(27, 27, 27, 0.9);
+
   position: relative;
   margin: 0;
   padding: 0;
@@ -31,6 +37,21 @@ body {
   color: var(--clr-grey);
   min-width: 400px;
   background-color: var(--clr-light);
+}
+
+body[data-theme='dark'] {
+  --clr-dark: rgb(249, 249, 249);
+  --clr-dark-grey: rgb(128, 128, 128);
+  --clr-grey: rgb(81, 81, 81);
+  --clr-light-grey: rgb(27, 27, 27);
+  --clr-light: rgb(27, 27, 27);
+  --clr-white: rgb(27, 27, 27);
+
+  --clr-dark-opaque-100: rgba(249, 249, 249, 0.1);
+  --clr-dark-opaque-200: rgba(249, 249, 249, 0.3);
+  --clr-dark-opaque-300: rgba(249, 249, 249, 0.5);
+  --clr-dark-opaque-400: rgba(249, 249, 249, 0.7);
+  --clr-dark-opaque-500: rgba(249, 249, 249, 0.9);
 }
 
 @media (min-width: 64em) {
