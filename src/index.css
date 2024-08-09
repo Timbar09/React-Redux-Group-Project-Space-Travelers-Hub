@@ -12,18 +12,31 @@ html {
 }
 
 body {
-  --clr-dark: rgb(27, 27, 27);
-  --clr-dark-grey: rgb(81, 81, 81);
-  --clr-grey: rgb(128, 128, 128);
-  --clr-light-grey: rgb(230, 230, 230);
-  --clr-light: rgb(249, 249, 249);
-  --clr-white: rgb(255, 255, 255);
+  --dark: rgb(27, 27, 27);
+  --darkest-grey: rgb(30, 30, 30);
+  --darker-grey: rgb(36, 36, 36);
+  --dark-grey: rgb(81, 81, 81);
+  --grey: rgb(135, 135, 135);
+  --light-grey: rgb(230, 230, 230);
+  --lighter-grey: rgb(244, 244, 244);
+  --lightest-grey: rgb(249, 249, 249);
+  --white: rgb(255, 255, 255);
 
-  --clr-dark-opaque-100: rgba(27, 27, 27, 0.1);
-  --clr-dark-opaque-200: rgba(27, 27, 27, 0.3);
-  --clr-dark-opaque-300: rgba(27, 27, 27, 0.5);
-  --clr-dark-opaque-400: rgba(27, 27, 27, 0.7);
-  --clr-dark-opaque-500: rgba(27, 27, 27, 0.9);
+  --bg-100: var(--white);
+  --bg-200: var(--lightest-grey);
+  --bg-300: var(--lighter-grey);
+  --bg-400: var(--light-grey);
+
+  --text-100: var(--darkest-grey);
+  --text-200: var(--dark-grey);
+  --text-300: var(--grey);
+
+  --opaque-50: rgba(27, 27, 27, 0.05);
+  --opaque-100: rgba(27, 27, 27, 0.1);
+  --opaque-200: rgba(27, 27, 27, 0.3);
+
+  --transition-100: 100ms;
+  --transition-200: 150ms;
 
   position: relative;
   margin: 0;
@@ -34,24 +47,23 @@ body {
   font-size: 0.95em;
   font-weight: 400;
   line-height: 1.4;
-  color: var(--clr-grey);
+  color: var(--text-300);
   min-width: 400px;
-  background-color: var(--clr-light);
+  background-color: var(--bg-100);
 }
 
 body[data-theme='dark'] {
-  --clr-dark: rgb(249, 249, 249);
-  --clr-dark-grey: rgb(128, 128, 128);
-  --clr-grey: rgb(81, 81, 81);
-  --clr-light-grey: rgb(36, 36, 36);
-  --clr-light: rgb(30, 30, 30);
-  --clr-white: rgb(27, 27, 27);
+  --bg-100: var(--dark);
+  --bg-200: var(--darkest-grey);
+  --bg-300: var(--darker-grey);
+  --bg-400: var(--dark-grey);
 
-  --clr-dark-opaque-100: rgba(249, 249, 249, 0.1);
-  --clr-dark-opaque-200: rgba(249, 249, 249, 0.3);
-  --clr-dark-opaque-300: rgba(249, 249, 249, 0.5);
-  --clr-dark-opaque-400: rgba(249, 249, 249, 0.7);
-  --clr-dark-opaque-500: rgba(249, 249, 249, 0.9);
+  --text-100: var(--lightest-grey);
+  --text-200: var(--light-grey);
+
+  --opaque-50: rgba(249, 249, 249, 0.05);
+  --opaque-100: rgba(249, 249, 249, 0.1);
+  --opaque-200: rgba(249, 249, 249, 0.3);
 }
 
 @media (min-width: 64em) {
@@ -91,17 +103,17 @@ a {
 
 @media (min-width: 768px) {
   .active {
-    color: var(--clr-dark);
+    color: var(--text-100);
   }
 
   .active::before {
-    background-color: var(--clr-dark);
+    background-color: var(--text-100);
     width: 100%;
   }
 
   .active .myProfile svg {
     border-radius: 50%;
-    outline: solid 0.075rem var(--clr-dark);
+    outline: solid 0.075rem var(--text-100);
     outline-offset: 3px;
     transition: outline-offset 100ms ease-in-out;
   }
@@ -123,13 +135,13 @@ a {
   }
 
   .active .myProfileText {
-    bottom: -1.25em;
+    bottom: -1.625em;
     opacity: 1;
   }
 }
 
 .main {
-  background-color: var(--clr-light);
+  background-color: var(--bg-100);
 }
 
 .overlay {
