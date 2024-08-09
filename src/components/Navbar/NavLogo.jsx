@@ -6,7 +6,7 @@ import styles from './Navbar.module.css';
 
 function NavLogo() {
   return (
-    <NavLink to="/" className={styles.logo} style={{ border: 0, color: '#1b1b1b' }}>
+    <NavLink to="/" className={styles.logo}>
       <img src={logo} alt="logo" />
       <span className={styles.logoName}>
         <span>Space</span>

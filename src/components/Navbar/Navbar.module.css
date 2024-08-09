@@ -13,12 +13,13 @@
   align-items: center;
   justify-content: space-between;
   gap: 2.5rem;
+  border-bottom: solid 0.125rem var(--clr-dark-opaque-100);
 }
 
 .logo {
   font-size: 1.75em;
   line-height: 1;
-  color: var(--clr-blue);
+  color: var(--clr-dark);
   padding: 0.25em 0;
   display: flex;
   align-items: center;
