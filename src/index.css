@@ -43,8 +43,8 @@ body[data-theme='dark'] {
   --clr-dark: rgb(249, 249, 249);
   --clr-dark-grey: rgb(128, 128, 128);
   --clr-grey: rgb(81, 81, 81);
-  --clr-light-grey: rgb(27, 27, 27);
-  --clr-light: rgb(27, 27, 27);
+  --clr-light-grey: rgb(36, 36, 36);
+  --clr-light: rgb(30, 30, 30);
   --clr-white: rgb(27, 27, 27);
 
   --clr-dark-opaque-100: rgba(249, 249, 249, 0.1);
@@ -129,7 +129,6 @@ a {
 }
 
 .main {
-  padding-top: 7rem;
   background-color: var(--clr-light);
 }
 
