@@ -7,7 +7,7 @@ import styles from './Navbar.module.css';
 
 function NavMobileMenu({ handleMenu }) {
   return (
-    <ul className={`${styles.mobileNav} d-md-none py-4`}>
+    <ul className={`${styles.mobileNav} d-md-none py-4 position-absolute w-100 text-center`}>
       <Container>
         {links.map((link) => (
           <li key={link.text}>
@@ -15,7 +15,7 @@ function NavMobileMenu({ handleMenu }) {
               to={link.path}
               className={`${({ isActive }) => (isActive ? 'active' : undefined)} ${
                 styles.option
-              } border p-2 mb-2 rounded`}
+              } p-2 mb-2 rounded fs-3 w-100`}
               onClick={handleMenu}
             >
               {link.text}

@@ -17,8 +17,12 @@ function Layout() {
 
   return (
     <>
-      <Navbar isMenuOpen={isMenuOpen} handleMenuToggle={toggleMenu} />
+      <header className="position-fixed top-0 w-100" style={{ zIndex: 100 }}>
+        <Navbar isMenuOpen={isMenuOpen} handleMenuToggle={toggleMenu} />
+      </header>
+
       <div className={isMenuOpen ? 'overlay d-md-none' : ''} />
+
       <main className="main">
         <Outlet />
       </main>

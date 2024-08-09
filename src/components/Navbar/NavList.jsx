@@ -19,10 +19,10 @@ function NavList() {
   return (
     <>
       <ThemeToggleButton />
-      <ul className={`${styles.navList} d-none d-md-flex py-2`}>
+      <ul className={`${styles.navList} d-none d-md-flex align-items-center gap-4 p-2 fs-6`}>
         {links.map((link) => (
           <li key={link.text}>
-            <NavLink to={link.path} className={styles.link}>
+            <NavLink to={link.path} className={`${styles.link} position-relative px-2`}>
               {link.path === '/my-profile' ? <MyProfile /> : link.text}
             </NavLink>
           </li>

@@ -1,28 +1,13 @@
-.header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-color: var(--clr-white);
-  margin-bottom: 1rem;
-  z-index: 1000;
-}
-
 .nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2.5rem;
-  border-bottom: solid 0.125rem var(--clr-dark-opaque-100);
+  background-color: var(--bg-100);
+  border-bottom: solid 0.125rem var(--opaque-100);
 }
 
 .logo {
   font-size: 1.75em;
   line-height: 1;
-  color: var(--clr-dark);
+  color: var(--text-100);
   padding: 0.25em 0;
-  display: flex;
-  align-items: center;
 }
 
 .logo img {
@@ -39,17 +24,7 @@
 }
 
 .logoName span:last-child {
-  display: block;
   font-size: 0.5em;
-}
-
-.navList {
-  display: flex;
-  align-items: center;
-  gap: 1.75rem;
-  font-size: 1.05em;
-  font-weight: 500;
-  line-height: 1.7;
 }
 
 .navList li:nth-child(3) {
@@ -59,15 +34,13 @@
 .navList li:nth-child(3)::before {
   content: '|';
   position: absolute;
-  left: -1em;
+  left: -0.85em;
   top: 50%;
   translate: 0 -50%;
 }
 
 .link {
-  position: relative;
-  padding: 0 0.25em;
-  transition: color 100ms ease-in-out;
+  transition: color var(--transition-100) ease-in-out;
 }
 
 .link::before {
@@ -75,7 +48,7 @@
 
   content: '';
   position: absolute;
-  bottom: -1em;
+  bottom: -1.225em;
   left: 50%;
   translate: -50% 0;
   width: var(--dimension);
@@ -84,7 +57,7 @@
 }
 
 .link:hover {
-  color: var(--clr-dark);
+  color: var(--text-100);
 }
 
 .navList li:last-child .link {
@@ -96,29 +69,26 @@
 }
 
 .mobileNav {
-  position: absolute;
   top: 100%;
   right: 0;
-  width: 100%;
-  text-align: center;
-  background-color: var(--clr-white);
+  background-color: var(--bg-100);
 }
 
 .option {
-  font-size: 1.5em;
-  color: var(--clr-dark);
-  width: 100%;
+  color: var(--text-200);
+  border: solid 0.125rem var(--opaque-100);
 }
 
 .option:hover {
-  color: var(--clr-dark);
-  background-color: var(--clr-light-grey);
-  transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+  color: var(--text-100);
+  background-color: var(--opaque-50);
+  transition: color var(--transition-100) ease-in-out,
+    background-color var(--transition-100) ease-in-out;
 }
 
 .option:active {
-  color: var(--clr-white);
-  background-color: var(--clr-dark);
+  color: var(--text-100);
+  background-color: var(--bg-100);
 }
 
 .hamburger {
@@ -131,7 +101,7 @@
   position: relative;
   width: 2rem;
   height: 0.25rem;
-  background-color: var(--clr-dark);
+  background-color: var(--text-100);
 }
 
 .stroke:not(:last-child) {

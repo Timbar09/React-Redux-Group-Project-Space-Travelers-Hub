@@ -2,7 +2,9 @@ import { useSelector } from 'react-redux';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import MissionItem from './MissionItem';
+// import MissionItem from './MissionItem';
+import MissionCard from './MissionCard';
+
 import styles from './MissionList.module.css';
 
 function MissionList() {
@@ -14,14 +16,26 @@ function MissionList() {
       <Row className={`${styles.heads} pb-2 d-none d-md-flex`}>
         <Col md={2}>Mission</Col>
         <Col md={5} lg={6}>
-          Descriotion
+          Description
         </Col>
         <Col md={3} lg={2}>
           Status
         </Col>
         <Col md={2} />
       </Row>
+
       <ul>
+        {missions.map((mission) => (
+          <MissionCard
+            key={mission.id}
+            id={mission.id}
+            name={mission.name}
+            description={mission.description}
+            reserved={mission.reserved}
+          />
+        ))}
+      </ul>
+      {/* <ul>
         {missions.map((mission) => (
           <MissionItem
             key={mission.id}
@@ -31,7 +45,7 @@ function MissionList() {
             reserved={mission.reserved}
           />
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 }

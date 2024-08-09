@@ -11,8 +11,8 @@ import styles from './Navbar.module.css';
 
 function Navbar({ isMenuOpen, handleMenuToggle }) {
   return (
-    <header className={styles.header}>
-      <Container className={styles.nav}>
+    <nav className={styles.nav}>
+      <Container className="d-flex justify-content-between align-items-center">
         <NavLogo />
 
         <NavList />
@@ -21,7 +21,7 @@ function Navbar({ isMenuOpen, handleMenuToggle }) {
 
         <HamburgerButton isMenuOpen={isMenuOpen} handleMenuToggle={handleMenuToggle} />
       </Container>
-    </header>
+    </nav>
   );
 }
 
