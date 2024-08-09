@@ -4,11 +4,11 @@ import { useState } from 'react';
 import Navbar from './Navbar';
 
 function Layout() {
-  const [menu, setMenu] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setMenu(!menu);
-    if (menu) {
+    setIsMenuOpen(!isMenuOpen);
+    if (isMenuOpen) {
       document.body.style.overflow = 'scroll';
     } else {
       document.body.style.overflow = 'hidden';
@@ -17,8 +17,8 @@ function Layout() {
 
   return (
     <>
-      <Navbar menu={menu} handleMenu={toggleMenu} />
-      <div className={menu && 'overlay d-md-none'} />
+      <Navbar isMenuOpen={isMenuOpen} handleMenuToggle={toggleMenu} />
+      <div className={isMenuOpen && 'overlay d-md-none'} />
       <main className="main">
         <Outlet />
       </main>

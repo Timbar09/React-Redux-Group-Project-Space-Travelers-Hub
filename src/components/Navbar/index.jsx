@@ -9,25 +9,25 @@ import HamburgerButton from './HamburgerButton';
 
 import styles from './Navbar.module.css';
 
-function Navbar({ menu, handleMenu }) {
+function Navbar({ isMenuOpen, handleMenuToggle }) {
   return (
-    <header className={`${styles.header} border-bottom`}>
+    <header className={styles.header}>
       <Container className={styles.nav}>
         <NavLogo />
 
         <NavList />
 
-        {menu && <NavMobileMenu handleMenu={handleMenu} />}
+        {isMenuOpen && <NavMobileMenu handleMenuToggle={handleMenuToggle} />}
 
-        <HamburgerButton menu={menu} handleMenu={handleMenu} />
+        <HamburgerButton isMenuOpen={isMenuOpen} handleMenuToggle={handleMenuToggle} />
       </Container>
     </header>
   );
 }
 
 Navbar.propTypes = {
-  menu: PropTypes.bool.isRequired,
-  handleMenu: PropTypes.func.isRequired,
+  isMenuOpen: PropTypes.bool.isRequired,
+  handleMenuToggle: PropTypes.func.isRequired,
 };
 
 export default Navbar;
