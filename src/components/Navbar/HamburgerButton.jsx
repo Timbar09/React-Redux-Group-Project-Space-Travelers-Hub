@@ -2,12 +2,12 @@ import PropTypes from 'prop-types';
 
 import styles from './Navbar.module.css';
 
-function HamburgerButton({ menu, handleMenu }) {
+function HamburgerButton({ isMenuOpen, handleMenuToggle }) {
   return (
     <button
-      className={`${styles.hamburger} ${menu ? styles.open : styles.close} d-md-none`}
+      className={`${styles.hamburger} ${isMenuOpen ? styles.open : styles.close} d-md-none`}
       type="button"
-      onClick={handleMenu}
+      onClick={handleMenuToggle}
       aria-label="Menu"
     >
       <span className={`${styles.stroke} ${styles.stroke1}`} />
@@ -18,8 +18,8 @@ function HamburgerButton({ menu, handleMenu }) {
 }
 
 HamburgerButton.propTypes = {
-  menu: PropTypes.bool.isRequired,
-  handleMenu: PropTypes.func.isRequired,
+  isMenuOpen: PropTypes.bool.isRequired,
+  handleMenuToggle: PropTypes.func.isRequired,
 };
 
 export default HamburgerButton;

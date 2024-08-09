@@ -18,7 +18,7 @@ function Layout() {
   return (
     <>
       <Navbar isMenuOpen={isMenuOpen} handleMenuToggle={toggleMenu} />
-      <div className={isMenuOpen && 'overlay d-md-none'} />
+      <div className={isMenuOpen ? 'overlay d-md-none' : ''} />
       <main className="main">
         <Outlet />
       </main>
