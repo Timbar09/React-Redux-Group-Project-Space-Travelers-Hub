@@ -4,8 +4,6 @@ import styles from './Loader.module.css';
 
 const boxClasses = [styles.boxOfStar1, styles.boxOfStar2, styles.boxOfStar3, styles.boxOfStar4];
 
-console.log(styles);
-
 function Loader() {
   return (
     <div className={styles.loaderContainer}>
