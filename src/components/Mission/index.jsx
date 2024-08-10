@@ -1,29 +1,24 @@
 import { useSelector } from 'react-redux';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 
-import MissionItem from './MissionItem';
-import styles from './MissionList.module.css';
+import PageHeader from '../PageHeader';
+import MissionCard from './MissionCard';
+
+import styles from './index.module.css';
 
 function Mission() {
   const { missions } = useSelector((state) => state.missions);
 
   return (
-    <div className="py-2 px-3 bg-white rounded">
-      <h1 className="pb-3 d-md-none">Missions</h1>
-      <Row className={`${styles.heads} pb-2 d-none d-md-flex`}>
-        <Col md={2}>Mission</Col>
-        <Col md={5} lg={6}>
-          Description
-        </Col>
-        <Col md={3} lg={2}>
-          Status
-        </Col>
-        <Col md={2} />
-      </Row>
-      <ul>
+    <Container classNames={`${styles.missionPage} py-4 px-3`}>
+      <PageHeader
+        heading="Featured Missions"
+        description="Explore our exciting space missions and discover the universe with us! Join us in our journey to explore the universe."
+      />
+
+      <ul className="list-unstyled d-flex flex-column gap-3">
         {missions.map((mission) => (
-          <MissionItem
+          <MissionCard
             key={mission.id}
             id={mission.id}
             name={mission.name}
@@ -32,7 +27,7 @@ function Mission() {
           />
         ))}
       </ul>
-    </div>
+    </Container>
   );
 }
 

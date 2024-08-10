@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux';
-import Container from 'react-bootstrap/Container';
 
 import Loader from '../components/Loader';
 import MissionContent from '../components/Mission';
@@ -11,11 +10,7 @@ function Missions() {
     return <Loader />;
   }
 
-  return (
-    <Container className="py-4">
-      <MissionContent />
-    </Container>
-  );
+  return <MissionContent />;
 }
 
 export default Missions;
