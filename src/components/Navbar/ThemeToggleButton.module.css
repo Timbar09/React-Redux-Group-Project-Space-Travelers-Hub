@@ -12,6 +12,7 @@
   border-radius: 50%;
 }
 
+/* TODO: Improve the sun appearance */
 .themeToggleContainer {
   position: relative;
   display: inline-block;
