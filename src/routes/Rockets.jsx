@@ -1,22 +1,14 @@
 import { useSelector } from 'react-redux';
 import { Container, ListGroup } from 'react-bootstrap';
+
+import Loader from '../components/Loader';
 import Rocket from '../components/rockets/Rocket';
-import styles from './Missions.module.css';
 
 function Rockets() {
   const { rocketList, isLoading } = useSelector((store) => store.Rockets);
 
   if (isLoading) {
-    return (
-      <div className={`${styles.loading} container padding`}>
-        <div className={styles.spinner}>
-          <span />
-          <span />
-          <span />
-          <span />
-        </div>
-      </div>
-    );
+    return <Loader />;
   }
 
   return (
