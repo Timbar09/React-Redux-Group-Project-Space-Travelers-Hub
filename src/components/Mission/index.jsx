@@ -16,7 +16,7 @@ function Mission() {
         description="Explore our exciting space missions and discover the universe with us! Join us in our journey to explore the universe."
       />
 
-      <ul className="list-unstyled d-flex flex-column gap-3">
+      <ul className={`${styles.missionList} list-unstyled`}>
         {missions.map((mission) => (
           <MissionCard
             key={mission.id}

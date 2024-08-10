@@ -1,0 +1,29 @@
+.missionList {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0fr;
+  gap: 1rem;
+}
+
+.missionList:hover {
+  grid-template-rows: 1fr;
+}
+
+.missionCard {
+  border: solid 0.1rem var(--opaque-50);
+  background-color: var(--bg-100);
+}
+
+.missionCardHeader {
+  background-color: var(--bg-100);
+}
+
+.missionCardCta {
+  width: max-content;
+}
+
+@media (min-width: 1200px) {
+  .missionList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
