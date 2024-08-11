@@ -1,0 +1,47 @@
+.button {
+  --danger: #e11a1a;
+  --shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-hover: 4px 4px 16px rgba(0, 0, 0, 0.25);
+
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  border: 0;
+  width: max-content;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.primary {
+  position: relative;
+  font-weight: 700;
+  color: var(--bg-200);
+  background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+  box-shadow: var(--shadow);
+  transition: opacity var(--transition-100) ease-in-out, transform var(--transition-100) ease-in-out,
+    box-shadow var(--transition-100) ease-in-out;
+}
+
+.primary:hover {
+  opacity: 0.9;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.tertiary {
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
+  color: var(--text-200);
+  background-color: var(--bg-400);
+  border: solid 0.1rem transparent;
+  transition: box-shadow var(--transition-100) ease-in-out, border var(--transition-100) ease-in-out,
+    color var(--transition-100) ease-in-out;
+}
+
+.tertiary:hover {
+  color: var(--danger);
+  border: solid 0.1rem var(--danger);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}

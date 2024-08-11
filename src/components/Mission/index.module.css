@@ -16,8 +16,12 @@
   background-color: var(--bg-100);
 }
 
-.missionCardHeader {
-  background-color: var(--bg-100);
+.missionCard[data-reserved='true'] {
+  background-color: var(--bg-200);
+}
+
+.missionCard[data-reserved='true'] footer {
+  background-color: var(--bg-300);
 }
 
 .missionCardBadge {
@@ -40,6 +44,10 @@
 
 .missionCardCta {
   width: max-content;
+}
+
+.missionCard button[class*='tertiary'] svg {
+  transform: scaleX(-1);
 }
 
 .missionCard footer {

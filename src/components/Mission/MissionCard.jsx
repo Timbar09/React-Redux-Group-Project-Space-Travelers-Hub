@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 
 import { BiSolidBadgeCheck as ActiveIcon, BiSolidBadge as InactiveIcon } from 'react-icons/bi';
+import { IoTicket as JoinIcon } from 'react-icons/io5';
+import { GiRun as LeaveIcon } from 'react-icons/gi';
 
 import { joinLeaveToggle } from '../../redux/missions/missionsSlice';
 
@@ -20,7 +22,7 @@ function MissionCard({ id, name, description, reserved }) {
   const processedName = name.length > 20 ? initials : name;
 
   return (
-    <li className={`${styles.missionCard} p-3 rounded d-md-flex gap-3`}>
+    <li className={`${styles.missionCard} p-3 rounded d-md-flex gap-3`} data-reserved={reserved}>
       <div className={`${styles.missionCardTop}`}>
         <header className={`${styles.missionCardHeader} d-flex align-items-center gap-3 py-2`}>
           <h3>{processedName}</h3>
@@ -64,12 +66,14 @@ function MissionCard({ id, name, description, reserved }) {
             type="tertiary"
             title="Leave Mission"
             handleClick={() => dispatch(joinLeaveToggle(id))}
+            icon={<LeaveIcon />}
           />
         ) : (
           <Button
             type="Primary"
             title="Join Mission"
             handleClick={() => dispatch(joinLeaveToggle(id))}
+            icon={<JoinIcon />}
           />
         )}
       </footer>
