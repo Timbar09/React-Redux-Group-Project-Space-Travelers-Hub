@@ -1,15 +1,14 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 
-import { BsPersonFillCheck as ActiveIcon } from 'react-icons/bs';
+import { GiSevenPointedStar as ActiveIcon } from 'react-icons/gi';
+import { MdDoNotDisturbOn as InactiveIcon } from 'react-icons/md';
 
 import { joinLeaveToggle } from '../../redux/missions/missionsSlice';
 
 import styles from './index.module.css';
 
-function MissionCard({
-  id, name, description, reserved,
-}) {
+function MissionCard({ id, name, description, reserved }) {
   const dispatch = useDispatch();
 
   const trimmedDescription = description.substring(0, 250);
@@ -26,11 +25,11 @@ function MissionCard({
           <h3 className="text-primary">{processedName}</h3>
 
           <span
-            className={`${styles.missionCardBadge} ${reserved ? 'bg-success' : 'bg-secondary'}
-           badge align-items-center gap-1`}
+            className={`${styles.missionCardBadge} px-2 py-1 rounded-1 d-inline-flex align-items-center gap-1`}
+            data-reserved={reserved ? 'true' : 'false'}
           >
-            <ActiveIcon />
-            {reserved ? 'Active Member' : 'Not a Member'}
+            <span>{reserved ? 'Active Member' : 'Not a Member'}</span>
+            {reserved ? <ActiveIcon /> : <InactiveIcon />}
           </span>
         </header>
 
@@ -49,7 +48,7 @@ function MissionCard({
         </p>
       </div>
 
-      <footer className="d-flex flex-md-column-reverse justify-content-between align-items-center gap-3  flex-fill">
+      <footer className="d-flex flex-md-column-reverse justify-content-between align-items-center align-items-md-end gap-3  flex-fill">
         <a
           href={`https://en.wikipedia.org/wiki/${name}`}
           target="_blank"

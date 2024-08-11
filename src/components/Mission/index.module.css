@@ -1,4 +1,6 @@
 .missionList {
+  --gold: #ffc107;
+
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0fr;
@@ -16,6 +18,20 @@
 
 .missionCardHeader {
   background-color: var(--bg-100);
+}
+
+.missionCardBadge {
+  background-color: var(--bg-200);
+  border: solid 0.1rem transparent;
+}
+
+.missionCardBadge[data-reserved='true'] {
+  color: var(--text-200);
+  background-color: var(--bg-300);
+}
+
+.missionCardBadge[data-reserved='true'] svg {
+  fill: var(--gold);
 }
 
 .missionCardCta {
