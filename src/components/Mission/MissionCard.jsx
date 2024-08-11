@@ -6,6 +6,8 @@ import { MdDoNotDisturbOn as InactiveIcon } from 'react-icons/md';
 
 import { joinLeaveToggle } from '../../redux/missions/missionsSlice';
 
+import Button from '../Button';
+
 import styles from './index.module.css';
 
 function MissionCard({ id, name, description, reserved }) {
@@ -21,8 +23,8 @@ function MissionCard({ id, name, description, reserved }) {
   return (
     <li className={`${styles.missionCard} p-3 rounded d-md-flex gap-3`}>
       <div className={`${styles.missionCardTop}`}>
-        <header className={`${styles.missionCardHeader} d-flex align-items-center gap-3 p-2`}>
-          <h3 className="text-primary">{processedName}</h3>
+        <header className={`${styles.missionCardHeader} d-flex align-items-center gap-3 py-2`}>
+          <h3>{processedName}</h3>
 
           <span
             className={`${styles.missionCardBadge} px-2 py-1 rounded-1 d-inline-flex align-items-center gap-1`}
@@ -33,7 +35,7 @@ function MissionCard({ id, name, description, reserved }) {
           </span>
         </header>
 
-        <p className={styles.missionCardDescription}>
+        <p className={`${styles.missionCardDescription} ps-4`}>
           {description.length > 250 ? `${trimmedDescription}...` : description}
           {description.length > 250 && (
             <button
@@ -48,23 +50,29 @@ function MissionCard({ id, name, description, reserved }) {
         </p>
       </div>
 
-      <footer className="d-flex flex-md-column-reverse justify-content-between align-items-center align-items-md-end gap-3  flex-fill">
+      <footer className="p-2 rounded-2 d-flex flex-md-column-reverse justify-content-between align-items-center align-items-md-end gap-3  flex-fill">
         <a
           href={`https://en.wikipedia.org/wiki/${name}`}
           target="_blank"
           rel="noreferrer"
-          className="btn btn-link"
+          className="btn-link"
         >
           Wikipedia
         </a>
 
-        <button
-          type="button"
-          className={`${styles.missionCardCta} btn ${reserved ? 'btn-danger' : 'btn-primary'}`}
-          onClick={() => dispatch(joinLeaveToggle(id))}
-        >
-          {reserved ? 'Leave Mission' : 'Join Mission'}
-        </button>
+        {reserved ? (
+          <Button
+            type="tertiary"
+            title="Leave Mission"
+            handleClick={() => dispatch(joinLeaveToggle(id))}
+          />
+        ) : (
+          <Button
+            type="Primary"
+            title="Join Mission"
+            handleClick={() => dispatch(joinLeaveToggle(id))}
+          />
+        )}
       </footer>
     </li>
   );

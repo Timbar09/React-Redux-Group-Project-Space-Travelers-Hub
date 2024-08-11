@@ -10,7 +10,7 @@ function Mission() {
   const { missions } = useSelector((state) => state.missions);
 
   return (
-    <Container classNames={`${styles.missionPage} py-4 px-3`}>
+    <Container className={`${styles.missionPage} py-4 px-3`}>
       <PageHeader
         heading="Featured Missions"
         description="Explore our exciting space missions and discover the universe with us! Join us in our journey to explore the universe."

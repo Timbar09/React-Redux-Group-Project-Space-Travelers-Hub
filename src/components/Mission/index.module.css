@@ -38,6 +38,10 @@
   width: max-content;
 }
 
+.missionCard footer {
+  background-color: var(--bg-200);
+}
+
 @media (min-width: 1200px) {
   .missionList {
     grid-template-columns: repeat(2, 1fr);
