@@ -13,9 +13,9 @@ html {
 
 body {
   --dark: rgb(27, 27, 27);
-  --darkest-grey: rgb(30, 30, 30);
-  --darker-grey: rgb(36, 36, 36);
-  --dark-grey: rgb(81, 81, 81);
+  --darkest-grey: rgb(32, 32, 32);
+  --darker-grey: rgb(38, 38, 38);
+  --dark-grey: rgb(50, 50, 50);
   --grey: rgb(135, 135, 135);
   --light-grey: rgb(230, 230, 230);
   --lighter-grey: rgb(244, 244, 244);
