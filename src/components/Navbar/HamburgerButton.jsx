@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import styles from './Navbar.module.css';
+import styles from './index.module.css';
 
 function HamburgerButton({ isMenuOpen, handleMenuToggle }) {
   return (

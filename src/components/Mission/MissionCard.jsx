@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 
-import { GiSevenPointedStar as ActiveIcon } from 'react-icons/gi';
-import { MdDoNotDisturbOn as InactiveIcon } from 'react-icons/md';
+import { BiSolidBadgeCheck as ActiveIcon, BiSolidBadge as InactiveIcon } from 'react-icons/bi';
 
 import { joinLeaveToggle } from '../../redux/missions/missionsSlice';
 

@@ -7,7 +7,7 @@ import NavList from './NavList';
 import NavMobileMenu from './NavMobileMenu';
 import HamburgerButton from './HamburgerButton';
 
-import styles from './Navbar.module.css';
+import styles from './index.module.css';
 
 function Navbar({ isMenuOpen, handleMenuToggle }) {
   return (

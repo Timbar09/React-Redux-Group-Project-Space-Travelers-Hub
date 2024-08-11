@@ -6,7 +6,7 @@ import ThemeToggleButton from './ThemeToggleButton';
 
 import links from './links';
 
-import styles from './Navbar.module.css';
+import styles from './index.module.css';
 
 function NavMobileMenu({ handleMenu }) {
   return (

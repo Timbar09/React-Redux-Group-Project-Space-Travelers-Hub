@@ -2,9 +2,11 @@ import { NavLink } from 'react-router-dom';
 
 import { FaCircleUser as UserIcon } from 'react-icons/fa6';
 
-import links from './links';
-import styles from './Navbar.module.css';
 import ThemeToggleButton from './ThemeToggleButton';
+
+import links from './links';
+
+import styles from './index.module.css';
 
 function MyProfile() {
   return (
