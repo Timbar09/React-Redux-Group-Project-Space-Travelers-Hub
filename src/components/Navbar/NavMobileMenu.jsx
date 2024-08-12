@@ -16,6 +16,7 @@ function NavMobileMenu({ handleMenu }) {
           <ThemeToggleButton />
         </li>
 
+        {/* TODO: Close the mobile menu when a link is clicked */}
         {links.map((link) => (
           <li key={link.text}>
             <NavLink
