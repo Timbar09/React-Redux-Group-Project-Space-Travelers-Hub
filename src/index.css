@@ -70,11 +70,6 @@ body[data-theme='dark'] {
   --opaque-200: rgba(249, 249, 249, 0.3);
 }
 
-body * {
-  transition: background-color var(--transition-200) ease-in-out,
-    color var(--transition-200) ease-in-out;
-}
-
 @media (min-width: 64em) {
   body {
     font-size: 1em;
