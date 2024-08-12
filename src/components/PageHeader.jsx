@@ -4,7 +4,7 @@ import styles from './PageHeader.module.css';
 
 function PageHeader({ heading, description }) {
   return (
-    <header className={`${styles.pageHeader} py-5 flex-column gap-1`}>
+    <header className={`${styles.pageHeader} flex-column gap-1`}>
       <h1 className={`${styles.pageHeaderHeading} py-5 text-center position-relative`}>
         {heading}
       </h1>
