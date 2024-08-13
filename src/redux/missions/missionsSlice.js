@@ -9,13 +9,19 @@ const initialState = {
 
 export const fetchMissions = createAsyncThunk('missions/fetchMissions', async () => {
   const response = await getData(MISSIONS_URL);
+
   const processedData = response.map((item) => ({
     id: item.mission_id,
     name: item.mission_name,
     description: item.description,
     reserved: false,
     wikipedia: item.wikipedia,
+    x: item.twitter,
+    website: item.website,
   }));
+
+  // console.log(processedData);
+
   return processedData;
 });
 
@@ -23,10 +29,10 @@ export const missionsSlice = createSlice({
   name: 'missions',
   initialState,
   reducers: {
-    joinLeaveToggle: (state, action) => {
+    joinLeaveToggle: (state, { payload }) => {
       const newState = { ...state };
       newState.missions = newState.missions.map((mission) => {
-        if (mission.id === action.payload) {
+        if (mission.id === payload) {
           return { ...mission, reserved: !mission.reserved };
         }
         return mission;
@@ -41,10 +47,10 @@ export const missionsSlice = createSlice({
         newState.isLoading = true;
         return newState;
       })
-      .addCase(fetchMissions.fulfilled, (state, action) => {
+      .addCase(fetchMissions.fulfilled, (state, { payload }) => {
         const newState = { ...state };
         newState.isLoading = false;
-        newState.missions = action.payload;
+        newState.missions = payload;
         return newState;
       });
   },
