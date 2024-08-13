@@ -1,15 +1,10 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
 
 import { BiSolidBadgeCheck as ActiveIcon, BiSolidBadge as InactiveIcon } from 'react-icons/bi';
-import { IoTicket as JoinIcon } from 'react-icons/io5';
-import { GiRun as LeaveIcon } from 'react-icons/gi';
 
-import { joinLeaveToggle } from '../../redux/missions/missionsSlice';
-
-import Button from '../Button';
 import Link from '../CustomLink';
+import MissionCardFooter from './MissionCardFooter';
 
 import styles from './index.module.css';
 
@@ -19,13 +14,14 @@ import styles from './index.module.css';
  * @param {string} name - The name of the mission.
  * @param {string} description - The description of the mission.
  * @param {boolean} reserved - The status of the mission reservation.
+ * @param {string} wikipedia - The Wikipedia link of the mission.
+ * @param {string} twitter - The Twitter link of the mission.
+ * @param {string} website - The website link of the mission.
  *
  * @returns {JSX.Element} Rendered MissionCard component.
  */
 
-function MissionCard({ id, name, description, reserved, wikipedia, x, website }) {
-  const dispatch = useDispatch();
-
+function MissionCard({ id, name, description, reserved, wikipedia, twitter, website }) {
   const [processedDescription, setProcessedDescription] = useState(() => {
     if (description.length > 250) {
       return `${description.substring(0, 250)}...`;
@@ -50,7 +46,7 @@ function MissionCard({ id, name, description, reserved, wikipedia, x, website })
 
   return (
     <li className={`${styles.missionCard} p-3 rounded d-md-flex gap-3`} data-reserved={reserved}>
-      <div className={`${styles.missionCardTop}`}>
+      <div className="mb-3 mb-md-0">
         <header className={`${styles.missionCardHeader} d-flex align-items-center gap-3 py-2`}>
           <h3>{processedName}</h3>
 
@@ -75,43 +71,13 @@ function MissionCard({ id, name, description, reserved, wikipedia, x, website })
         </p>
       </div>
 
-      <footer className="p-2 rounded-2 d-flex flex-md-column-reverse justify-content-between align-items-center align-items-md-end gap-3  flex-fill">
-        <ul className={`${styles.missionCardLinks} d-flex gap-3`}>
-          <li className={`${styles.missionCardLink}`}>
-            <a href={wikipedia} target="_blank" rel="noreferrer">
-              Wikipedia
-            </a>
-          </li>
-
-          <li className={`${styles.missionCardLink}`}>
-            <a href={`https://twitter.com/${x}`} target="_blank" rel="noreferrer">
-              X / Twitter
-            </a>
-          </li>
-
-          <li className={`${styles.missionCardLink}`}>
-            <a href={website} target="_blank" rel="noreferrer">
-              Website
-            </a>
-          </li>
-        </ul>
-
-        {reserved ? (
-          <Button
-            type="tertiary"
-            title="Leave Mission"
-            handleClick={() => dispatch(joinLeaveToggle(id))}
-            icon={<LeaveIcon />}
-          />
-        ) : (
-          <Button
-            type="Primary"
-            title="Join Mission"
-            handleClick={() => dispatch(joinLeaveToggle(id))}
-            icon={<JoinIcon />}
-          />
-        )}
-      </footer>
+      <MissionCardFooter
+        id={id}
+        wikipedia={wikipedia}
+        twitter={twitter}
+        website={website}
+        reserved={reserved}
+      />
     </li>
   );
 }
@@ -122,8 +88,7 @@ MissionCard.propTypes = {
   description: PropTypes.string.isRequired,
   reserved: PropTypes.bool.isRequired,
   wikipedia: PropTypes.string.isRequired,
-  x: PropTypes.string.isRequired,
+  twitter: PropTypes.string.isRequired,
   website: PropTypes.string.isRequired,
 };
-
 export default MissionCard;
