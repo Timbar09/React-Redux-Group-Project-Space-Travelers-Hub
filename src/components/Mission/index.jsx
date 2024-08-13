@@ -17,13 +17,16 @@ function Mission() {
       />
 
       <ul className={`${styles.missionList} list-unstyled`}>
-        {missions.map((mission) => (
+        {missions.map(({ id, name, description, reserved, wikipedia, x, website }) => (
           <MissionCard
-            key={mission.id}
-            id={mission.id}
-            name={mission.name}
-            description={mission.description}
-            reserved={mission.reserved}
+            key={id}
+            id={id}
+            name={name}
+            description={description}
+            reserved={reserved}
+            wikipedia={wikipedia}
+            x={x}
+            website={website}
           />
         ))}
       </ul>

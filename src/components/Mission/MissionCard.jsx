@@ -23,7 +23,7 @@ import styles from './index.module.css';
  * @returns {JSX.Element} Rendered MissionCard component.
  */
 
-function MissionCard({ id, name, description, reserved }) {
+function MissionCard({ id, name, description, reserved, wikipedia, x, website }) {
   const dispatch = useDispatch();
 
   const [processedDescription, setProcessedDescription] = useState(() => {
@@ -76,14 +76,25 @@ function MissionCard({ id, name, description, reserved }) {
       </div>
 
       <footer className="p-2 rounded-2 d-flex flex-md-column-reverse justify-content-between align-items-center align-items-md-end gap-3  flex-fill">
-        <a
-          href={`https://en.wikipedia.org/wiki/${name}`}
-          target="_blank"
-          rel="noreferrer"
-          className="btn-link"
-        >
-          Wikipedia
-        </a>
+        <ul className={`${styles.missionCardLinks} d-flex gap-3`}>
+          <li className={`${styles.missionCardLink}`}>
+            <a href={wikipedia} target="_blank" rel="noreferrer">
+              Wikipedia
+            </a>
+          </li>
+
+          <li className={`${styles.missionCardLink}`}>
+            <a href={`https://twitter.com/${x}`} target="_blank" rel="noreferrer">
+              X / Twitter
+            </a>
+          </li>
+
+          <li className={`${styles.missionCardLink}`}>
+            <a href={website} target="_blank" rel="noreferrer">
+              Website
+            </a>
+          </li>
+        </ul>
 
         {reserved ? (
           <Button
@@ -110,6 +121,9 @@ MissionCard.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   reserved: PropTypes.bool.isRequired,
+  wikipedia: PropTypes.string.isRequired,
+  x: PropTypes.string.isRequired,
+  website: PropTypes.string.isRequired,
 };
 
 export default MissionCard;
