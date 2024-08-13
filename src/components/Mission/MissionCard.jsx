@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { BiSolidBadgeCheck as ActiveIcon, BiSolidBadge as InactiveIcon } from 'react-icons/bi';
@@ -13,6 +14,12 @@ import styles from './index.module.css';
 
 function MissionCard({ id, name, description, reserved }) {
   const dispatch = useDispatch();
+  const [processedDescription, setProcessedDescription] = useState(() => {
+    if (description.length > 250) {
+      return description.substring(0, 250);
+    }
+    return description;
+  });
 
   const trimmedDescription = description.substring(0, 250);
   const initials = name
@@ -20,6 +27,14 @@ function MissionCard({ id, name, description, reserved }) {
     .map((word) => word.charAt(0).toUpperCase())
     .join('');
   const processedName = name.length > 20 ? initials : name;
+
+  const handleExpandOrMinimize = () => {
+    if (processedDescription.length === 250) {
+      setProcessedDescription(description);
+    } else {
+      setProcessedDescription(trimmedDescription);
+    }
+  };
 
   return (
     <li className={`${styles.missionCard} p-3 rounded d-md-flex gap-3`} data-reserved={reserved}>
@@ -37,13 +52,12 @@ function MissionCard({ id, name, description, reserved }) {
         </header>
 
         <p className={`${styles.missionCardDescription} ps-4`}>
-          {description.length > 250 ? `${trimmedDescription}...` : description}
+          {processedDescription}
           {description.length > 250 && (
             <button
               type="button"
               className="btn btn-link text-decoration-none"
-              data-bs-toggle="modal"
-              data-bs-target={`#missionModal${id}`}
+              onClick={handleExpandOrMinimize}
             >
               Read more
             </button>
