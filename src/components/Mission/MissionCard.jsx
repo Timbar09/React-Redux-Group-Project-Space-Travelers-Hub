@@ -9,6 +9,7 @@ import { GiRun as LeaveIcon } from 'react-icons/gi';
 import { joinLeaveToggle } from '../../redux/missions/missionsSlice';
 
 import Button from '../Button';
+import Link from '../CustomLink';
 
 import styles from './index.module.css';
 
@@ -16,7 +17,7 @@ function MissionCard({ id, name, description, reserved }) {
   const dispatch = useDispatch();
   const [processedDescription, setProcessedDescription] = useState(() => {
     if (description.length > 250) {
-      return description.substring(0, 250);
+      return `${description.substring(0, 250)}...`;
     }
     return description;
   });
@@ -29,10 +30,10 @@ function MissionCard({ id, name, description, reserved }) {
   const processedName = name.length > 20 ? initials : name;
 
   const handleExpandOrMinimize = () => {
-    if (processedDescription.length === 250) {
+    if (processedDescription.endsWith('...')) {
       setProcessedDescription(description);
     } else {
-      setProcessedDescription(trimmedDescription);
+      setProcessedDescription(`${trimmedDescription}...`);
     }
   };
 
@@ -52,15 +53,12 @@ function MissionCard({ id, name, description, reserved }) {
         </header>
 
         <p className={`${styles.missionCardDescription} ps-4`}>
-          {processedDescription}
+          {processedDescription}{' '}
           {description.length > 250 && (
-            <button
-              type="button"
-              className="btn btn-link text-decoration-none"
-              onClick={handleExpandOrMinimize}
-            >
-              Read more
-            </button>
+            <Link
+              text={processedDescription.length === 250 ? 'Read More' : 'Read Less'}
+              handleClick={handleExpandOrMinimize}
+            />
           )}
         </p>
       </div>
