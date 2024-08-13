@@ -17,7 +17,7 @@ function Mission() {
       />
 
       <ul className={`${styles.missionList} list-unstyled`}>
-        {missions.map(({ id, name, description, reserved, wikipedia, x, website }) => (
+        {missions.map(({ id, name, description, reserved, wikipedia, twitter, website }) => (
           <MissionCard
             key={id}
             id={id}
@@ -25,7 +25,7 @@ function Mission() {
             description={description}
             reserved={reserved}
             wikipedia={wikipedia}
-            x={x}
+            twitter={twitter}
             website={website}
           />
         ))}

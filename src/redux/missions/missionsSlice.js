@@ -16,7 +16,7 @@ export const fetchMissions = createAsyncThunk('missions/fetchMissions', async ()
     description: item.description,
     reserved: false,
     wikipedia: item.wikipedia,
-    x: item.twitter,
+    twitter: item.twitter || 'https://x.com',
     website: item.website,
   }));
 
