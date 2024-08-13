@@ -56,7 +56,8 @@ function MissionCard({ id, name, description, reserved }) {
           {processedDescription}{' '}
           {description.length > 250 && (
             <Link
-              text={processedDescription.length === 250 ? 'Read More' : 'Read Less'}
+              to="#this-is-a-dead-link"
+              text={processedDescription.endsWith('...') ? 'Show More' : 'Show Less'}
               handleClick={handleExpandOrMinimize}
             />
           )}

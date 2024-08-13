@@ -43,8 +43,8 @@
   fill: var(--gold);
 }
 
-.missionCardDescription {
-  transition: height 0.5s;
+.missionCardDescription a {
+  font-size: 0.85em;
 }
 
 .missionCardCta {
