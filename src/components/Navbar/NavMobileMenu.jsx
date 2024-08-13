@@ -8,7 +8,14 @@ import links from './links';
 
 import styles from './index.module.css';
 
-function NavMobileMenu({ handleMenu }) {
+/**
+ * NavMobileMenu component
+ * @param {function} handleMenu - Function to handle the mobile menu
+ *
+ * @returns {JSX.Element} - Rendered NavMobileMenu component
+ */
+
+function NavMobileMenu({ handleMenuToggle }) {
   return (
     <ul className={`${styles.mobileNav} d-md-none py-4 position-absolute w-100 text-center`}>
       <Container>
@@ -24,7 +31,7 @@ function NavMobileMenu({ handleMenu }) {
               className={`${({ isActive }) => (isActive ? 'active' : undefined)} ${
                 styles.option
               } p-2 mb-2 rounded fs-3 w-100`}
-              onClick={handleMenu}
+              onClick={handleMenuToggle}
             >
               {link.text}
             </NavLink>
@@ -36,7 +43,7 @@ function NavMobileMenu({ handleMenu }) {
 }
 
 NavMobileMenu.propTypes = {
-  handleMenu: PropTypes.func.isRequired,
+  handleMenuToggle: PropTypes.func.isRequired,
 };
 
 export default NavMobileMenu;

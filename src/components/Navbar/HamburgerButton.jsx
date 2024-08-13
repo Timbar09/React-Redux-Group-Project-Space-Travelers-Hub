@@ -2,6 +2,14 @@ import PropTypes from 'prop-types';
 
 import styles from './index.module.css';
 
+/**
+ * Renders a hamburger button component.
+ * @param {boolean} isMenuOpen - The status of the menu.
+ * @param {function} handleMenuToggle - The function to toggle the menu.
+ *
+ * @returns {JSX.Element} Rendered HamburgerButton component
+ */
+
 function HamburgerButton({ isMenuOpen, handleMenuToggle }) {
   return (
     <button

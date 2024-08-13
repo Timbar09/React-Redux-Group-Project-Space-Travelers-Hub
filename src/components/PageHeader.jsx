@@ -2,6 +2,14 @@ import PropTypes from 'prop-types';
 
 import styles from './PageHeader.module.css';
 
+/**
+ * Renders a page header component
+ * @param {string} heading - The heading to display on the page header
+ * @param {string} description - The description to display on the page header
+ *
+ * @returns {JSX.Element} - Rendered PageHeader component
+ */
+
 function PageHeader({ heading, description }) {
   return (
     <header className={`${styles.pageHeader} flex-column gap-1`}>

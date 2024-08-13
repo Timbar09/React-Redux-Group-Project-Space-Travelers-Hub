@@ -13,8 +13,19 @@ import Link from '../CustomLink';
 
 import styles from './index.module.css';
 
+/**
+ * Renders a mission card component.
+ * @param {string} id - The unique identifier of the mission.
+ * @param {string} name - The name of the mission.
+ * @param {string} description - The description of the mission.
+ * @param {boolean} reserved - The status of the mission reservation.
+ *
+ * @returns {JSX.Element} Rendered MissionCard component.
+ */
+
 function MissionCard({ id, name, description, reserved }) {
   const dispatch = useDispatch();
+
   const [processedDescription, setProcessedDescription] = useState(() => {
     if (description.length > 250) {
       return `${description.substring(0, 250)}...`;
