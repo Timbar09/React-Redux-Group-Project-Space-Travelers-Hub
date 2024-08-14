@@ -39,8 +39,8 @@ body {
   --opaque-100: rgba(27, 27, 27, 0.1);
   --opaque-200: rgba(27, 27, 27, 0.3);
 
-  --shadow-100: 2px 2px 8px rgba(0, 0, 0, 0.25);
-  --shadow-200: 4px 4px 16px rgba(0, 0, 0, 0.25);
+  --shadow-100: 2px 2px 8px rgba(0, 0, 0, 0.125);
+  --shadow-200: 4px 4px 16px rgba(0, 0, 0, 0.175);
 
   --transition-100: 100ms;
   --transition-200: 150ms;

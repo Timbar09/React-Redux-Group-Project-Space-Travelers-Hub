@@ -14,11 +14,13 @@
 .missionCard {
   border: solid 0.1rem var(--opaque-50);
   background-color: var(--bg-100);
+  box-shadow: var(--shadow-100);
 }
 
 .missionCard[data-reserved='true'] {
   border-color: var(--opaque-100);
   background-color: var(--bg-400);
+  box-shadow: none;
 }
 
 .missionCard[data-reserved='true'] .missionCardFooter {
