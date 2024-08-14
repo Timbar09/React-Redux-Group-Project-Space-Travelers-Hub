@@ -10,12 +10,26 @@ import styles from './Button.module.css';
  * @param {string} title - The text to display on the button element
  * @param {function} handleClick - The function to run when the button is clicked
  * @param {element} icon - The icon to display on the button element
+ * @param {string} dataBsToggle - The data-bs-toggle is a Bootstrap toggling attribute value
+ * @param {string} dataBsTarget - The data-bs-target is a Bootstrap target attribute value
+ * @param {string} dataBsDismiss - The data-bs-dismiss is a Bootstrap dismiss attribute value
+ * @param {boolean} danger - The danger attribute to show the button as a danger button
  *
  * @returns {JSX.Element} - Rendered Button component
  */
 
-function Button({ type, title, handleClick, icon }) {
+function Button({
+  type,
+  title,
+  handleClick,
+  icon,
+  dataBsToggle,
+  danger,
+  dataBsTarget,
+  dataBsDismiss,
+}) {
   const processedType = type.toLowerCase();
+  const isTextLess = title.length === 0;
 
   const types = {
     primary: styles.primary,
@@ -26,11 +40,18 @@ function Button({ type, title, handleClick, icon }) {
   return (
     <button
       type="button"
-      className={`d-inline-flex align-items-center gap-2 px-3 rounded-1 ${styles.button} ${types[processedType]}`}
+      className={`${styles.button} ${danger ? styles.danger : ''}
+       ${types[processedType]} ${
+        isTextLess ? 'px-2' : 'px-3'
+      } d-inline-flex align-items-center gap-2 rounded-1 `}
       onClick={handleClick}
+      aria-label={title}
+      data-bs-toggle={dataBsToggle}
+      data-bs-target={dataBsTarget}
+      data-bs-dismiss={dataBsDismiss}
     >
       <span>{icon}</span>
-      <span>{title}</span>
+      {!isTextLess && <span>{title}</span>}
     </button>
   );
 }
@@ -40,13 +61,21 @@ Button.propTypes = {
   type: PropTypes.string,
   handleClick: PropTypes.func,
   icon: PropTypes.element,
+  dataBsToggle: PropTypes.string,
+  dataBsTarget: PropTypes.string,
+  dataBsDismiss: PropTypes.string,
+  danger: PropTypes.bool,
 };
 
 Button.defaultProps = {
-  title: 'Primary Button',
+  title: '',
   type: 'primary',
   handleClick: () => {},
   icon: <Icon />,
+  dataBsToggle: '',
+  dataBsTarget: '',
+  dataBsDismiss: '',
+  danger: false,
 };
 
 export default Button;

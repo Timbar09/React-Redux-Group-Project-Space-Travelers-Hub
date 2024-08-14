@@ -6,10 +6,19 @@
   border: 0;
   width: max-content;
   text-decoration: none;
+  color: var(--text-200);
+  background-color: var(--bg-400);
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  transition: opacity var(--transition-100) ease-in-out, transform var(--transition-100) ease-in-out,
+    box-shadow var(--transition-100) ease-in-out, border var(--transition-100) ease-in-out,
+    color var(--transition-100) ease-in-out, background-color var(--transition-100) ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--opaque-200);
 }
 
 .primary {
@@ -18,8 +27,6 @@
   color: var(--bg-200);
   background: linear-gradient(90deg, var(--primary), var(--primary-dark));
   box-shadow: var(--shadow-100);
-  transition: opacity var(--transition-100) ease-in-out, transform var(--transition-100) ease-in-out,
-    box-shadow var(--transition-100) ease-in-out;
 }
 
 .primary:hover {
@@ -31,14 +38,14 @@
 .tertiary {
   padding-top: 0.15em;
   padding-bottom: 0.15em;
-  color: var(--text-200);
-  background-color: var(--bg-400);
   border: solid 0.1rem transparent;
-  transition: box-shadow var(--transition-100) ease-in-out, border var(--transition-100) ease-in-out,
-    color var(--transition-100) ease-in-out;
 }
 
 .tertiary:hover {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.danger:hover {
   color: var(--danger);
   border: solid 0.1rem var(--danger);
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
