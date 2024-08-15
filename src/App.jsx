@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import Layout from './components/Layout';
 import Missions from './routes/Missions';
@@ -13,10 +13,13 @@ import Rockets from './routes/Rockets';
 
 function App() {
   const dispatch = useDispatch();
+  const missions = useSelector((state) => state.missions.missions);
 
   useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
+    if (missions.length === 0) {
+      dispatch(fetchMissions());
+    }
+  }, [dispatch, missions]);
 
   useEffect(() => {
     dispatch(getRockets());

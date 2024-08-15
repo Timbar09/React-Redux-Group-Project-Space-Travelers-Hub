@@ -1,6 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { saveState, loadState } from '../../localStorage';
 import { MISSIONS_URL } from '../../config';
 import getData from '../../api';
+
+const preloadedState = loadState();
 
 const initialState = {
   missions: [],
@@ -20,23 +23,23 @@ export const fetchMissions = createAsyncThunk('missions/fetchMissions', async ()
     website: item.website,
   }));
 
-  // console.log(processedData);
-
   return processedData;
 });
 
 export const missionsSlice = createSlice({
   name: 'missions',
-  initialState,
+  initialState: preloadedState || initialState,
   reducers: {
     joinLeaveToggle: (state, { payload }) => {
       const newState = { ...state };
       newState.missions = newState.missions.map((mission) => {
-        if (mission.id === payload) {
-          return { ...mission, reserved: !mission.reserved };
+        if (mission.id === payload.id) {
+          const updatedMission = { ...mission, reserved: !mission.reserved };
+          return updatedMission;
         }
         return mission;
       });
+      saveState({ missions: newState.missions });
       return newState;
     },
   },
@@ -51,6 +54,7 @@ export const missionsSlice = createSlice({
         const newState = { ...state };
         newState.isLoading = false;
         newState.missions = payload;
+        saveState({ missions: newState.missions });
         return newState;
       });
   },
