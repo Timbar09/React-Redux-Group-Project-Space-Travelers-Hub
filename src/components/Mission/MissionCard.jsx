@@ -17,11 +17,21 @@ import styles from './index.module.css';
  * @param {string} wikipedia - The Wikipedia link of the mission.
  * @param {string} twitter - The Twitter link of the mission.
  * @param {string} website - The website link of the mission.
+ * @param {function} handleModal - The function to run when the modal is triggered.
  *
  * @returns {JSX.Element} Rendered MissionCard component.
  */
 
-function MissionCard({ id, name, description, reserved, wikipedia, twitter, website }) {
+function MissionCard({
+  id,
+  name,
+  description,
+  reserved,
+  wikipedia,
+  twitter,
+  website,
+  handleModal,
+}) {
   const [processedDescription, setProcessedDescription] = useState(() => {
     if (description.length > 250) {
       return `${description.substring(0, 250)}...`;
@@ -60,7 +70,7 @@ function MissionCard({ id, name, description, reserved, wikipedia, twitter, webs
         </header>
 
         <p className={`${styles.missionCardDescription} ps-4`}>
-          {processedDescription}{' '}
+          {`${processedDescription} `}
           {description.length > 250 && (
             <Link
               to="#this-is-a-dead-link"
@@ -77,6 +87,7 @@ function MissionCard({ id, name, description, reserved, wikipedia, twitter, webs
         twitter={twitter}
         website={website}
         reserved={reserved}
+        handleModal={handleModal}
       />
     </li>
   );
@@ -90,5 +101,6 @@ MissionCard.propTypes = {
   wikipedia: PropTypes.string.isRequired,
   twitter: PropTypes.string.isRequired,
   website: PropTypes.string.isRequired,
+  handleModal: PropTypes.func.isRequired,
 };
 export default MissionCard;

@@ -1,13 +1,20 @@
+import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import Container from 'react-bootstrap/Container';
 
 import PageHeader from '../PageHeader';
 import MissionCard from './MissionCard';
+import Modal from '../Modal';
 
 import styles from './index.module.css';
 
 function Mission() {
   const { missions } = useSelector((state) => state.missions);
+  const [selectedMissionId, setSelectedMissionId] = useState(null);
+
+  const handleModal = (id) => {
+    setSelectedMissionId(id);
+  };
 
   return (
     <Container className={`${styles.missionPage} py-4 px-3`}>
@@ -27,9 +34,12 @@ function Mission() {
             wikipedia={wikipedia}
             twitter={twitter}
             website={website}
+            handleModal={handleModal} // This is not from the mission object
           />
         ))}
       </ul>
+
+      <Modal id={selectedMissionId} />
     </Container>
   );
 }

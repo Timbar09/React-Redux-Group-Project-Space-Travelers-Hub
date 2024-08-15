@@ -1,13 +1,10 @@
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
 
-import { IoTicket as JoinIcon } from 'react-icons/io5';
+import { IoMdRocket as JoinIcon } from 'react-icons/io';
 import { GiRun as LeaveIcon } from 'react-icons/gi';
 import { SiWikipedia as WikipediaIcon } from 'react-icons/si';
 import { GoLinkExternal as WebsiteIcon } from 'react-icons/go';
 import { RiTwitterXLine as TwitterIcon } from 'react-icons/ri';
-
-import { joinLeaveToggle } from '../../redux/missions/missionsSlice';
 
 import Button from '../Button';
 
@@ -20,13 +17,12 @@ import styles from './index.module.css';
  * @param {string} twitter - The Twitter handle of the mission.
  * @param {string} website - The website link of the mission.
  * @param {boolean} reserved - The status of the mission reservation.
+ * @param {function} handleModal - The function to run when the modal is triggered.
  *
  * @returns {JSX.Element} Rendered MissionCardFooter component.
  */
 
-function MissionCardFooter({ id, wikipedia, twitter, website, reserved }) {
-  const dispatch = useDispatch();
-
+function MissionCardFooter({ id, wikipedia, twitter, website, reserved, handleModal }) {
   const links = [
     {
       href: wikipedia,
@@ -67,18 +63,15 @@ function MissionCardFooter({ id, wikipedia, twitter, website, reserved }) {
       </ul>
 
       {reserved ? (
-        <Button
-          type="tertiary"
-          title="Leave Mission"
-          handleClick={() => dispatch(joinLeaveToggle(id))}
-          icon={<LeaveIcon />}
-        />
+        <Button type="tertiary" title="Leave Mission" icon={<LeaveIcon />} danger />
       ) : (
         <Button
           type="Primary"
           title="Join Mission"
-          handleClick={() => dispatch(joinLeaveToggle(id))}
+          handleClick={() => handleModal(id)}
           icon={<JoinIcon />}
+          dataBsTarget="#exampleModal"
+          dataBsToggle="modal"
         />
       )}
     </footer>
@@ -91,6 +84,7 @@ MissionCardFooter.propTypes = {
   website: PropTypes.string.isRequired,
   reserved: PropTypes.bool.isRequired,
   id: PropTypes.string.isRequired,
+  handleModal: PropTypes.func.isRequired,
 };
 
 export default MissionCardFooter;
