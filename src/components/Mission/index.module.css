@@ -18,13 +18,13 @@
 }
 
 .missionCard[data-reserved='true'] {
-  border-color: var(--opaque-100);
-  background-color: var(--bg-400);
+  border-color: transparent;
+  background-color: var(--bg-300);
   box-shadow: none;
 }
 
 .missionCard[data-reserved='true'] .missionCardFooter {
-  background-color: var(--bg-300);
+  background-color: var(--bg-200);
 }
 
 .missionCard[data-reserved='true'] .missionCardLink a {

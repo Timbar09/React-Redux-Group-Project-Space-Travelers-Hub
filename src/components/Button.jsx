@@ -7,9 +7,9 @@ import styles from './Button.module.css';
 /**
  * Renders a button component
  * @param {string} type - The type of button to render e.g. primary, secondary, tertiary
- * @param {string} title - The text to display on the button element
+ * @param {string} title - The text to display on the button element. Default is an empty string
  * @param {function} handleClick - The function to run when the button is clicked
- * @param {element} icon - The icon to display on the button element
+ * @param {element} icon - The icon to display on the button element. Default is a smiley face icon
  * @param {string} dataBsToggle - The data-bs-toggle is a Bootstrap toggling attribute value
  * @param {string} dataBsTarget - The data-bs-target is a Bootstrap target attribute value
  * @param {string} dataBsDismiss - The data-bs-dismiss is a Bootstrap dismiss attribute value
