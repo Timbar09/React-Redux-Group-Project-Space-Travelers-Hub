@@ -1,0 +1,27 @@
+.modal {
+  background-color: var(--bg-100);
+}
+
+.close {
+  color: var(--text-200);
+  background-color: var(--bg-300);
+  font-size: 1.25em;
+}
+
+.modal p:first-child {
+  margin-bottom: 1em;
+}
+
+.modal p:last-child {
+  margin-top: 1em;
+}
+
+.modalBody {
+  color: var(--text-200);
+}
+
+.header,
+.footer {
+  border-color: var(--opaque-100);
+  border-width: 0.125em;
+}
