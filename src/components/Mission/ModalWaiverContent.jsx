@@ -1,18 +1,6 @@
-// import PropTypes from 'prop-types';
-// import { useDispatch } from 'react-redux';
-
-// import { MdFactCheck as AcceptIcon } from 'react-icons/md';
-// import { CgClose as CloseIcon } from 'react-icons/cg';
-
-// import { joinLeaveToggle } from '../../redux/missions/missionsSlice';
-
-// import Button from '../Button';
-
 import styles from './index.module.css';
 
 function ModalWaiverContent() {
-  //   const dispatch = useDispatch();
-
   return (
     <div className={`${styles.modalContent}`}>
       <p className="mb-2">

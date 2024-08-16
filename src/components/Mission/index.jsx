@@ -26,17 +26,17 @@ function Mission() {
       />
 
       <ul className={`${styles.missionList} list-unstyled`}>
-        {missions.map(({ id, name, description, reserved, wikipedia, twitter, website }) => (
+        {missions.map((mission) => (
           <MissionCard
-            key={id}
-            id={id}
-            name={name}
-            description={description}
-            reserved={reserved}
-            wikipedia={wikipedia}
-            twitter={twitter}
-            website={website}
-            handleModal={handleModal} // This is not from the mission object
+            key={mission.id}
+            id={mission.id}
+            name={mission.name}
+            description={mission.description}
+            reserved={mission.reserved}
+            wikipedia={mission.wikipedia}
+            twitter={mission.twitter}
+            website={mission.website}
+            handleModal={handleModal}
           />
         ))}
       </ul>

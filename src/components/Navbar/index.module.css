@@ -27,11 +27,11 @@
   font-size: 0.5em;
 }
 
-.navList li:nth-child(3) {
+.navList li:last-child {
   position: relative;
 }
 
-.navList li:nth-child(3)::before {
+.navList li:last-child::before {
   content: '|';
   position: absolute;
   left: -0.85em;
@@ -48,7 +48,7 @@
 
   content: '';
   position: absolute;
-  bottom: -1.225em;
+  bottom: -1.25em;
   left: 50%;
   translate: -50% 0;
   width: var(--dimension);

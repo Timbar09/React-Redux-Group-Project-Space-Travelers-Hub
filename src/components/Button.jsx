@@ -45,7 +45,6 @@ function Button({
       danger: styles.tertiaryDanger,
     },
   };
-  console.log(types[processedType].default);
 
   return (
     <button
