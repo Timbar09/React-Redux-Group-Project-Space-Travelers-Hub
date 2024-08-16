@@ -32,16 +32,26 @@ function Button({
   const isTextLess = title.length === 0;
 
   const types = {
-    primary: styles.primary,
-    secondary: styles.secondary,
-    tertiary: styles.tertiary,
+    primary: {
+      default: styles.primary,
+      danger: styles.primaryDanger,
+    },
+    secondary: {
+      default: styles.secondary,
+      danger: styles.secondaryDanger,
+    },
+    tertiary: {
+      default: styles.tertiary,
+      danger: styles.tertiaryDanger,
+    },
   };
+  console.log(types[processedType].default);
 
   return (
     <button
       type="button"
-      className={`${styles.button} ${danger ? styles.danger : ''}
-       ${types[processedType]} ${
+      className={`${styles.button} ${danger ? types[processedType].danger : ''}
+       ${types[processedType].default} ${
         isTextLess ? 'px-2' : 'px-3'
       } d-inline-flex align-items-center gap-2 rounded-1 `}
       onClick={handleClick}

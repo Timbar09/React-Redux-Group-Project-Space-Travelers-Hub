@@ -79,6 +79,10 @@
   background-color: var(--bg-400);
 }
 
+.leaveMissionModalContent p {
+  color: var(--danger);
+}
+
 @media (min-width: 1200px) {
   .missionList {
     grid-template-columns: repeat(2, 1fr);

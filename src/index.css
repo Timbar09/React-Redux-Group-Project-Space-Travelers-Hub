@@ -15,6 +15,7 @@ html {
 body {
   --primary-dark: rgb(4, 167, 164);
   --primary: rgb(0, 213, 196);
+  --danger: rgb(255, 0, 0);
 
   --dark: rgb(27, 27, 27);
   --darkest-grey: rgb(32, 32, 32);

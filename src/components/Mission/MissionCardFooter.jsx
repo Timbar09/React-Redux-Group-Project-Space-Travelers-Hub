@@ -63,14 +63,22 @@ function MissionCardFooter({ id, wikipedia, twitter, website, reserved, handleMo
       </ul>
 
       {reserved ? (
-        <Button type="tertiary" title="Leave Mission" icon={<LeaveIcon />} danger />
+        <Button
+          type="tertiary"
+          title="Leave Mission"
+          icon={<LeaveIcon />}
+          danger
+          handleClick={() => handleModal(id)}
+          dataBsTarget="#leaveModal"
+          dataBsToggle="modal"
+        />
       ) : (
         <Button
           type="Primary"
           title="Join Mission"
           handleClick={() => handleModal(id)}
           icon={<JoinIcon />}
-          dataBsTarget="#exampleModal"
+          dataBsTarget="#waiverModal"
           dataBsToggle="modal"
         />
       )}
