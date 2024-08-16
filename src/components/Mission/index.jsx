@@ -5,6 +5,8 @@ import Container from 'react-bootstrap/Container';
 import PageHeader from '../PageHeader';
 import MissionCard from './MissionCard';
 import Modal from '../Modal';
+import ModalWaiverContent from './ModalWaiverContent';
+import LeaveMissionModalContent from './LeaveMissionModalContent';
 
 import styles from './index.module.css';
 
@@ -39,7 +41,21 @@ function Mission() {
         ))}
       </ul>
 
-      <Modal id={selectedMissionId} />
+      <Modal
+        modalId="waiverModal"
+        title="Waiver of Liability"
+        itemId={selectedMissionId}
+        Content={ModalWaiverContent}
+        size="modal-lg"
+      />
+
+      <Modal
+        modalId="leaveModal"
+        title="Are you sure you want to leave this mission?"
+        itemId={selectedMissionId}
+        Content={LeaveMissionModalContent}
+        blank
+      />
     </Container>
   );
 }
