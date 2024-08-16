@@ -8,14 +8,6 @@
   font-size: 1.25em;
 }
 
-.modal p:first-child {
-  margin-bottom: 1em;
-}
-
-.modal p:last-child {
-  margin-top: 1em;
-}
-
 .modalBody {
   color: var(--text-200);
 }
