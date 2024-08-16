@@ -19,7 +19,7 @@ function NavMobileMenu({ handleMenuToggle }) {
   return (
     <ul className={`${styles.mobileNav} d-md-none py-4 position-absolute w-100 text-center`}>
       <Container>
-        <li className="mb-2 d-flex justify-content-end">
+        <li className="mb-2 d-flex justify-content-end px-1">
           <ThemeToggleButton />
         </li>
 

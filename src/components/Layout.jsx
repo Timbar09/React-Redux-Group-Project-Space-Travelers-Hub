@@ -26,6 +26,8 @@ function Layout() {
       <main className="main">
         <Outlet />
       </main>
+
+      {/* TODO: Add footer */}
     </>
   );
 }

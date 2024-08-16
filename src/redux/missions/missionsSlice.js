@@ -33,7 +33,7 @@ export const missionsSlice = createSlice({
     joinLeaveToggle: (state, { payload }) => {
       const newState = { ...state };
       newState.missions = newState.missions.map((mission) => {
-        if (mission.id === payload.id) {
+        if (mission.id === payload) {
           const updatedMission = { ...mission, reserved: !mission.reserved };
           return updatedMission;
         }
