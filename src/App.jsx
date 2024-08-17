@@ -14,16 +14,17 @@ import Rockets from './routes/Rockets';
 function App() {
   const dispatch = useDispatch();
   const { missionList } = useSelector((state) => state.missions);
+  const { rocketList } = useSelector((state) => state.rockets);
 
   useEffect(() => {
     if (missionList.length === 0) {
       dispatch(fetchMissions());
     }
-  }, [dispatch, missionList]);
 
-  useEffect(() => {
-    dispatch(getRockets());
-  }, [dispatch]);
+    if (rocketList.length === 0) {
+      dispatch(getRockets());
+    }
+  }, [dispatch, missionList.length, rocketList.length]);
 
   return (
     <Routes>

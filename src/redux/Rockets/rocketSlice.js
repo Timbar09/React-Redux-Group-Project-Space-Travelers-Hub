@@ -2,6 +2,14 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 import getData from '../../api';
 import { ROCKETS_URL } from '../../config';
+import { saveState, loadState } from '../../localStorage';
+
+const preloadedState = loadState('rockets');
+
+const initialState = {
+  rocketList: [],
+  isLoading: true,
+};
 
 export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
   const response = await getData(ROCKETS_URL);
@@ -18,19 +26,15 @@ export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
   return processedData;
 });
 
-const initialState = {
-  rocketList: [],
-};
-
 const rocketSlice = createSlice({
   name: 'rockets',
-  initialState,
-  isLoading: true,
+  initialState: preloadedState || initialState,
   reducers: {
     AddRemoveReservationToggle: (state, { payload }) => {
       const rocket = state.rocketList.find((rocket) => rocket.id === payload);
       if (rocket) {
         rocket.isReserved = !rocket.isReserved;
+        saveState('rockets', { rocketList: state.rocketList });
       }
     },
   },
@@ -39,12 +43,16 @@ const rocketSlice = createSlice({
       .addCase(getRockets.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(getRockets.fulfilled, (state, action) => {
+      .addCase(getRockets.fulfilled, (state, { payload }) => {
         state.isLoading = false;
-        state.rocketList = action.payload;
+        state.rocketList = payload;
+        saveState('rockets', { rocketList: state.rocketList });
       })
-      .addCase(getRockets.rejected, (state) => {
+      .addCase(getRockets.rejected, (state, { error }) => {
         state.isLoading = false;
+        state.rocketList = [];
+        saveState('rockets', { rocketList: state.rocketList });
+        state.error = error.message;
       });
   },
 });

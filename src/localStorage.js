@@ -1,6 +1,6 @@
-export const loadState = () => {
+export const loadState = (list) => {
   try {
-    const serializedState = localStorage.getItem('state');
+    const serializedState = localStorage.getItem(`spaceX-${list}`);
     if (serializedState === null) {
       return undefined;
     }
@@ -11,10 +11,10 @@ export const loadState = () => {
   }
 };
 
-export const saveState = (state) => {
+export const saveState = (list, state) => {
   try {
     const serializedState = JSON.stringify(state);
-    localStorage.setItem('state', serializedState);
+    localStorage.setItem(`spaceX-${list}`, serializedState);
   } catch (err) {
     console.error('Could not save state', err);
   }

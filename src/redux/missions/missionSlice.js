@@ -4,7 +4,7 @@ import { MISSIONS_URL } from '../../config';
 import getData from '../../api';
 import { saveState, loadState } from '../../localStorage';
 
-const preloadedState = loadState();
+const preloadedState = loadState('missions');
 
 const initialState = {
   missionList: [],
@@ -40,7 +40,7 @@ export const missionsSlice = createSlice({
       );
       if (mission) {
         mission.isReserved = !mission.isReserved;
-        saveState({ missionList: state.missionList });
+        saveState('missions', { missionList: state.missionList });
       }
     },
   },
@@ -52,7 +52,14 @@ export const missionsSlice = createSlice({
       .addCase(fetchMissions.fulfilled, (state, { payload }) => {
         state.isLoading = false;
         state.missionList = payload;
-        saveState({ missionList: state.missionList });
+        saveState('missions', { missionList: state.missionList });
+      })
+      .addCase(fetchMissions.rejected, (state, { error }) => {
+        state.isLoading = false;
+        state.missionList = [];
+        saveState('missions', { missionList: state.missionList });
+        state.error = error.message;
+        // TODO: Handle error with an error page
       });
   },
 });
