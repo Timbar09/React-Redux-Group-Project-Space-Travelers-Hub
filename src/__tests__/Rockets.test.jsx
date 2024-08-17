@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
 import Rockets from '../routes/Rockets';
 import store from '../redux/store';
-import { addReservation, remReservation } from '../redux/Rockets/rocketSlice';
+import { addReservation, remReservation } from '../redux/rockets/rocketSlice';
 
 describe('Rockets test', () => {
   test('should render Rockets', () => {

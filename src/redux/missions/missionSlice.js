@@ -1,0 +1,62 @@
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+
+import { MISSIONS_URL } from '../../config';
+import getData from '../../api';
+import { saveState, loadState } from '../../localStorage';
+
+const preloadedState = loadState();
+
+const initialState = {
+  missionList: [],
+  isLoading: true,
+};
+
+export const fetchMissions = createAsyncThunk(
+  'missions/fetchMissions',
+  async () => {
+    const response = await getData(MISSIONS_URL);
+
+    const processedData = response.map((item) => ({
+      id: item.mission_id,
+      name: item.mission_name,
+      description: item.description,
+      isReserved: false,
+      wikipedia: item.wikipedia,
+      twitter: item.twitter || 'https://x.com',
+      website: item.website,
+    }));
+
+    return processedData;
+  },
+);
+
+export const missionsSlice = createSlice({
+  name: 'missions',
+  initialState: preloadedState || initialState,
+  reducers: {
+    joinLeaveMissionToggle: (state, { payload }) => {
+      const mission = state.missionList.find(
+        (mission) => mission.id === payload,
+      );
+      if (mission) {
+        mission.isReserved = !mission.isReserved;
+        saveState({ missionList: state.missionList });
+      }
+    },
+  },
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchMissions.pending, (state) => {
+        state.isLoading = true;
+      })
+      .addCase(fetchMissions.fulfilled, (state, { payload }) => {
+        state.isLoading = false;
+        state.missionList = payload;
+        saveState({ missionList: state.missionList });
+      });
+  },
+});
+
+export const { joinLeaveMissionToggle } = missionsSlice.actions;
+
+export default missionsSlice.reducer;

@@ -11,7 +11,7 @@ import LeaveMissionModalContent from './LeaveMissionModalContent';
 import styles from './index.module.css';
 
 function Mission() {
-  const { missions } = useSelector((state) => state.missions);
+  const { missionList } = useSelector((state) => state.missions);
   const [selectedMissionId, setSelectedMissionId] = useState(null);
 
   const handleModal = (id) => {
@@ -26,13 +26,13 @@ function Mission() {
       />
 
       <ul className={`${styles.missionList} list-unstyled`}>
-        {missions.map((mission) => (
+        {missionList.map((mission) => (
           <MissionCard
             key={mission.id}
             id={mission.id}
             name={mission.name}
             description={mission.description}
-            reserved={mission.reserved}
+            isReserved={mission.isReserved}
             wikipedia={mission.wikipedia}
             twitter={mission.twitter}
             website={mission.website}

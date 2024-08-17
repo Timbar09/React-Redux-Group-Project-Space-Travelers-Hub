@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { CgClose as CancelIcon } from 'react-icons/cg';
 import { GiRun as LeaveIcon } from 'react-icons/gi';
 
-import { joinLeaveToggle } from '../../redux/missions/missionsSlice';
+import { joinLeaveMissionToggle } from '../../redux/missions/missionSlice';
 
 import Button from '../Button';
 
@@ -18,17 +18,23 @@ function LeaveMissionModalContent({ itemId, title }) {
       <h1 className="fs-4">{title}</h1>
 
       <p className="my-3 border-bottom border-top py-3">
-        By leaving this mission, you will lose all the benefits associated with it.
+        By leaving this mission, you will lose all the benefits associated with
+        it.
       </p>
 
       <div className="d-flex justify-content-end gap-3">
-        <Button type="tertiary" title="Cancel" dataBsDismiss="modal" icon={<CancelIcon />} />
+        <Button
+          type="tertiary"
+          title="Cancel"
+          dataBsDismiss="modal"
+          icon={<CancelIcon />}
+        />
         <Button
           type="secondary"
           title="Leave Mission"
           dataBsDismiss="modal"
           icon={<LeaveIcon style={{ transform: 'rotateY(180deg)' }} />}
-          handleClick={() => dispatch(joinLeaveToggle(itemId))}
+          handleClick={() => dispatch(joinLeaveMissionToggle(itemId))}
           danger
         />
       </div>

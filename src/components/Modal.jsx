@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { MdFactCheck as AcceptIcon } from 'react-icons/md';
 import { CgClose as CloseIcon } from 'react-icons/cg';
 
-import { joinLeaveToggle } from '../redux/missions/missionsSlice';
+import { joinLeaveMissionToggle } from '../redux/missions/missionSlice';
 
 import Button from './Button';
 
@@ -40,12 +40,18 @@ function Modal({ modalId, title, Content, itemId, blank, size }) {
           </div>
         ) : (
           <div className={`${styles.modal} modal-content`}>
-            <div className={`${styles.header} modal-header d-flex justify-content-between`}>
+            <div
+              className={`${styles.header} modal-header d-flex justify-content-between`}
+            >
               <h1 className="modal-title fs-5" id={`${modalId}Label`}>
                 {title}
               </h1>
 
-              <Button type="tertiary" dataBsDismiss="modal" icon={<CloseIcon />} />
+              <Button
+                type="tertiary"
+                dataBsDismiss="modal"
+                icon={<CloseIcon />}
+              />
             </div>
 
             <div className={`${styles.modalBody} modal-body`}>
@@ -57,7 +63,7 @@ function Modal({ modalId, title, Content, itemId, blank, size }) {
                 type="Primary"
                 title="Accept and Join Mission"
                 dataBsDismiss="modal"
-                handleClick={() => dispatch(joinLeaveToggle(itemId))}
+                handleClick={() => dispatch(joinLeaveMissionToggle(itemId))}
                 icon={<AcceptIcon />}
               />
             </div>

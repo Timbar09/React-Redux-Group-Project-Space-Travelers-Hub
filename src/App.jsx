@@ -7,19 +7,19 @@ import Missions from './routes/Missions';
 import MyProfile from './routes/MyProfile';
 import NotMatch from './routes/NotMatch';
 
-import { fetchMissions } from './redux/missions/missionsSlice';
-import { getRockets } from './redux/Rockets/rocketSlice';
+import { fetchMissions } from './redux/missions/missionSlice';
+import { getRockets } from './redux/rockets/rocketSlice';
 import Rockets from './routes/Rockets';
 
 function App() {
   const dispatch = useDispatch();
-  const missions = useSelector((state) => state.missions.missions);
+  const { missionList } = useSelector((state) => state.missions);
 
   useEffect(() => {
-    if (missions.length === 0) {
+    if (missionList.length === 0) {
       dispatch(fetchMissions());
     }
-  }, [dispatch, missions]);
+  }, [dispatch, missionList]);
 
   useEffect(() => {
     dispatch(getRockets());

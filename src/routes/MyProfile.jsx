@@ -5,17 +5,21 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
-import { joinLeaveToggle } from '../redux/missions/missionsSlice';
-import { remReservation } from '../redux/Rockets/rocketSlice';
+import { joinLeaveMissionToggle } from '../redux/missions/missionSlice';
+import { AddRemoveReservationToggle } from '../redux/rockets/rocketSlice';
 import styles from './MyProfile.module.css';
 
 function MyProfile() {
-  const { missions } = useSelector((state) => state.missions);
-  const { rocketList } = useSelector((store) => store.Rockets);
+  const { missionList } = useSelector((state) => state.missions);
+  const { rocketList } = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
 
-  const joinedMissions = missions.filter((mission) => mission.reserved === true);
-  const reservedRockets = rocketList.filter((rocket) => rocket.isReserved === true);
+  const joinedMissions = missionList.filter(
+    (mission) => mission.reserved === true,
+  );
+  const reservedRockets = rocketList.filter(
+    (rocket) => rocket.isReserved === true,
+  );
 
   return (
     <Container>
@@ -30,14 +34,21 @@ function MyProfile() {
                   <Row>
                     <Col>
                       <p>{mission.name}</p>
-                      <a href={mission.wikipedia} target="_balnk" className={styles.readMore}>
+                      <a
+                        href={mission.wikipedia}
+                        target="_blank"
+                        className={styles.readMore}
+                        rel="noreferrer"
+                      >
                         Read more
                       </a>
                     </Col>
                     <Col className={styles.cancelBtn}>
                       <Button
                         variant="outline-danger"
-                        onClick={() => dispatch(joinLeaveToggle(mission.id))}
+                        onClick={() =>
+                          dispatch(joinLeaveMissionToggle(mission.id))
+                        }
                       >
                         Leave Mission
                       </Button>
@@ -61,14 +72,21 @@ function MyProfile() {
                   <Row>
                     <Col>
                       <p>{rocket.name}</p>
-                      <a href={rocket.wikipedia} target="_balnk" className={styles.readMore}>
+                      <a
+                        href={rocket.wikipedia}
+                        target="_blank"
+                        className={styles.readMore}
+                        rel="noreferrer"
+                      >
                         Read more
                       </a>
                     </Col>
                     <Col className={styles.cancelBtn}>
                       <Button
                         variant="outline-danger"
-                        onClick={() => dispatch(remReservation(rocket.id))}
+                        onClick={() =>
+                          dispatch(AddRemoveReservationToggle(rocket.id))
+                        }
                       >
                         Cancel Reservation
                       </Button>

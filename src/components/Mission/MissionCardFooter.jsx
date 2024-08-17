@@ -16,13 +16,20 @@ import styles from './index.module.css';
  * @param {string} wikipedia - The Wikipedia link of the mission.
  * @param {string} twitter - The Twitter handle of the mission.
  * @param {string} website - The website link of the mission.
- * @param {boolean} reserved - The status of the mission reservation.
+ * @param {boolean} isReserved - The status of the mission reservation.
  * @param {function} handleModal - The function to run when the modal is triggered.
  *
  * @returns {JSX.Element} Rendered MissionCardFooter component.
  */
 
-function MissionCardFooter({ id, wikipedia, twitter, website, reserved, handleModal }) {
+function MissionCardFooter({
+  id,
+  wikipedia,
+  twitter,
+  website,
+  isReserved,
+  handleModal,
+}) {
   const links = [
     {
       href: wikipedia,
@@ -62,7 +69,7 @@ function MissionCardFooter({ id, wikipedia, twitter, website, reserved, handleMo
         ))}
       </ul>
 
-      {reserved ? (
+      {isReserved ? (
         <Button
           type="tertiary"
           title="Leave Mission"
@@ -90,7 +97,7 @@ MissionCardFooter.propTypes = {
   wikipedia: PropTypes.string.isRequired,
   twitter: PropTypes.string.isRequired,
   website: PropTypes.string.isRequired,
-  reserved: PropTypes.bool.isRequired,
+  isReserved: PropTypes.bool.isRequired,
   id: PropTypes.string.isRequired,
   handleModal: PropTypes.func.isRequired,
 };
