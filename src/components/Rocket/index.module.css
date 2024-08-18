@@ -4,6 +4,34 @@
   box-shadow: var(--shadow-100);
 }
 
+.card[data-reserved='true'] {
+  border-color: transparent;
+  background-color: var(--bg-300);
+  box-shadow: none;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50% 0;
+  bottom: 0;
+  width: 0;
+  background-color: var(--opaque-contrast-300);
+  border-radius: inherit;
+  z-index: 1;
+  transition: width 0.3s ease-in-out;
+}
+
+.card[data-reserved='true']:before {
+  width: 100%;
+}
+
+.card:hover::before {
+  width: 0;
+}
+
 .carousel {
   background-color: var(--bg-200);
 }
@@ -17,10 +45,13 @@
 }
 
 .cardBadge {
+  position: relative;
   padding-top: 0.15em;
   padding-bottom: 0.15em;
   color: var(--text-200);
-  background-color: var(--bg-300);
+  background-color: var(--bg-200);
+  border: solid 0.1rem var(--primary);
+  z-index: 1;
 }
 
 .cardBadge svg {
@@ -31,7 +62,6 @@
   .card {
     max-width: 30em;
     margin: 0 auto;
-    /* flex: 0.5; */
   }
   .carousel {
     max-width: 30em;
@@ -46,5 +76,9 @@
 
   .carouselImage {
     border-radius: 0.25em 0 0 0.25em;
+  }
+
+  .cardBody {
+    flex: min-content;
   }
 }

@@ -17,7 +17,10 @@ function RocketCard({ rocket }) {
   const dispatch = useDispatch();
 
   return (
-    <li className={`${styles.card} rounded-2 d-lg-flex p-2`}>
+    <li
+      className={`${styles.card} rounded-2 d-lg-flex p-2 position-relative`}
+      data-reserved={rocket.isReserved}
+    >
       <RocketImageCarousel imageUrls={rocket.images} cardId={rocket.id} />
 
       <div className={`${styles.cardBody} p-3`}>

@@ -40,6 +40,8 @@ body {
   --opaque-50: rgba(27, 27, 27, 0.05);
   --opaque-100: rgba(27, 27, 27, 0.1);
   --opaque-200: rgba(27, 27, 27, 0.3);
+  --opaque-contrast-200: rgba(249, 249, 249, 0.3);
+  --opaque-contrast-300: rgba(249, 249, 249, 0.5);
 
   --shadow-100: 2px 2px 8px rgba(0, 0, 0, 0.125);
   --shadow-200: 4px 4px 16px rgba(0, 0, 0, 0.175);
@@ -73,6 +75,8 @@ body[data-theme='dark'] {
   --opaque-50: rgba(249, 249, 249, 0.05);
   --opaque-100: rgba(249, 249, 249, 0.1);
   --opaque-200: rgba(249, 249, 249, 0.3);
+  --opaque-contrast-200: rgba(27, 27, 27, 0.3);
+  --opaque-contrast-300: rgba(27, 27, 27, 0.5);
 }
 
 @media (min-width: 64em) {
