@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 
 import { IoMdRocket as ReserveIcon } from 'react-icons/io';
 import { TbRocketOff as CancelIcon } from 'react-icons/tb';
+import { IoTicket as BadgeIcon } from 'react-icons/io5';
 
 import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
 
@@ -33,7 +34,16 @@ function RocketCard({ rocket }) {
           />
         </header>
 
-        <p>{rocket.isReserved ? 'Reserved' : 'Not Reserved'}</p>
+        <p>
+          {rocket.isReserved && (
+            <span
+              className={`${styles.cardBadge} px-2 rounded-1 d-inline-flex align-items-center gap-1`}
+            >
+              <BadgeIcon />
+              Reserved
+            </span>
+          )}
+        </p>
       </div>
     </li>
   );
