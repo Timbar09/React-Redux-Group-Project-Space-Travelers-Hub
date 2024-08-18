@@ -12,6 +12,10 @@
   border-radius: 0.25em 0.25em 0 0;
 }
 
+.cardHeader {
+  border-bottom: solid 0.1rem var(--opaque-50);
+}
+
 @media (min-width: 768px) {
   .card {
     max-width: 30em;
