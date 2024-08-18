@@ -49,7 +49,7 @@ function Button({
         .replace('http://', '')
         .split('/');
 
-      elementTitle = site;
+      elementTitle = `Visit ${site}`;
     }
   }
 

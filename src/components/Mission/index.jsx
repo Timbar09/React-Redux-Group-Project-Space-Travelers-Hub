@@ -12,7 +12,7 @@ import styles from './index.module.css';
 
 function Mission() {
   const { missionList } = useSelector((state) => state.missions);
-  const [selectedMissionId, setSelectedMissionId] = useState(null);
+  const [selectedMissionId, setSelectedMissionId] = useState(missionList[0].id);
 
   const handleModal = (id) => {
     setSelectedMissionId(id);

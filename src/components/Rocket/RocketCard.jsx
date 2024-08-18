@@ -62,6 +62,28 @@ function RocketCard({ rocket }) {
           )}
           {rocket.description}
         </p>
+
+        <div className={`${styles.missionCardDetails} d-flex gap-3`}>
+          <div>
+            <span className="fw-bold">Boosters:</span>
+            <span>{rocket.boosters}</span>
+          </div>
+
+          <div>
+            <span className="fw-bold">Diameter:</span>
+            <span>{`${rocket.diameter} m`}</span>
+          </div>
+
+          <div>
+            <span className="fw-bold">Cost Per Launch:</span>
+            <span>{`$${rocket.costPerLaunch}`}</span>
+          </div>
+
+          <div>
+            <span className="fw-bold">Success Rate:</span>
+            <span>{`${rocket.successRate}%`}</span>
+          </div>
+        </div>
       </div>
     </li>
   );
@@ -75,6 +97,10 @@ RocketCard.propTypes = {
     images: PropTypes.arrayOf(PropTypes.string),
     wikipedia: PropTypes.string,
     isReserved: PropTypes.bool,
+    boosters: PropTypes.number,
+    diameter: PropTypes.number,
+    costPerLaunch: PropTypes.number,
+    successRate: PropTypes.number,
   }).isRequired,
 };
 

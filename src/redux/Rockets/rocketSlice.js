@@ -21,6 +21,10 @@ export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
     images: item.flickr_images,
     wikipedia: item.wikipedia,
     isReserved: false,
+    boosters: item.boosters,
+    diameter: item.diameter.meters,
+    costPerLaunch: item.cost_per_launch,
+    successRate: item.success_rate_pct,
   }));
 
   return processedData;
