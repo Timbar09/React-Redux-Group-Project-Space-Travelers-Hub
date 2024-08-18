@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { IoMdRocket as ReserveIcon } from 'react-icons/io';
 import { TbRocketOff as CancelIcon } from 'react-icons/tb';
 import { IoTicket as BadgeIcon } from 'react-icons/io5';
+import { SiWikipedia as WikipediaIcon } from 'react-icons/si';
 
 import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
 
@@ -25,13 +26,26 @@ function RocketCard({ rocket }) {
         >
           <h3>{rocket.name}</h3>
 
-          <Button
-            type={rocket.isReserved ? 'tertiary' : 'primary'}
-            title={rocket.isReserved ? 'Cancel Reservation' : 'Reserve Rocket'}
-            icon={rocket.isReserved ? <CancelIcon /> : <ReserveIcon />}
-            danger={rocket.isReserved}
-            handleClick={() => dispatch(AddRemoveReservationToggle(rocket.id))}
-          />
+          <div className="d-flex gap-2">
+            <Button
+              type="tertiary"
+              icon={<WikipediaIcon />}
+              isLink
+              to={rocket.wikipedia}
+            />
+
+            <Button
+              type={rocket.isReserved ? 'tertiary' : 'primary'}
+              title={
+                rocket.isReserved ? 'Cancel Reservation' : 'Reserve Rocket'
+              }
+              icon={rocket.isReserved ? <CancelIcon /> : <ReserveIcon />}
+              danger={rocket.isReserved}
+              handleClick={() =>
+                dispatch(AddRemoveReservationToggle(rocket.id))
+              }
+            />
+          </div>
         </header>
 
         <p>

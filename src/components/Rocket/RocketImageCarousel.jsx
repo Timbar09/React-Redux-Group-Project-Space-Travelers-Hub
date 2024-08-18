@@ -22,14 +22,14 @@ function Button({ nextOrPrev, cardId }) {
 function CarouselIndicators({ imageUrls, cardId }) {
   return (
     <div className={`${styles.carouselIndicators} carousel-indicators`}>
-      {imageUrls.map((_, index) => (
+      {imageUrls.map((url, index) => (
         <button
           type="button"
           data-bs-target={`#${cardId}`}
           data-bs-slide-to={index}
           className={index === 0 ? 'active' : ''}
           aria-label={`Slide ${index}`}
-          key={cardId}
+          key={`${cardId}-${url}`}
         />
       ))}
     </div>
