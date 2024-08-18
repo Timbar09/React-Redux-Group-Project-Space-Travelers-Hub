@@ -15,23 +15,50 @@
   box-shadow: var(--shadow-100);
 }
 
+.missionCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50% 0;
+  bottom: 0;
+  width: 0;
+  opacity: 0;
+  background-color: var(--opaque-contrast-300);
+  border-radius: inherit;
+  z-index: 1;
+  transition: width 10ms ease-in-out, opacity 0.3s 20ms ease-in-out;
+}
+
 .missionCard[data-reserved='true'] {
   border-color: transparent;
   background-color: var(--bg-300);
   box-shadow: none;
 }
 
-.missionCard[data-reserved='true'] .missionCardFooter {
-  background-color: var(--bg-200);
+.missionCard[data-reserved='true']::before {
+  width: 100%;
+  opacity: 1;
 }
 
-.missionCard[data-reserved='true'] .missionCardLink a {
-  background-color: var(--opaque-50);
+.missionCard[data-reserved='true'] .missionCardBadge {
+  border-color: var(--primary);
+}
+
+.missionCard[data-reserved='true'] .missionCardFooter {
+  background-color: var(--bg-200);
 }
 
 .missionCardBadge {
   background-color: var(--bg-200);
   border: solid 0.1rem transparent;
+  z-index: 1;
+}
+
+.missionCard:hover::before {
+  width: 0;
+  opacity: 0;
+  transition: width 10ms 0.3s ease-in-out, opacity 0.3s 0s ease-in-out;
 }
 
 .missionCardBadge svg {
@@ -60,21 +87,6 @@
 
 .missionCardFooter {
   background-color: var(--bg-200);
-}
-
-.missionCardLink a {
-  --dimension: 1.75rem;
-
-  width: var(--dimension);
-  height: var(--dimension);
-  background-color: var(--bg-300);
-  transition: background-color var(--transition-100) ease-in-out,
-    color var(--transition-100) ease-in-out;
-}
-
-.missionCardLink a:hover {
-  color: var(--text-200);
-  background-color: var(--bg-400);
 }
 
 .leaveMissionModalContent p {

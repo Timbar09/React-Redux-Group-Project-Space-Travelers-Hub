@@ -18,18 +18,22 @@
   translate: -50% 0;
   bottom: 0;
   width: 0;
+  opacity: 0;
   background-color: var(--opaque-contrast-300);
   border-radius: inherit;
   z-index: 1;
-  transition: width 0.3s ease-in-out;
+  transition: width 10ms ease-in-out, opacity 0.3s 20ms ease-in-out;
 }
 
 .card[data-reserved='true']:before {
   width: 100%;
+  opacity: 1;
 }
 
 .card:hover::before {
   width: 0;
+  opacity: 0;
+  transition: width 10ms 0.3s ease-in-out, opacity 0.3s 0s ease-in-out;
 }
 
 .carousel {

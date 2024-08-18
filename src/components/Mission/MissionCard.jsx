@@ -59,7 +59,7 @@ function MissionCard({
 
   return (
     <li
-      className={`${styles.missionCard} p-3 rounded d-md-flex gap-3`}
+      className={`${styles.missionCard} p-3 rounded d-md-flex gap-3 position-relative`}
       data-reserved={isReserved}
     >
       <div className="mb-3 mb-md-0">

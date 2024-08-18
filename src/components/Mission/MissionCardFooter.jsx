@@ -50,45 +50,25 @@ function MissionCardFooter({
 
   return (
     <footer
-      className={`${styles.missionCardFooter} p-2 rounded-2 d-flex flex-md-column-reverse justify-content-between align-items-center align-items-md-end justify-content-md-end gap-3`}
+      className={`${styles.missionCardFooter} p-2 rounded-2 d-flex flex-md-column-reverse justify-content-between align-items-center align-items-md-end justify-content-md-end gap-2`}
     >
       <ul className="d-flex gap-2 align-items-center">
         {links.map(({ href, label, Icon }) => (
-          <li className={`${styles.missionCardLink}`} key={label}>
-            <a
-              href={href}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={label}
-              title={label}
-              className="rounded-1 d-inline-flex align-items-center justify-content-center"
-            >
-              <Icon />
-            </a>
+          <li key={label}>
+            <Button type="tertiary" icon={<Icon />} isLink to={href} />
           </li>
         ))}
       </ul>
 
-      {isReserved ? (
-        <Button
-          type="tertiary"
-          title="Leave Mission"
-          icon={<LeaveIcon />}
-          danger
-          handleClick={() => handleModal(id)}
-          dataBsTarget="#leaveModal"
-          dataBsToggle="modal"
-        />
-      ) : (
-        <Button
-          type="Primary"
-          title="Join Mission"
-          handleClick={() => handleModal(id)}
-          icon={<JoinIcon />}
-          dataBsTarget="#waiverModal"
-          dataBsToggle="modal"
-        />
-      )}
+      <Button
+        type={isReserved ? 'tertiary' : 'primary'}
+        title={isReserved ? 'Leave Mission' : 'Join Mission'}
+        handleClick={() => handleModal(id)}
+        icon={isReserved ? <LeaveIcon /> : <JoinIcon />}
+        dataBsTarget={isReserved ? '#leaveModal' : '#waiverModal'}
+        dataBsToggle="modal"
+        danger={isReserved}
+      />
     </footer>
   );
 }
