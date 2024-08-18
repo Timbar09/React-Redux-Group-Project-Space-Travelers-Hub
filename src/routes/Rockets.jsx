@@ -1,25 +1,16 @@
 import { useSelector } from 'react-redux';
-import { Container, ListGroup } from 'react-bootstrap';
 
 import Loader from '../components/Loader';
-import Rocket from '../components/rockets/Rocket';
+import RocketContent from '../components/Rocket';
 
 function Rockets() {
-  const { rocketList, isLoading } = useSelector((store) => store.Rockets);
+  const { isLoading } = useSelector((state) => state.rockets);
 
   if (isLoading) {
     return <Loader />;
   }
 
-  return (
-    <Container className="rocket-container">
-      <ListGroup variant="flush">
-        {rocketList.map((rocket) => (
-          <Rocket key={rocket.id} myrockets={rocket} />
-        ))}
-      </ListGroup>
-    </Container>
-  );
+  return <RocketContent />;
 }
 
 export default Rockets;
