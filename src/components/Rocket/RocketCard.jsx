@@ -37,12 +37,13 @@ function RocketCard({ rocket }) {
         <p>
           {rocket.isReserved && (
             <span
-              className={`${styles.cardBadge} px-2 rounded-1 d-inline-flex align-items-center gap-1`}
+              className={`${styles.cardBadge} px-2 rounded-1 d-inline-flex align-items-center gap-1 me-2`}
             >
               <BadgeIcon />
               Reserved
             </span>
           )}
+          {rocket.description}
         </p>
       </div>
     </li>
