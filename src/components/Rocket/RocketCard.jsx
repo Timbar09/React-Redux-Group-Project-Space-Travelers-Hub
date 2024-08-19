@@ -10,11 +10,35 @@ import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
 
 import RocketImageCarousel from './RocketImageCarousel';
 import Button from '../Button';
+import RocketCardDetails from './RocketCardDetails';
 
 import styles from './index.module.css';
 
 function RocketCard({ rocket }) {
   const dispatch = useDispatch();
+  const toggleRes = () => dispatch(AddRemoveReservationToggle(rocket.id));
+
+  const costPerLaunch = `$${rocket.costPerLaunch
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`;
+
+  const metrics = [
+    {
+      id: 'boosters001',
+      name: 'Boosters',
+      value: rocket.boosters,
+    },
+    {
+      id: 'diameter001',
+      name: 'Diameter',
+      value: `${rocket.diameter.toFixed(1)}m`,
+    },
+    {
+      id: 'successRate001',
+      name: 'Success Rate',
+      value: `${rocket.successRate}%`,
+    },
+  ];
 
   return (
     <li
@@ -44,9 +68,7 @@ function RocketCard({ rocket }) {
               }
               icon={rocket.isReserved ? <CancelIcon /> : <ReserveIcon />}
               danger={rocket.isReserved}
-              handleClick={() =>
-                dispatch(AddRemoveReservationToggle(rocket.id))
-              }
+              handleClick={toggleRes}
             />
           </div>
         </header>
@@ -63,27 +85,7 @@ function RocketCard({ rocket }) {
           {rocket.description}
         </p>
 
-        <div className={`${styles.missionCardDetails} d-flex gap-3`}>
-          <div>
-            <span className="fw-bold">Boosters:</span>
-            <span>{rocket.boosters}</span>
-          </div>
-
-          <div>
-            <span className="fw-bold">Diameter:</span>
-            <span>{`${rocket.diameter} m`}</span>
-          </div>
-
-          <div>
-            <span className="fw-bold">Cost Per Launch:</span>
-            <span>{`$${rocket.costPerLaunch}`}</span>
-          </div>
-
-          <div>
-            <span className="fw-bold">Success Rate:</span>
-            <span>{`${rocket.successRate}%`}</span>
-          </div>
-        </div>
+        <RocketCardDetails costPerLaunch={costPerLaunch} metrics={metrics} />
       </div>
     </li>
   );
