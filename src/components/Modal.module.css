@@ -1,3 +1,7 @@
+.modalOverlay {
+  backdrop-filter: blur(0.125em);
+}
+
 .modal {
   background-color: var(--bg-100);
 }

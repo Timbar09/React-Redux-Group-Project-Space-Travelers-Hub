@@ -27,7 +27,7 @@ function Modal({ modalId, title, Content, itemId, blank, size }) {
 
   return (
     <div
-      className="modal fade"
+      className={`${styles.modalOverlay} modal fade`}
       id={modalId}
       tabIndex="-1"
       aria-labelledby={`${modalId}Label`}

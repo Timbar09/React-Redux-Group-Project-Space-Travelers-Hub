@@ -4,22 +4,21 @@ import { useDispatch } from 'react-redux';
 import { CgClose as CancelIcon } from 'react-icons/cg';
 import { GiRun as LeaveIcon } from 'react-icons/gi';
 
-import { joinLeaveMissionToggle } from '../../redux/missions/missionSlice';
+import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
 
 import Button from '../Button';
 
 import styles from './index.module.css';
 
-function LeaveMissionModalContent({ itemId, title }) {
+function CancelRocketModalContent({ itemId }) {
   const dispatch = useDispatch();
 
   return (
-    <div className={`${styles.leaveMissionModalContent} p-3`}>
-      <h1 className="fs-4">{title}</h1>
+    <div className={`${styles.cancelRocketModalContent} p-3`}>
+      <h1 className="fs-4">Cancel Rocket Reservation</h1>
 
       <p className="my-3 py-3">
-        By leaving this mission, you will lose all the benefits associated with
-        it.
+        Are you sure you want to cancel the reservation?
       </p>
 
       <div className="d-flex justify-content-end gap-3">
@@ -31,10 +30,10 @@ function LeaveMissionModalContent({ itemId, title }) {
         />
         <Button
           type="secondary"
-          title="Leave Mission"
+          title="Cancel Reservation"
           dataBsDismiss="modal"
           icon={<LeaveIcon style={{ transform: 'rotateY(180deg)' }} />}
-          handleClick={() => dispatch(joinLeaveMissionToggle(itemId))}
+          handleClick={() => dispatch(AddRemoveReservationToggle(itemId))}
           danger
         />
       </div>
@@ -42,9 +41,8 @@ function LeaveMissionModalContent({ itemId, title }) {
   );
 }
 
-LeaveMissionModalContent.propTypes = {
+CancelRocketModalContent.propTypes = {
   itemId: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
 };
 
-export default LeaveMissionModalContent;
+export default CancelRocketModalContent;

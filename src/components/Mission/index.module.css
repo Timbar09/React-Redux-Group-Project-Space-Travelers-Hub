@@ -91,6 +91,8 @@
 
 .leaveMissionModalContent p {
   color: var(--danger);
+  border-top: 0.1em solid var(--opaque-50);
+  border-bottom: 0.1em solid var(--opaque-50);
 }
 
 @media (min-width: 1200px) {

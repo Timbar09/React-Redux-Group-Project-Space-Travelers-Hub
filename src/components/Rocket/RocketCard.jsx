@@ -14,7 +14,7 @@ import RocketCardDetails from './RocketCardDetails';
 
 import styles from './index.module.css';
 
-function RocketCard({ rocket }) {
+function RocketCard({ rocket, handleModal }) {
   const dispatch = useDispatch();
   const toggleRes = () => dispatch(AddRemoveReservationToggle(rocket.id));
 
@@ -26,7 +26,7 @@ function RocketCard({ rocket }) {
     {
       id: 'boosters001',
       name: 'Boosters',
-      value: rocket.boosters,
+      value: rocket.boosters.toString(),
     },
     {
       id: 'diameter001',
@@ -61,15 +61,24 @@ function RocketCard({ rocket }) {
               to={rocket.wikipedia}
             />
 
-            <Button
-              type={rocket.isReserved ? 'tertiary' : 'primary'}
-              title={
-                rocket.isReserved ? 'Cancel Reservation' : 'Reserve Rocket'
-              }
-              icon={rocket.isReserved ? <CancelIcon /> : <ReserveIcon />}
-              danger={rocket.isReserved}
-              handleClick={toggleRes}
-            />
+            {rocket.isReserved ? (
+              <Button
+                type="tertiary"
+                title="Cancel Reservation"
+                icon={<CancelIcon />}
+                handleClick={handleModal(rocket.id)}
+                danger
+                dataBsTarget="#cancelRocketModal"
+                dataBsToggle="modal"
+              />
+            ) : (
+              <Button
+                type="primary"
+                title="Reserve Rocket"
+                icon={<ReserveIcon />}
+                handleClick={toggleRes}
+              />
+            )}
           </div>
         </header>
 
@@ -104,6 +113,7 @@ RocketCard.propTypes = {
     costPerLaunch: PropTypes.number,
     successRate: PropTypes.number,
   }).isRequired,
+  handleModal: PropTypes.func.isRequired,
 };
 
 export default RocketCard;
