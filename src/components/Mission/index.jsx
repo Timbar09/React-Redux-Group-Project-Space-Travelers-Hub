@@ -23,6 +23,7 @@ function Mission() {
       <PageHeader
         heading="Featured Missions"
         description="Explore our exciting space missions and discover the universe with us! Join us in our journey to explore the universe."
+        className={styles.pageHeader}
       />
 
       <ul className={`${styles.missionList} list-unstyled`}>

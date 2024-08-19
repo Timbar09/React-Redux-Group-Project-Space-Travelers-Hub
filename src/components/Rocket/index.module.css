@@ -1,3 +1,11 @@
+.pageHeader {
+  background-image: url('/src/assets/images/rockets-bg-light.webp');
+}
+
+body[data-theme='dark'] .pageHeader {
+  background-image: url('/src/assets/images/rockets-bg-dark.webp');
+}
+
 .card {
   background-color: var(--bg-100);
   border: solid 0.1rem var(--opaque-50);

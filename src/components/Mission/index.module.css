@@ -1,3 +1,11 @@
+.pageHeader {
+  background-image: url('/src/assets/images/missions-bg-light.webp');
+}
+
+body[data-theme='dark'] .pageHeader {
+  background-image: url('/src/assets/images/missions-bg-dark.webp');
+}
+
 .missionList {
   display: grid;
   grid-template-columns: 1fr;

@@ -3,14 +3,9 @@
   padding-top: 6em;
   padding-bottom: 6em;
   margin-bottom: 2em;
-  background-image: url('/src/assets/images/missions-bg-light.webp');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-body[data-theme='dark'] .pageHeader {
-  background-image: url('/src/assets/images/missions-bg-dark.webp');
 }
 
 .pageHeader::before {
@@ -27,6 +22,7 @@ body[data-theme='dark'] .pageHeader {
 .pageHeaderHeading {
   font-size: calc(2.5em + 1vw);
   font-weight: 700;
+  text-shadow: 0.05em 0.05em 0.05em var(--bg-300);
 }
 
 .pageHeaderDescription {
@@ -34,4 +30,5 @@ body[data-theme='dark'] .pageHeader {
   color: var(--text-200);
   font-size: 1.125em;
   max-width: 30em;
+  text-shadow: 0.05em 0.05em 0.05em var(--bg-300);
 }

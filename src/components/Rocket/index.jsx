@@ -23,6 +23,7 @@ function Rocket() {
       <PageHeader
         heading="Featured Rockets"
         description="Explore our exciting rockets and discover the universe with us! Join us in our journey to explore the universe."
+        className={styles.pageHeader}
       />
 
       <ul className={`${styles.rocketList} d-flex flex-column gap-3`}>
