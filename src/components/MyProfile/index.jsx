@@ -1,30 +1,41 @@
-import { useSelector, useDispatch } from 'react-redux';
+// import { useSelector, useDispatch } from 'react-redux';
 
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
+// import Button from 'react-bootstrap/Button';
 
-import { joinLeaveMissionToggle } from '../../redux/missions/missionSlice';
-import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
+// import { joinLeaveMissionToggle } from '../../redux/missions/missionSlice';
+// import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
 
 import styles from './index.module.css';
 
 function MyProfile() {
-  const { missionList } = useSelector((state) => state.missions);
-  const { rocketList } = useSelector((state) => state.rockets);
-  const dispatch = useDispatch();
+  //   const { missionList } = useSelector((state) => state.missions);
+  //   const { rocketList } = useSelector((state) => state.rockets);
+  //   const dispatch = useDispatch();
 
-  const joinedMissions = missionList.filter(
-    (mission) => mission.isReserved === true,
-  );
-  const reservedRockets = rocketList.filter(
-    (rocket) => rocket.isReserved === true,
-  );
+  //   const joinedMissions = missionList.filter(
+  //     (mission) => mission.isReserved === true,
+  //   );
+  //   const reservedRockets = rocketList.filter(
+  //     (rocket) => rocket.isReserved === true,
+  //   );
 
   return (
     <Container className={`${styles.myProfilePage} py-4 px-3`}>
-      <Row>
+      <header
+        className={`${styles.myProfileHeader} d-sm-flex gap-3 p-3 rounded-2`}
+      >
+        <div className={`${styles.myProfileBio} d-flex gap-3 rounded-2 p-2`}>
+          <div className={styles.myProfileBioImage}>
+            <img src="https://via.placeholder.com/150" alt="profile" />
+          </div>
+
+          <h1 className={`${styles.myProfileTitle} d-sm-none`}>John Doe</h1>
+        </div>
+      </header>
+      {/* <Row>
         <Col sm={12} lg={6} className="mb-4">
           <h2 className="mb-4">My Missions</h2>
 
@@ -102,7 +113,7 @@ function MyProfile() {
             )}
           </ul>
         </Col>
-      </Row>
+      </Row> */}
     </Container>
   );
 }

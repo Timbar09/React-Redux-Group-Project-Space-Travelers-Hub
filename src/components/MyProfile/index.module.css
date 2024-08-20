@@ -1,4 +1,33 @@
-.missionItem {
+.myProfileHeader {
+  margin: 5em 0 2.5em;
+}
+
+.myProfileBio {
+  background-color: var(--bg-400);
+}
+
+.myProfileBioImage {
+  width: 10em;
+}
+
+.myProfileBioImage img {
+  border-radius: 0.25em;
+  width: 100%;
+}
+
+.myProfileTitle {
+  font-size: 3.5em;
+  line-height: 1;
+}
+
+@media (min-width: 576px) {
+  .myProfileBioImage {
+    width: 20vw;
+    max-width: 15em;
+  }
+}
+
+/* .missionItem {
   font-size: 1.25em;
   line-height: 1;
 }
@@ -27,4 +56,4 @@
 
 .cancelBtn {
   text-align: right;
-}
+} */
