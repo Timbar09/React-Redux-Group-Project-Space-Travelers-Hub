@@ -38,6 +38,7 @@ function Rocket() {
 
       <Modal
         modalId="cancelRocketModal"
+        title="Cancel Reservation"
         itemId={selectedRocketId}
         Content={CancelRocketModalContent}
         blank

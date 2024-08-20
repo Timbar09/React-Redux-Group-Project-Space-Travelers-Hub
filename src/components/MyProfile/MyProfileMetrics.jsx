@@ -1,13 +1,10 @@
+import PropTypes from 'prop-types';
+
 import { TbProgress as ProgressIcon } from 'react-icons/tb';
 
 import styles from './index.module.css';
 
-function MyProfileMetrics() {
-  const metrics = [
-    { id: 'profileMetric1', name: 'Missions', value: '5' },
-    { id: 'profileMetric2', name: 'Rockets', value: '2' },
-  ];
-
+function MyProfileMetrics({ metrics }) {
   return (
     <div className={`${styles.myProfileMetrics} d-flex gap-1`}>
       {metrics.map((metric) => (
@@ -30,5 +27,15 @@ function MyProfileMetrics() {
     </div>
   );
 }
+
+MyProfileMetrics.propTypes = {
+  metrics: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      value: PropTypes.number.isRequired,
+    }),
+  ).isRequired,
+};
 
 export default MyProfileMetrics;

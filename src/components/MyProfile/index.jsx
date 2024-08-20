@@ -1,4 +1,4 @@
-// import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
@@ -13,16 +13,21 @@ import MyProfileMetrics from './MyProfileMetrics';
 import styles from './index.module.css';
 
 function MyProfile() {
-  //   const { missionList } = useSelector((state) => state.missions);
-  //   const { rocketList } = useSelector((state) => state.rockets);
-  //   const dispatch = useDispatch();
+  const { missionList } = useSelector((state) => state.missions);
+  const { rocketList } = useSelector((state) => state.rockets);
+  const dispatch = useDispatch();
 
-  //   const joinedMissions = missionList.filter(
-  //     (mission) => mission.isReserved === true,
-  //   );
-  //   const reservedRockets = rocketList.filter(
-  //     (rocket) => rocket.isReserved === true,
-  //   );
+  const joinedMissions = missionList.filter(
+    (mission) => mission.isReserved === true,
+  );
+  const reservedRockets = rocketList.filter(
+    (rocket) => rocket.isReserved === true,
+  );
+
+  const metrics = [
+    { id: 'profileCount1', name: 'Missions', value: joinedMissions.length },
+    { id: 'profileCount2', name: 'Rockets', value: reservedRockets.length },
+  ];
 
   return (
     <Container className={`${styles.myProfilePage} py-4 px-3`}>
@@ -38,7 +43,7 @@ function MyProfile() {
 
           <div className="d-md-none">
             <h1>John Doe</h1>
-            <MyProfileMetrics />
+            <MyProfileMetrics metrics={metrics} />
           </div>
         </div>
 
@@ -49,7 +54,7 @@ function MyProfile() {
             <h1 className={`${styles.myProfileTitle}`}>John Doe</h1>
 
             <div className="d-none d-md-block">
-              <MyProfileMetrics />
+              <MyProfileMetrics metrics={metrics} />
             </div>
           </div>
 
