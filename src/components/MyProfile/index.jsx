@@ -8,6 +8,8 @@ import Container from 'react-bootstrap/Container';
 // import { joinLeaveMissionToggle } from '../../redux/missions/missionSlice';
 // import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
 
+import MyProfileMetrics from './MyProfileMetrics';
+
 import styles from './index.module.css';
 
 function MyProfile() {
@@ -25,14 +27,37 @@ function MyProfile() {
   return (
     <Container className={`${styles.myProfilePage} py-4 px-3`}>
       <header
-        className={`${styles.myProfileHeader} d-sm-flex gap-3 p-3 rounded-2`}
+        className={`${styles.myProfileHeader} d-md-flex gap-3 p-3 rounded-2`}
       >
-        <div className={`${styles.myProfileBio} d-flex gap-3 rounded-2 p-2`}>
+        <div
+          className={`${styles.myProfileBio} d-flex gap-3 rounded-2 p-2 mb-2 mb-md-0 flex-md-column`}
+        >
           <div className={styles.myProfileBioImage}>
             <img src="https://via.placeholder.com/150" alt="profile" />
           </div>
 
-          <h1 className={`${styles.myProfileTitle} d-sm-none`}>John Doe</h1>
+          <div className="d-md-none">
+            <h1>John Doe</h1>
+            <MyProfileMetrics />
+          </div>
+        </div>
+
+        <div
+          className={`${styles.myProfileDescription} d-flex flex-column gap-3 p-2 rounded-2`}
+        >
+          <div className="d-none d-md-flex justify-content-between align-items-center gap-1">
+            <h1 className={`${styles.myProfileTitle}`}>John Doe</h1>
+
+            <div className="d-none d-md-block">
+              <MyProfileMetrics />
+            </div>
+          </div>
+
+          <p>
+            Welcome to your profile page! Here you can view the missions you
+            have joined and the rockets you have reserved. You can also cancel
+            your reservations and leave missions from here.
+          </p>
         </div>
       </header>
       {/* <Row>

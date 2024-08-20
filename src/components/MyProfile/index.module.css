@@ -1,9 +1,14 @@
 .myProfileHeader {
   margin: 5em 0 2.5em;
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.myProfileBio {
-  background-color: var(--bg-400);
+.myProfileBio,
+.myProfileDescription {
+  background-color: var(--bg-100);
+  border: solid 0.1em var(--bg-300);
 }
 
 .myProfileBioImage {
@@ -20,40 +25,33 @@
   line-height: 1;
 }
 
+.myProfileMetrics {
+  font-size: 0.75rem;
+  /* background-color: var(--bg-200); */
+}
+
+.myProfileMetric > span:last-child {
+  font-size: 0.75em;
+}
+
+.myProfileMetric svg {
+  font-size: 3.5em;
+  color: var(--primary);
+  stroke-width: 1;
+}
+
+.myProfileMetricValue {
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  font-size: 1.125em;
+  font-weight: 600;
+}
+
 @media (min-width: 576px) {
   .myProfileBioImage {
-    width: 20vw;
+    width: 23vw;
     max-width: 15em;
+    min-width: 10em;
   }
 }
-
-/* .missionItem {
-  font-size: 1.25em;
-  line-height: 1;
-}
-
-.missionItem:not(:last-child) {
-  border-bottom: solid 1px lightgray;
-}
-
-.readMore {
-  text-decoration: none;
-  font-size: 0.65em;
-  font-weight: 600;
-  color: rgb(10, 169, 201);
-}
-
-.readMore:hover {
-  text-decoration: underline;
-}
-
-.emptyListMessage {
-  height: 25vh;
-  max-height: 10rem;
-  display: grid;
-  place-items: center;
-}
-
-.cancelBtn {
-  text-align: right;
-} */
