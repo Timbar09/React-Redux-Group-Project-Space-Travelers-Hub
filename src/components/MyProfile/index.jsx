@@ -38,7 +38,7 @@ function MyProfile() {
           className={`${styles.myProfileBio} d-flex gap-3 rounded-2 p-2 mb-2 mb-md-0 flex-md-column`}
         >
           <div className={styles.myProfileBioImage}>
-            <img src="https://via.placeholder.com/150" alt="profile" />
+            <img src="/src/assets/images/john-doe.jpg" alt="John Doe" />
           </div>
 
           <div className="d-md-none">

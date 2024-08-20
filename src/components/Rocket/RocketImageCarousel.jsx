@@ -37,12 +37,22 @@ function CarouselIndicators({ imageUrls, cardId }) {
 }
 
 function RocketImageCarousel({ imageUrls, cardId }) {
+  const newImageUrls = imageUrls.map((url) => {
+    if (url.includes('imgur')) {
+      return url.replace('jpg', 'jpeg').replace('imgur', 'i.imgur');
+    }
+    return url;
+  });
+
   return (
-    <div id={cardId} className={`${styles.carousel} carousel slide rounded-2`}>
-      <CarouselIndicators imageUrls={imageUrls} cardId={cardId} />
+    <div
+      id={`${cardId}-carousel`}
+      className={`${styles.carousel} carousel slide rounded-2`}
+    >
+      <CarouselIndicators imageUrls={newImageUrls} cardId={cardId} />
 
       <div className={`${styles.carouselInner} carousel-inner`}>
-        {imageUrls.map((url, index) => (
+        {newImageUrls.map((url, index) => (
           <div
             className={`${styles.carouselItem} carousel-item ${
               index === 0 ? 'active' : ''
@@ -52,7 +62,7 @@ function RocketImageCarousel({ imageUrls, cardId }) {
             <img
               src={url}
               className={`${styles.carouselImage} d-block w-100`}
-              alt="..."
+              alt={`Slide ${index}`}
             />
           </div>
         ))}
