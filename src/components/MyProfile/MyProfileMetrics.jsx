@@ -6,9 +6,9 @@ import styles from './index.module.css';
 
 function MyProfileMetrics({ metrics }) {
   return (
-    <div className={`${styles.myProfileMetrics} d-flex gap-1`}>
+    <ul className={`${styles.myProfileMetrics} d-flex gap-1`}>
       {metrics.map((metric) => (
-        <div
+        <li
           key={metric.id}
           className={`${styles.myProfileMetric} d-flex flex-column align-items-center gap-1`}
         >
@@ -22,9 +22,9 @@ function MyProfileMetrics({ metrics }) {
           </span>
 
           <span className="">{metric.name}</span>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 
