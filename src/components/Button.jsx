@@ -14,6 +14,7 @@ import styles from './Button.module.css';
  * @param {string} dataBsTarget - The data-bs-target is a Bootstrap target attribute value
  * @param {string} dataBsDismiss - The data-bs-dismiss is a Bootstrap dismiss attribute value
  * @param {boolean} danger - The danger attribute to show the button as a danger button
+ * @param {string} ariaLabel - The aria-label attribute to describe the button
  * @param {boolean} isLink - The isLink attribute to show the button as a link
  * @param {string} to - The to attribute to redirect the user to a different page or section
  *
@@ -29,6 +30,7 @@ function Button({
   danger,
   dataBsTarget,
   dataBsDismiss,
+  ariaLabel,
   isLink,
   to,
 }) {
@@ -76,7 +78,7 @@ function Button({
         isTextLess ? 'px-2' : 'px-3'
       } d-inline-flex align-items-center gap-2 rounded-1 `}
       onClick={handleClick}
-      aria-label={title}
+      aria-label={ariaLabel || title}
       title={elementTitle}
       data-bs-toggle={dataBsToggle}
       data-bs-target={dataBsTarget}
@@ -100,6 +102,7 @@ Button.propTypes = {
   dataBsTarget: PropTypes.string,
   dataBsDismiss: PropTypes.string,
   danger: PropTypes.bool,
+  ariaLabel: PropTypes.string,
   isLink: PropTypes.bool,
   to: PropTypes.string,
 };
@@ -113,6 +116,7 @@ Button.defaultProps = {
   dataBsTarget: '',
   dataBsDismiss: '',
   danger: false,
+  ariaLabel: null,
   isLink: false,
   to: '',
 };

@@ -50,7 +50,6 @@
   max-width: 60em;
   background-color: var(--bg-100);
   border: solid 0.1em var(--opaque-50);
-  overflow: hidden;
 }
 .myProfileTabHeader {
   position: relative;
@@ -108,6 +107,15 @@
   height: var(--dimension);
   color: var(--primary);
   border: solid 0.15em var(--opaque-50);
+}
+
+.myProfileTabItemMoreList {
+  position: absolute;
+  top: 2.5em;
+  right: 0;
+  background-color: var(--bg-100);
+  box-shadow: var(--shadow-100);
+  z-index: 1;
 }
 
 @media (min-width: 576px) {
