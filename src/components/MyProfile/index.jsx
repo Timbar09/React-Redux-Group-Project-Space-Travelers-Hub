@@ -1,6 +1,5 @@
 import { useSelector } from 'react-redux';
-import { useState } from 'react';
-
+import { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 
 import MyProfileHeader from './MyProfileHeader';
@@ -22,15 +21,16 @@ function MyProfile() {
   const [list, setList] = useState(joinedMissions);
   const [activeTab, setActiveTab] = useState('missions');
 
-  const handleTabChange = (tab) => {
-    setActiveTab(tab);
-    if (tab === 'missions') {
+  useEffect(() => {
+    if (activeTab === 'missions') {
       setList(joinedMissions);
-      setActiveTab('missions');
     } else {
       setList(reservedRockets);
-      setActiveTab('rockets');
     }
+  }, [missionList, rocketList, activeTab]);
+
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
   };
 
   const metrics = [
