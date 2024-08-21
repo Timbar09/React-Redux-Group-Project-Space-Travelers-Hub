@@ -2,14 +2,17 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useState } from 'react';
 
 import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
-// import Button from 'react-bootstrap/Button';
 
-// import { joinLeaveMissionToggle } from '../../redux/missions/missionSlice';
-// import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
+import { GiRun as LeaveIcon } from 'react-icons/gi';
+import { TbRocketOff as CancelIcon } from 'react-icons/tb';
+import { GiSpaceSuit as MissionIcon } from 'react-icons/gi';
+import { BsFillRocketTakeoffFill as RocketIcon } from 'react-icons/bs';
+
+import { joinLeaveMissionToggle } from '../../redux/missions/missionSlice';
+import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
 
 import MyProfileHeader from './MyProfileHeader';
+import Button from '../Button';
 
 import styles from './index.module.css';
 
@@ -39,6 +42,14 @@ function MyProfile() {
     }
   };
 
+  const handleCancelation = (id) => {
+    if (activeTab === 'missions') {
+      dispatch(joinLeaveMissionToggle(id));
+    } else {
+      dispatch(AddRemoveReservationToggle(id));
+    }
+  };
+
   const metrics = [
     { id: 'profileCount1', name: 'Missions', value: joinedMissions.length },
     { id: 'profileCount2', name: 'Rockets', value: reservedRockets.length },
@@ -49,35 +60,75 @@ function MyProfile() {
       <MyProfileHeader metrics={metrics} />
 
       <section className={`${styles.myProfileContent} rounded-2`}>
-        <div className={`${styles.myProfileTabs} d-flex align-items-center`}>
+        <div
+          className={`${styles.myProfileTabHeader} d-flex align-items-center`}
+        >
           <button
             type="button"
-            className={`${styles.myProfileTab} ${
+            className={`${styles.myProfileTabButton} ${
               activeTab === 'missions' ? styles.activeTab : ''
             } flex-grow-1 p-2`}
             onClick={() => handleTabChange('missions')}
           >
-            Missions
+            Joined Missions
           </button>
 
           <button
             type="button"
-            className={`${styles.myProfileTab} ${
+            className={`${styles.myProfileTabButton} ${
               activeTab === 'rockets' ? styles.activeTab : ''
             } flex-grow-1 p-2`}
             onClick={() => handleTabChange('rockets')}
           >
-            Rockets
+            Booked Rockets
           </button>
         </div>
 
-        <ul className={`${styles.myMissionsList} d-flex flex-column gap-3`}>
+        <ul
+          className={`${styles.myProfileTabList} d-flex flex-column gap-2 px-3`}
+        >
           {list.map((item) => (
             <li
-              key={`myMission-${item.id}`}
-              className={`${styles.myItem} d-flex gap-3 p-3 rounded-2`}
+              key={`myItem-${item.id}`}
+              className={`${styles.myProfileTabItem} d-flex align-items-center justify-content-between gap-3 p-3 rounded-2`}
             >
-              <h3>{item.name}</h3>
+              <div className="d-flex align-items-center gap-2">
+                {activeTab === 'missions' ? (
+                  <span
+                    className={`${styles.myProfileTabItemIcon} p-2 rounded-1 d-flex align-items-center justify-content-center`}
+                  >
+                    <MissionIcon />
+                  </span>
+                ) : (
+                  <span
+                    className={`${styles.myProfileTabItemIcon} p-2 rounded-1 d-flex align-items-center justify-content-center`}
+                  >
+                    <RocketIcon />
+                  </span>
+                )}
+
+                <h3>{item.name}</h3>
+              </div>
+
+              <div className="d-flex gap-2">
+                <Button
+                  type="tertiary"
+                  icon={
+                    activeTab === 'missions' ? (
+                      <LeaveIcon style={{ transform: 'rotateY(180deg)' }} />
+                    ) : (
+                      <CancelIcon />
+                    )
+                  }
+                  title={
+                    activeTab === 'missions'
+                      ? 'Leave Mission'
+                      : 'Cancel Reservation'
+                  }
+                  handleClick={() => handleCancelation(item.id)}
+                  danger
+                />
+              </div>
             </li>
           ))}
         </ul>
