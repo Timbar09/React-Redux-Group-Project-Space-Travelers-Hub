@@ -1,25 +1,16 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useState } from 'react';
 
 import Container from 'react-bootstrap/Container';
 
-import { GiRun as LeaveIcon } from 'react-icons/gi';
-import { TbRocketOff as CancelIcon } from 'react-icons/tb';
-import { GiSpaceSuit as MissionIcon } from 'react-icons/gi';
-import { BsFillRocketTakeoffFill as RocketIcon } from 'react-icons/bs';
-
-import { joinLeaveMissionToggle } from '../../redux/missions/missionSlice';
-import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
-
 import MyProfileHeader from './MyProfileHeader';
-import Button from '../Button';
+import MyProfileItem from './MyProfileItem';
 
 import styles from './index.module.css';
 
 function MyProfile() {
   const { missionList } = useSelector((state) => state.missions);
   const { rocketList } = useSelector((state) => state.rockets);
-  const dispatch = useDispatch();
 
   const joinedMissions = missionList.filter(
     (mission) => mission.isReserved === true,
@@ -39,14 +30,6 @@ function MyProfile() {
     } else {
       setList(reservedRockets);
       setActiveTab('rockets');
-    }
-  };
-
-  const handleCancelation = (id) => {
-    if (activeTab === 'missions') {
-      dispatch(joinLeaveMissionToggle(id));
-    } else {
-      dispatch(AddRemoveReservationToggle(id));
     }
   };
 
@@ -88,48 +71,7 @@ function MyProfile() {
           className={`${styles.myProfileTabList} d-flex flex-column gap-2 px-3`}
         >
           {list.map((item) => (
-            <li
-              key={`myItem-${item.id}`}
-              className={`${styles.myProfileTabItem} d-flex align-items-center justify-content-between gap-3 p-3 rounded-2`}
-            >
-              <div className="d-flex align-items-center gap-2">
-                {activeTab === 'missions' ? (
-                  <span
-                    className={`${styles.myProfileTabItemIcon} p-2 rounded-1 d-flex align-items-center justify-content-center`}
-                  >
-                    <MissionIcon />
-                  </span>
-                ) : (
-                  <span
-                    className={`${styles.myProfileTabItemIcon} p-2 rounded-1 d-flex align-items-center justify-content-center`}
-                  >
-                    <RocketIcon />
-                  </span>
-                )}
-
-                <h3>{item.name}</h3>
-              </div>
-
-              <div className="d-flex gap-2">
-                <Button
-                  type="tertiary"
-                  icon={
-                    activeTab === 'missions' ? (
-                      <LeaveIcon style={{ transform: 'rotateY(180deg)' }} />
-                    ) : (
-                      <CancelIcon />
-                    )
-                  }
-                  title={
-                    activeTab === 'missions'
-                      ? 'Leave Mission'
-                      : 'Cancel Reservation'
-                  }
-                  handleClick={() => handleCancelation(item.id)}
-                  danger
-                />
-              </div>
-            </li>
+            <MyProfileItem key={item.id} item={item} activeTab={activeTab} />
           ))}
         </ul>
       </section>
