@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+import { useState } from 'react';
 
 import { GiSpaceSuit as MissionIcon, GiRun as LeaveIcon } from 'react-icons/gi';
 import { BsFillRocketTakeoffFill as RocketIcon } from 'react-icons/bs';
 import { TbRocketOff as CancelIcon } from 'react-icons/tb';
+import { IoMdMore as MoreIcon } from 'react-icons/io';
 
 import { joinLeaveMissionToggle } from '../../redux/missions/missionSlice';
 import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
@@ -14,6 +16,7 @@ import styles from './index.module.css';
 
 function MyProfileItem({ item, activeTab }) {
   const dispatch = useDispatch();
+  const [isMoreMenuOpen, setIsMoreMenuOpen] = useState(false);
 
   const handleCancelation = (id) => {
     if (activeTab === 'missions') {
@@ -21,6 +24,10 @@ function MyProfileItem({ item, activeTab }) {
     } else {
       dispatch(AddRemoveReservationToggle(id));
     }
+  };
+
+  const handleMoreMenu = () => {
+    setIsMoreMenuOpen((prevState) => !prevState);
   };
 
   return (
@@ -46,22 +53,39 @@ function MyProfileItem({ item, activeTab }) {
         <h3>{item.name}</h3>
       </div>
 
-      <div className="d-flex gap-2">
+      <div className={`${styles.myProfileTabItemMore} position-relative`}>
         <Button
           type="tertiary"
-          icon={
-            activeTab === 'missions' ? (
-              <LeaveIcon style={{ transform: 'rotateY(180deg)' }} />
-            ) : (
-              <CancelIcon />
-            )
-          }
-          title={
-            activeTab === 'missions' ? 'Leave Mission' : 'Cancel Reservation'
-          }
-          handleClick={() => handleCancelation(item.id)}
-          danger
+          icon={<MoreIcon />}
+          ariaLabel="More menu"
+          handleClick={handleMoreMenu}
         />
+
+        <ul
+          className={`${styles.myProfileTabItemMoreList} p-1 rounded-2 ${
+            isMoreMenuOpen ? 'd-block' : 'd-none'
+          }`}
+        >
+          <li>
+            <Button
+              type="tertiary"
+              icon={
+                activeTab === 'missions' ? (
+                  <LeaveIcon style={{ transform: 'rotateY(180deg)' }} />
+                ) : (
+                  <CancelIcon />
+                )
+              }
+              title={
+                activeTab === 'missions'
+                  ? 'Leave Mission'
+                  : 'Cancel Reservation'
+              }
+              handleClick={() => handleCancelation(item.id)}
+              danger
+            />
+          </li>
+        </ul>
       </div>
     </li>
   );
