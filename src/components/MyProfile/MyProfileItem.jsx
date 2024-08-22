@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 import { GiSpaceSuit as MissionIcon, GiRun as LeaveIcon } from 'react-icons/gi';
 import { BsFillRocketTakeoffFill as RocketIcon } from 'react-icons/bs';
@@ -17,6 +17,7 @@ import styles from './index.module.css';
 function MyProfileItem({ item, activeTab }) {
   const dispatch = useDispatch();
   const [isMoreMenuOpen, setIsMoreMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const handleCancelation = (id) => {
     if (activeTab === 'missions') {
@@ -29,6 +30,20 @@ function MyProfileItem({ item, activeTab }) {
   const handleMoreMenu = () => {
     setIsMoreMenuOpen((prevState) => !prevState);
   };
+
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsMoreMenuOpen(false); // Close the menu
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <li
@@ -53,7 +68,10 @@ function MyProfileItem({ item, activeTab }) {
         <h3>{item.name}</h3>
       </div>
 
-      <div className={`${styles.myProfileTabItemMore} position-relative`}>
+      <div
+        className={`${styles.myProfileTabItemMore} position-relative`}
+        ref={menuRef}
+      >
         <Button
           type="tertiary"
           icon={<MoreIcon />}
