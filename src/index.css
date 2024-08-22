@@ -15,7 +15,7 @@ html {
 body {
   --primary-dark: rgb(4, 167, 164);
   --primary: rgb(0, 213, 196);
-  --gold: #ffc107;
+  --gold: rgb(255, 193, 7);
   --danger: rgb(255, 0, 0);
 
   --dark: rgb(27, 27, 27);

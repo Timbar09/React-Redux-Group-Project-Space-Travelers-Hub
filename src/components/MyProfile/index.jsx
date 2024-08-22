@@ -63,17 +63,34 @@ function MyProfile() {
             } flex-grow-1 p-2`}
             onClick={() => handleTabChange('rockets')}
           >
-            Booked Rockets
+            Reserved Rockets
           </button>
         </div>
 
-        <ul
-          className={`${styles.myProfileTabList} d-flex flex-column gap-2 px-3`}
-        >
-          {list.map((item) => (
-            <MyProfileItem key={item.id} item={item} activeTab={activeTab} />
-          ))}
-        </ul>
+        {list.length > 0 ? (
+          <ul
+            className={`${styles.myProfileTabList} d-flex flex-column gap-2 px-3`}
+          >
+            {list.map((item) => (
+              <MyProfileItem key={item.id} item={item} activeTab={activeTab} />
+            ))}
+          </ul>
+        ) : (
+          <div className={`${styles.emptyList} text-center`}>
+            <img
+              src="/src/assets/images/empty-list-mockup.webp"
+              alt="Empty list"
+            />
+
+            <h3 className="mt-3 fs-4">Hey, I&apos;m all alone here!</h3>
+
+            <p className="mt-2">
+              {`You haven't ${
+                activeTab === 'missions' ? 'joined' : 'reserved'
+              } any ${activeTab === 'missions' ? 'missions' : 'rockets'} yet!`}
+            </p>
+          </div>
+        )}
       </section>
     </Container>
   );

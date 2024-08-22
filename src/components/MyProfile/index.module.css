@@ -96,6 +96,17 @@
   padding-bottom: 1em;
 }
 
+.emptyList {
+  padding: 5em 0;
+  text-align: center;
+}
+
+.emptyList img {
+  width: 100%;
+  max-width: 12em;
+  min-width: 7em;
+}
+
 .myProfileTabItem {
   background-color: var(--bg-200);
 }
