@@ -21,6 +21,7 @@ export const fetchMissions = createAsyncThunk(
       name: item.mission_name,
       description: item.description,
       isReserved: false,
+      reservedOn: null,
       wikipedia: item.wikipedia,
       twitter: item.twitter || 'https://x.com',
       website: item.website,
@@ -40,6 +41,9 @@ export const missionsSlice = createSlice({
       );
       if (mission) {
         mission.isReserved = !mission.isReserved;
+        mission.reservedOn = mission.isReserved
+          ? new Date().toLocaleString()
+          : null;
         saveState('missions', { missionList: state.missionList });
       }
     },

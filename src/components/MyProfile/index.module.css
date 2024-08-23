@@ -116,12 +116,21 @@
 }
 
 .myProfileTabItemIcon {
-  --dimension: 2.5em;
+  --dimension: 2.75em;
 
   width: var(--dimension);
   height: var(--dimension);
   color: var(--primary);
   border: solid 0.15em var(--opaque-50);
+}
+
+.myProfileTabItemTitle h3 {
+  line-height: 1;
+  font-size: 1.25em;
+}
+
+.myProfileTabItemTitle span {
+  font-size: 0.75em;
 }
 
 .myProfileTabItemMoreList {

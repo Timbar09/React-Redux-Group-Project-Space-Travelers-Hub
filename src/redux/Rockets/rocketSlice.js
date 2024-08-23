@@ -21,6 +21,7 @@ export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
     images: item.flickr_images,
     wikipedia: item.wikipedia,
     isReserved: false,
+    reservedOn: null,
     boosters: item.boosters,
     diameter: item.diameter.meters,
     costPerLaunch: item.cost_per_launch,
@@ -38,6 +39,9 @@ const rocketSlice = createSlice({
       const rocket = state.rocketList.find((rocket) => rocket.id === payload);
       if (rocket) {
         rocket.isReserved = !rocket.isReserved;
+        rocket.reservedOn = rocket.isReserved
+          ? new Date().toLocaleString()
+          : null;
         saveState('rockets', { rocketList: state.rocketList });
       }
     },
