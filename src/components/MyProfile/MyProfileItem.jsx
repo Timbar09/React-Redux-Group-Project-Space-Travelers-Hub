@@ -1,50 +1,13 @@
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { useState, useEffect, useRef } from 'react';
 
-import { GiSpaceSuit as MissionIcon, GiRun as LeaveIcon } from 'react-icons/gi';
+import { GiSpaceSuit as MissionIcon } from 'react-icons/gi';
 import { BsFillRocketTakeoffFill as RocketIcon } from 'react-icons/bs';
-import { TbRocketOff as CancelIcon } from 'react-icons/tb';
-import { IoMdMore as MoreIcon } from 'react-icons/io';
 
-import { joinLeaveMissionToggle } from '../../redux/missions/missionSlice';
-import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
-
-import Button from '../Button';
+import MyProfileItemMoreMenu from './MyProfileItemMoreMenu';
 
 import styles from './index.module.css';
 
 function MyProfileItem({ item, activeTab }) {
-  const dispatch = useDispatch();
-  const [isMoreMenuOpen, setIsMoreMenuOpen] = useState(false);
-  const menuRef = useRef(null);
-
-  const handleCancelation = (id) => {
-    if (activeTab === 'missions') {
-      dispatch(joinLeaveMissionToggle(id));
-    } else {
-      dispatch(AddRemoveReservationToggle(id));
-    }
-  };
-
-  const handleMoreMenu = () => {
-    setIsMoreMenuOpen((prevState) => !prevState);
-  };
-
-  const handleClickOutside = (event) => {
-    if (menuRef.current && !menuRef.current.contains(event.target)) {
-      setIsMoreMenuOpen(false); // Close the menu
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
-
   return (
     <li
       key={`myItem-${item.id}`}
@@ -68,43 +31,7 @@ function MyProfileItem({ item, activeTab }) {
         <h3>{item.name}</h3>
       </div>
 
-      <div
-        className={`${styles.myProfileTabItemMore} position-relative`}
-        ref={menuRef}
-      >
-        <Button
-          type="tertiary"
-          icon={<MoreIcon />}
-          ariaLabel="More menu"
-          handleClick={handleMoreMenu}
-        />
-
-        <ul
-          className={`${styles.myProfileTabItemMoreList} p-1 rounded-2 ${
-            isMoreMenuOpen ? 'd-block' : 'd-none'
-          }`}
-        >
-          <li>
-            <Button
-              type="tertiary"
-              icon={
-                activeTab === 'missions' ? (
-                  <LeaveIcon style={{ transform: 'rotateY(180deg)' }} />
-                ) : (
-                  <CancelIcon />
-                )
-              }
-              title={
-                activeTab === 'missions'
-                  ? 'Leave Mission'
-                  : 'Cancel Reservation'
-              }
-              handleClick={() => handleCancelation(item.id)}
-              danger
-            />
-          </li>
-        </ul>
-      </div>
+      <MyProfileItemMoreMenu itemId={item.id} activeTab={activeTab} />
     </li>
   );
 }

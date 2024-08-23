@@ -107,6 +107,10 @@
   min-width: 7em;
 }
 
+.emptyList h3 {
+  color: var(--primary);
+}
+
 .myProfileTabItem {
   background-color: var(--bg-200);
 }
