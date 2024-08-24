@@ -1,11 +1,56 @@
 .homePage {
+  --text-200: var(--lightest-grey);
+  --home-text: rgb(211, 211, 211);
+
   height: 100vh;
+  color: var(--home-text);
+  background-color: rgb(0, 0, 2);
+}
+
+.container {
   background: url('/src//assets/images/hero-bg-mobile.webp') no-repeat center
     center/cover;
 }
 
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 2, 0.15);
+}
+
+.title {
+  font-size: 10.5em;
+  line-height: 0.85;
+  color: var(--text-200);
+  max-width: 15em;
+  margin: 1em auto 0;
+}
+
+.title span {
+  display: block;
+}
+
+.title span:first-child {
+  letter-spacing: 0.15em;
+  font-weight: 700;
+}
+
+.title span:last-child {
+  font-size: 2.5rem;
+  letter-spacing: 0.5em;
+  font-weight: 400;
+}
+
+.description {
+  font-size: 1.125em;
+}
+
 @media (min-width: 992px) {
-  .homePage {
+  .container {
     background-image: url('/src//assets/images/hero-bg-desktop.webp');
   }
 }
