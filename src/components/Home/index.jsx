@@ -1,4 +1,5 @@
 import Container from 'react-bootstrap/Container';
+import { NavLink } from 'react-router-dom';
 
 import { IoMdRocket as BookRocketIcon } from 'react-icons/io';
 import { GiSpaceSuit as JoinMissionIcon } from 'react-icons/gi';
@@ -23,19 +24,23 @@ function Home() {
         </p>
 
         <div className="position-relative d-flex flex-column align-items-center gap-1 flex-sm-row gap-sm-3">
-          <Button
-            type="primary"
-            title="Join a Mission"
-            handleClick={() => console.log('Clicked the "Join Now" button')}
-            icon={<JoinMissionIcon />}
-          />
+          <NavLink to="/missions">
+            <Button
+              type="primary"
+              title="Join a Mission"
+              icon={<JoinMissionIcon />}
+            />
+          </NavLink>
+
           <span> or </span>
-          <Button
-            type="secondary"
-            title="Book a Rocket"
-            handleClick={() => console.log('Clicked the "Book Rocket" button')}
-            icon={<BookRocketIcon />}
-          />
+
+          <NavLink to="/rockets">
+            <Button
+              type="secondary"
+              title="Book a Rocket"
+              icon={<BookRocketIcon />}
+            />
+          </NavLink>
         </div>
       </Container>
     </div>
