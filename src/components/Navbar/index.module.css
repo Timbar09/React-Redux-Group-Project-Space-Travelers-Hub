@@ -3,6 +3,13 @@
   border-bottom: solid 0.125rem var(--opaque-100);
 }
 
+.homePageNav {
+  --text-100: var(--lightest-grey);
+
+  background-color: transparent;
+  border-bottom: none;
+}
+
 .logo {
   font-size: 1.75em;
   line-height: 1;
