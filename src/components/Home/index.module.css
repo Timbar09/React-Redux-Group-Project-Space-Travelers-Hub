@@ -1,3 +1,11 @@
 .homePage {
   height: 100vh;
+  background: url('/src//assets/images/hero-bg-mobile.webp') no-repeat center
+    center/cover;
+}
+
+@media (min-width: 992px) {
+  .homePage {
+    background-image: url('/src//assets/images/hero-bg-desktop.webp');
+  }
 }

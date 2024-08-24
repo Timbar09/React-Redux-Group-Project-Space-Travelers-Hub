@@ -4,9 +4,11 @@ import styles from './index.module.css';
 
 function Home() {
   return (
-    <Container className={`${styles.homePage} py-4 px-3`}>
-      <h1>Home</h1>
-    </Container>
+    <div className={`${styles.homePage} py-4`}>
+      <Container className="d-flex flex-column align-items-center justify-content-center">
+        <h1>Home</h1>
+      </Container>
+    </div>
   );
 }
 
