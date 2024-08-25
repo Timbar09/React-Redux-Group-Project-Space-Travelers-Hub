@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import Container from 'react-bootstrap/Container';
 
@@ -17,6 +17,10 @@ function Mission() {
   const handleModal = (id) => {
     setSelectedMissionId(id);
   };
+
+  useEffect(() => {
+    document.title = "Missions | Space Traveler's Hub";
+  }, []);
 
   return (
     <Container className={`${styles.missionPage} py-4 px-3`}>

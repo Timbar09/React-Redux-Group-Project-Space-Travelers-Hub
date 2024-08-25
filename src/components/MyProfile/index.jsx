@@ -33,6 +33,10 @@ function MyProfile() {
     setActiveTab(tab);
   };
 
+  useEffect(() => {
+    document.title = 'My Profile | Space Traveler’s Hub';
+  }, []);
+
   const metrics = [
     { id: 'profileCount1', name: 'Missions', value: joinedMissions.length },
     { id: 'profileCount2', name: 'Rockets', value: reservedRockets.length },

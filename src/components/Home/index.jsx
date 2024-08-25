@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import { NavLink } from 'react-router-dom';
 
@@ -9,6 +10,10 @@ import Button from '../Button';
 import styles from './index.module.css';
 
 function Home() {
+  useEffect(() => {
+    document.title = "Space Traveler's Hub";
+  }, []);
+
   return (
     <div className={`${styles.homePage} py-4`}>
       <Container
