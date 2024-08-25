@@ -66,7 +66,7 @@ function RocketCard({ rocket, handleModal }) {
                 type="tertiary"
                 title="Cancel Reservation"
                 icon={<CancelIcon />}
-                handleClick={handleModal(rocket.id)}
+                handleClick={() => handleModal(rocket.id)}
                 danger
                 dataBsTarget="#cancelRocketModal"
                 dataBsToggle="modal"
