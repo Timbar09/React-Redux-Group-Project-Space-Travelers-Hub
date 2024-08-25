@@ -16,8 +16,6 @@ function MyProfileItem({ item, activeTab }) {
     rockets: `Reserved ${dayjs(item.reservedOn).fromNow()}`,
   };
 
-  console.log('Missions timeFromNow', timeFromNow[activeTab]);
-
   return (
     <li
       key={`myItem-${item.id}`}
