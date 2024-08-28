@@ -21,7 +21,7 @@ function Home() {
       >
         <h1 className={`${styles.title} text-center position-relative`}>
           <span>SPACE</span>
-          <span> TRAVELERS&apos; HUB </span>
+          <span> TRAVELER&apos;S HUB </span>
         </h1>
 
         <p className={`${styles.description} text-center position-relative`}>
