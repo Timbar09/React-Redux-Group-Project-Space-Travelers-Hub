@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import { useState } from 'react';
 
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,7 +28,7 @@ function Layout() {
         <Outlet />
       </main>
 
-      {/* TODO: Add footer */}
+      <Footer />
     </>
   );
 }
