@@ -11,9 +11,12 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  transition: opacity var(--transition-100) ease-in-out, transform var(--transition-100) ease-in-out,
-    box-shadow var(--transition-100) ease-in-out, border var(--transition-100) ease-in-out,
-    color var(--transition-100) ease-in-out, background-color var(--transition-100) ease-in-out;
+  transition: opacity var(--transition-100) ease-in-out,
+    transform var(--transition-100) ease-in-out,
+    box-shadow var(--transition-100) ease-in-out,
+    border var(--transition-100) ease-in-out,
+    color var(--transition-100) ease-in-out,
+    background-color var(--transition-100) ease-in-out;
 }
 
 .button:hover {
@@ -34,6 +37,8 @@
 }
 
 .secondary {
+  padding-top: calc(0.25em - 0.1rem);
+  padding-bottom: calc(0.25em - 0.1rem);
   color: var(--primary);
   background-color: transparent;
   border: solid 0.1rem var(--primary);
