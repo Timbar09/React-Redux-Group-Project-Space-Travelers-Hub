@@ -18,11 +18,30 @@ function Footer() {
         isHome ? styles.homeFooter : ''
       }`}
     >
-      <Container className="py-4 d-flex flex-wrap justify-content-center align-items-center gap-3 justify-content-md-between">
+      <Container className="d-flex flex-wrap justify-content-center align-items-center gap-3 justify-content-md-between">
         <p className="m-0">
           &copy;
           {copyrightContent}
-          <CustomLink to="#" text="Space Traveler's Hub" target="_blank" />
+          <CustomLink
+            to="https://github.com/Timbar09/React-Redux-Group-Project-Space-Travelers-Hub"
+            text="Space Traveler's Hub"
+            target="_blank"
+          />
+          <span>.</span>
+        </p>
+
+        <p className="m-0">
+          <small>
+            <span>Developed by </span>
+            <CustomLink
+              to="https://github.com/Timbar09"
+              text="Miles Mosweu"
+              target="_blank"
+            />
+            <span> and </span>
+            <CustomLink to="#" text="Shakir Hussain" target="_blank" />
+            <span>.</span>
+          </small>
         </p>
       </Container>
     </footer>
