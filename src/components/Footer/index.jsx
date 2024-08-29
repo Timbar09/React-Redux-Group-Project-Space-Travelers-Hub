@@ -12,7 +12,14 @@ function Footer() {
         location.pathname === '/' ? styles.homeFooter : ''
       }`}
     >
-      <Container className="py-4">Footer</Container>
+      <Container className="py-4 d-flex flex-wrap justify-content-between align-items-center">
+        <p className="m-0">
+          &copy; 2021 - All Rights Reserved -{' '}
+          <a href="#" className="" target="_blank" rel="noreferrer">
+            Space Traveler&apos;s Hub
+          </a>
+        </p>
+      </Container>
     </footer>
   );
 }
