@@ -20,6 +20,7 @@ function CustomLink({ to, text, target, handleClick }) {
       href={to}
       className={`${styles.link} d-inline-flex gap-1 align-items-center`}
       target={target}
+      rel={target === '_blank' ? 'noreferrer' : ''}
       onClick={handleClick}
     >
       <span>{text}</span>
