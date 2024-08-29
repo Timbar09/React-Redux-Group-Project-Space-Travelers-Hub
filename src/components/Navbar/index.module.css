@@ -11,7 +11,10 @@
 }
 
 .logo {
-  font-size: 1.75em;
+  font-family: var(--ff-orbitron);
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
   line-height: 1;
   color: var(--text-100);
   padding: 0.25em 0;
@@ -24,14 +27,12 @@
 .logoName {
   display: inline-block;
   margin-left: 1rem;
-}
-
-.logoName span:first-child {
   letter-spacing: 0.125em;
 }
 
 .logoName span:last-child {
-  font-size: 0.5em;
+  font-size: 0.375em;
+  letter-spacing: 0.125em;
 }
 
 .navList li:last-child {

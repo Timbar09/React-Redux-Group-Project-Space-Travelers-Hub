@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@400;500;600;800&display=swap');
-/* TODO: Try out different fonts and weights */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 html {
   font-size: 100%;
@@ -13,6 +13,11 @@ html {
 }
 
 body {
+  /* FONTS */
+  --ff-mukta-vaani: 'Mukta Vaani', 'Segoe UI', sans-serif;
+  --ff-orbitron: 'Orbitron', system-ui;
+
+  /* COLORS */
   --primary-dark: rgb(4, 167, 164);
   --primary: rgb(0, 213, 196);
   --gold: rgb(255, 193, 7);
@@ -52,7 +57,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: 'Mukta Vaani', 'Segoe UI', sans-serif;
+  font-family: var(--ff-mukta-vaani);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 0.95em;
@@ -94,6 +99,10 @@ h2,
 h3,
 h4 {
   margin: 0;
+  font-family: var(--ff-orbitron);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   color: var(--text-100);
 }
 

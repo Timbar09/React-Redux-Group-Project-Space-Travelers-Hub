@@ -8,7 +8,8 @@
   color: var(--text-200);
   background-color: var(--opaque-50);
   display: inline-block;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 1em;
   margin: 4px 2px;
   cursor: pointer;
   transition: opacity var(--transition-100) ease-in-out,
@@ -24,7 +25,6 @@
 }
 
 .primary {
-  font-weight: 700;
   color: var(--bg-200);
   background: linear-gradient(90deg, var(--primary), var(--primary-dark));
   box-shadow: var(--shadow-100);
