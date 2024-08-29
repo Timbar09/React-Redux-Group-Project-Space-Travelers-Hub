@@ -4,18 +4,25 @@ import Container from 'react-bootstrap/Container';
 
 import CustomLink from '../CustomLink';
 
+import links from '../Navbar/links';
+
 import styles from './index.module.css';
 
 function Footer() {
   const location = useLocation();
+  const paths = links.map((link) => link.path);
+
   const isHome = location.pathname === '/';
+  const isNoMatch = !paths.includes(location.pathname);
+  const isHomeOrNoMatch = isHome || isNoMatch;
+
   const currentYear = dayjs().format('YYYY');
   const copyrightContent = `${currentYear} - All Rights Reserved - `;
 
   return (
     <footer
       className={`${styles.footer} text-center ${
-        isHome ? styles.homeFooter : ''
+        isHomeOrNoMatch ? styles.homeFooter : ''
       }`}
     >
       <Container className="d-flex flex-wrap justify-content-center align-items-center gap-3 justify-content-md-between">
@@ -39,7 +46,11 @@ function Footer() {
               target="_blank"
             />
             <span> and </span>
-            <CustomLink to="#" text="Shakir Hussain" target="_blank" />
+            <CustomLink
+              to="https://github.com/Shakir-Hussain12"
+              text="Shakir Hussain"
+              target="_blank"
+            />
             <span>.</span>
           </small>
         </p>
