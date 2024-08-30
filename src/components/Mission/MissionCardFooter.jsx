@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { IoMdRocket as JoinIcon } from 'react-icons/io';
-import { GiRun as LeaveIcon } from 'react-icons/gi';
+import { GiRun as LeaveIcon, GiSpaceSuit as JoinIcon } from 'react-icons/gi';
 import { SiWikipedia as WikipediaIcon } from 'react-icons/si';
 import { GoLinkExternal as WebsiteIcon } from 'react-icons/go';
 import { RiTwitterXLine as TwitterIcon } from 'react-icons/ri';

@@ -1,0 +1,59 @@
+.arrow {
+  border: 0;
+  padding: 1em;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-size: 1.25em;
+  color: var(--text-300);
+  background-color: transparent;
+  z-index: 1000;
+  transition: color var(--transition-100) ease-in-out;
+}
+
+.arrow:hover {
+  color: var(--primary);
+}
+
+.nextArrow {
+  right: 0;
+}
+
+.prevArrow {
+  left: 0;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.slider > ul {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.slider > ul li {
+  display: inline-block;
+}
+
+.slider > ul li:not(:last-child) {
+  margin-right: 0.5em;
+}
+
+.slider > ul button {
+  --width: 2rem;
+  --height: 0.2rem;
+  --bg-color: rgba(129, 129, 129, 0.5);
+
+  border: 0;
+  font-size: 0;
+  width: var(--width);
+  height: var(--height);
+  background-color: var(--bg-color);
+  border-radius: 5rem;
+}

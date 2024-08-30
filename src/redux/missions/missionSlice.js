@@ -63,7 +63,6 @@ export const missionsSlice = createSlice({
         state.missionList = [];
         saveState('missions', { missionList: state.missionList });
         state.error = error.message;
-        // TODO: Handle error with an error page
       });
   },
 });

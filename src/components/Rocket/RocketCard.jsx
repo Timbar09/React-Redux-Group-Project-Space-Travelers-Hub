@@ -8,7 +8,8 @@ import { SiWikipedia as WikipediaIcon } from 'react-icons/si';
 
 import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
 
-import RocketImageCarousel from './RocketImageCarousel';
+// import RocketImageCarousel from './RocketImageCarousel';
+import Carousel from '../Carousel';
 import Button from '../Button';
 import RocketCardDetails from './RocketCardDetails';
 
@@ -45,7 +46,8 @@ function RocketCard({ rocket, handleModal }) {
       className={`${styles.card} rounded-2 d-lg-flex p-2 position-relative`}
       data-reserved={rocket.isReserved}
     >
-      <RocketImageCarousel imageUrls={rocket.images} cardId={rocket.id} />
+      {/* <RocketImageCarousel imageUrls={rocket.images} cardId={rocket.id} /> */}
+      <Carousel imageUrls={rocket.images} />
 
       <div className={`${styles.cardBody} p-3`}>
         <header

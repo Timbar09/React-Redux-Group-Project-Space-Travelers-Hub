@@ -123,6 +123,23 @@ a {
   display: inline-block;
 }
 
+.main {
+  background-color: var(--bg-200);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+
+/* slick-carouse */
+.slick-active button {
+  background-color: var(--primary) !important;
+}
+
 @media (min-width: 768px) {
   .active {
     color: var(--text-100);
@@ -160,16 +177,4 @@ a {
     bottom: -1.625em;
     opacity: 1;
   }
-}
-
-.main {
-  background-color: var(--bg-200);
-}
-
-.overlay {
-  position: fixed;
-  inset: 0;
-  backdrop-filter: blur(5px);
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 10;
 }
