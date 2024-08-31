@@ -1,4 +1,8 @@
 .nav {
+  --padding: 0.35rem;
+
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
   background-color: var(--bg-100);
   border-bottom: solid 0.125rem var(--opaque-100);
 }
