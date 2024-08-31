@@ -22,7 +22,7 @@
 .pageHeaderHeading {
   font-size: calc(2.5em + 1vw);
   font-weight: 700;
-  text-shadow: 0.05em 0.05em 0.05em var(--bg-300);
+  text-shadow: 0.05em 0.05em 0.05em var(--opaque-100);
 }
 
 .pageHeaderDescription {

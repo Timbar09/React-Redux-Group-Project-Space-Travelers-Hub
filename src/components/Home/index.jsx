@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import { NavLink } from 'react-router-dom';
 
-import { IoMdRocket as BookRocketIcon } from 'react-icons/io';
+import { IoMdRocket as ReserveRocketIcon } from 'react-icons/io';
 import { GiSpaceSuit as JoinMissionIcon } from 'react-icons/gi';
 
 import Button from '../Button';
@@ -42,8 +42,8 @@ function Home() {
           <NavLink to="/rockets">
             <Button
               type="secondary"
-              title="Book a Rocket"
-              icon={<BookRocketIcon />}
+              title="Reserve a Rocket"
+              icon={<ReserveRocketIcon />}
             />
           </NavLink>
         </div>
