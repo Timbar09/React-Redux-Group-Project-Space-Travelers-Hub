@@ -26,8 +26,6 @@ function Slider({ slides, tag }) {
       spaceBetween={50}
       slidesPerView={1}
       loop
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
       pagination={{ clickable: true }}
       effect="creative"
       creativeEffect={{
