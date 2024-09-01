@@ -4,18 +4,11 @@ import { TbProgress as ProgressIcon } from 'react-icons/tb';
 
 import styles from './index.module.css';
 
-function RocketCardDetails({ costPerLaunch, metrics }) {
+function RocketCardDetails({ metrics }) {
   return (
     <footer
       className={`${styles.cardDetails} d-flex flex-wrap gap-3 rounded-2 mt-2 p-3`}
     >
-      <div
-        className={`${styles.costPerLaunch} d-flex flex-column gap-1 py-2 px-3`}
-      >
-        <span className="d-block pb-1">Cost Per Launch</span>
-        <span>{costPerLaunch}</span>
-      </div>
-
       <div className="d-flex gap-3">
         {metrics.map((metric) => (
           <div
@@ -38,7 +31,6 @@ function RocketCardDetails({ costPerLaunch, metrics }) {
 }
 
 RocketCardDetails.propTypes = {
-  costPerLaunch: PropTypes.string.isRequired,
   metrics: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string,

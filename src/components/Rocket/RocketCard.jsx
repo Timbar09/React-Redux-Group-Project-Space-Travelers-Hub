@@ -18,11 +18,19 @@ function RocketCard({ rocket, handleModal }) {
   const dispatch = useDispatch();
   const toggleRes = () => dispatch(AddRemoveReservationToggle(rocket.id));
 
-  const costPerLaunch = `$${rocket.costPerLaunch
-    .toString()
-    .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`;
+  const shortenNumber = (num) => {
+    if (num >= 1e9) return `${(num / 1e9).toFixed(0)}G`;
+    if (num >= 1e6) return `${(num / 1e6).toFixed(0)}M`;
+    if (num >= 1e3) return `${(num / 1e3).toFixed(0)}K`;
+    return num;
+  };
 
   const metrics = [
+    {
+      id: 'boosters000',
+      name: 'Cost / Launch',
+      value: shortenNumber(rocket.costPerLaunch),
+    },
     {
       id: 'boosters001',
       name: 'Boosters',
@@ -94,7 +102,7 @@ function RocketCard({ rocket, handleModal }) {
           {rocket.description}
         </p>
 
-        <RocketCardDetails costPerLaunch={costPerLaunch} metrics={metrics} />
+        <RocketCardDetails metrics={metrics} />
       </div>
     </li>
   );
