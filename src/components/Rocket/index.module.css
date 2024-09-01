@@ -76,7 +76,7 @@ body[data-theme='dark'] .pageHeader {
   color: var(--gold);
 }
 
-.cardDetails {
+.cardFooter {
   background-color: var(--bg-200);
 }
 
@@ -94,26 +94,26 @@ body[data-theme='dark'] .pageHeader {
   color: var(--primary);
 }
 
-.cardDetail > span:first-child {
+.cardMetric > span:first-child {
   background-color: var(--bg-100);
 }
 
-.cardDetail > span:last-child {
+.cardMetric > span:last-child {
   font-size: 0.75em;
 }
 
-.cardDetail svg {
+.cardMetric svg {
   font-size: 3.5em;
   color: var(--primary);
   stroke-width: 1;
 }
 
-.card[data-reserved='true'] .cardDetail svg,
+.card[data-reserved='true'] .cardMetric svg,
 .card[data-reserved='true'] .costPerLaunch span:last-child {
   color: var(--text-300);
 }
 
-.cardDetailMetric {
+.cardMetricValue {
   top: 50%;
   left: 50%;
   translate: -50% -50%;

@@ -10,7 +10,7 @@ import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
 
 import RocketImageCarousel from './RocketImageCarousel';
 import Button from '../Button';
-import RocketCardDetails from './RocketCardDetails';
+import RocketCardMetrics from './RocketCardMetrics';
 
 import styles from './index.module.css';
 
@@ -102,7 +102,11 @@ function RocketCard({ rocket, handleModal }) {
           {rocket.description}
         </p>
 
-        <RocketCardDetails metrics={metrics} />
+        <footer
+          className={`${styles.cardFooter} d-flex flex-wrap gap-3 rounded-2 mt-2 p-3`}
+        >
+          <RocketCardMetrics metrics={metrics} />
+        </footer>
       </div>
     </li>
   );
