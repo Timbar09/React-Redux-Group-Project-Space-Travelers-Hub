@@ -29,7 +29,7 @@ body[data-theme='dark'] .pageHeader {
   opacity: 0;
   background-color: var(--opaque-contrast-300);
   border-radius: inherit;
-  z-index: 1;
+  z-index: 5;
   transition: width 10ms ease-in-out, opacity 0.3s 20ms ease-in-out;
 }
 
@@ -44,12 +44,18 @@ body[data-theme='dark'] .pageHeader {
   transition: width 10ms 0.3s ease-in-out, opacity 0.3s 0s ease-in-out;
 }
 
-.carousel {
+.imageCarousel {
   background-color: var(--bg-200);
 }
 
-.carouselImage {
+.imageCarouselImage {
   border-radius: 0.25em 0.25em 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  aspect-ratio: 16 / 9;
 }
 
 .cardHeader {
@@ -63,7 +69,7 @@ body[data-theme='dark'] .pageHeader {
   color: var(--text-200);
   background-color: var(--bg-200);
   border: solid 0.1rem var(--primary);
-  z-index: 1;
+  z-index: 5;
 }
 
 .cardBadge svg {
@@ -126,7 +132,8 @@ body[data-theme='dark'] .pageHeader {
     max-width: 30em;
     margin: 0 auto;
   }
-  .carousel {
+
+  .imageCarousel {
     max-width: 30em;
   }
 }
@@ -137,7 +144,7 @@ body[data-theme='dark'] .pageHeader {
     width: 100%;
   }
 
-  .carouselImage {
+  .imageCarouselImage {
     border-radius: 0.25em 0 0 0.25em;
   }
 
