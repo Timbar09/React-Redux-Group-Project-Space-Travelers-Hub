@@ -88,11 +88,14 @@
 
 .option {
   color: var(--text-200);
-  border: solid 0.125rem var(--opaque-100);
+  background-color: var(--bg-200);
+  border: solid 0.075em var(--opaque-50);
 }
 
 .option:hover {
-  color: var(--text-100);
+  --transition: calc(var(--transition-100) / 4);
+
+  color: var(--primary);
   background-color: var(--opaque-50);
   transition: color var(--transition-100) ease-in-out,
     background-color var(--transition-100) ease-in-out;

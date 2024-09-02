@@ -12,7 +12,6 @@
   border-radius: 50%;
 }
 
-/* TODO: Improve the sun appearance */
 .themeToggleContainer {
   position: relative;
   display: inline-block;
@@ -20,7 +19,8 @@
   height: var(--dimension);
   border-radius: inherit;
   background-color: var(--sun-bg);
-  -webkit-box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61) inset,
+  -webkit-box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61)
+      inset,
     0em -0.062em 0.062em 0em #a1872a inset;
   box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61) inset,
     0em -0.062em 0.062em 0em #a1872a inset;
@@ -44,7 +44,8 @@
   height: 100%;
   background-color: var(--moon-bg);
   border-radius: inherit;
-  -webkit-box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61) inset,
+  -webkit-box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61)
+      inset,
     0em -0.062em 0.062em 0em #969696 inset;
   box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61) inset,
     0em -0.062em 0.062em 0em #969696 inset;

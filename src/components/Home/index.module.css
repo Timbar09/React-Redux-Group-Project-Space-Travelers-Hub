@@ -23,7 +23,7 @@
 }
 
 .title {
-  font-size: clamp(5rem, 20vw, 10.5rem);
+  font-size: clamp(4.25rem, 17vw, 10.5rem);
   line-height: 1;
   color: var(--text-200);
   max-width: 15em;
@@ -40,7 +40,7 @@
 }
 
 .title span:last-child {
-  font-size: clamp(1.35rem, 5.25vw, 2.8125rem);
+  font-size: clamp(1.125rem, 4.5vw, 2.8125rem);
   letter-spacing: 0.5em;
   font-weight: 400;
 }
