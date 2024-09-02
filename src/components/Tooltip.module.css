@@ -1,0 +1,23 @@
+.tooltipTitle {
+  border: 0;
+  color: var(--text-200);
+  background-color: var(--opaque-50);
+  transition: color var(--transition-100) ease-in-out,
+    background-color var(--transition-100) ease-in-out;
+}
+
+.tooltipTitle:hover {
+  cursor: pointer;
+  color: var(--primary);
+  background-color: var(--opaque-100);
+}
+
+.tooltipContent {
+  position: absolute;
+  top: 125%;
+  left: -1em;
+  width: max-content;
+  background-color: var(--bg-200);
+  box-shadow: var(--shadow-100);
+  z-index: 20;
+}

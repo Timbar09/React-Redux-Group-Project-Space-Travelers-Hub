@@ -5,12 +5,14 @@ import { IoMdRocket as ReserveIcon } from 'react-icons/io';
 import { TbRocketOff as CancelIcon } from 'react-icons/tb';
 import { IoTicket as BadgeIcon } from 'react-icons/io5';
 import { SiWikipedia as WikipediaIcon } from 'react-icons/si';
+import { BsInfoLg as InfoIcon } from 'react-icons/bs';
 
 import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
 
 import RocketImageCarousel from './RocketImageCarousel';
 import Button from '../Button';
 import RocketCardMetrics from './RocketCardMetrics';
+import Tooltip from '../Tooltip';
 
 import styles from './index.module.css';
 
@@ -61,7 +63,13 @@ function RocketCard({ rocket, handleModal }) {
         >
           <h3>{rocket.name}</h3>
 
-          <div className="d-flex gap-2">
+          <div className="d-flex gap-2 align-items-center">
+            <span className="d-none d-lg-inline">
+              <Tooltip title={<InfoIcon />}>
+                <RocketCardMetrics metrics={metrics} />
+              </Tooltip>
+            </span>
+
             <Button
               type="tertiary"
               icon={<WikipediaIcon />}
@@ -103,7 +111,7 @@ function RocketCard({ rocket, handleModal }) {
         </p>
 
         <footer
-          className={`${styles.cardFooter} d-flex flex-wrap gap-3 rounded-2 mt-2 p-3`}
+          className={`${styles.cardFooter} d-flex flex-wrap gap-3 rounded-2 mt-2 p-3 d-lg-none`}
         >
           <RocketCardMetrics metrics={metrics} />
         </footer>
