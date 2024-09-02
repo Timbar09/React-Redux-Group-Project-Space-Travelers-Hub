@@ -17,10 +17,7 @@ function LeaveMissionModalContent({ itemId, title }) {
     <div className={`${styles.leaveMissionModalContent} p-3`}>
       <h1 className="fs-4">{title}</h1>
 
-      <p className="my-3 py-3">
-        By leaving this mission, you will lose all the benefits associated with
-        it.
-      </p>
+      <p className="my-3 py-3">Are you sure you want to leave this mission?</p>
 
       <div className="d-flex justify-content-end gap-3">
         <Button

@@ -18,7 +18,7 @@ function CancelRocketModalContent({ itemId }) {
       <h1 className="fs-4">Cancel Rocket Reservation</h1>
 
       <p className="my-3 py-3">
-        Are you sure you want to cancel the reservation?
+        Are you sure you want to cancel this reservation?
       </p>
 
       <div className="d-flex justify-content-end gap-3">

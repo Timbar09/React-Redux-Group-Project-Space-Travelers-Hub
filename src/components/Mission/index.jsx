@@ -56,7 +56,7 @@ function Mission() {
 
       <Modal
         modalId="leaveModal"
-        title="Are you sure you want to leave this mission?"
+        title="Leave this mission"
         itemId={selectedMissionId}
         Content={LeaveMissionModalContent}
         blank
