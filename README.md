@@ -44,17 +44,17 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Single Page App**
+- **Display of commercial and scientific space travel services.**
 
-- **Redux toolkit**
+- **Real-time data fetching from the SpaceX API.**
 
-- **Redux thunk**
+- **User capabilities to book rockets and join space missions.**
 
-- **ES6**
+- **Built with React.js and Redux-toolkit.**
 
-- **Gitflow**
+- **Styled with Bootstrap, React-Bootstrap and custom CSS.**
 
-- **REST APIs**
+- **Integration with Rest APIs.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,16 +134,17 @@ You can deploy this project by running following command:
 
 ## 👥 Author <a name="author"></a>
 
-| 👤 Author | GitHub | Twitter | LinkedIn |
-| :-- | :-- | :-- | :-- |
+| 👤 Author    | GitHub                                   | Twitter                                 | LinkedIn                                        |
+| :----------- | :--------------------------------------- | :-------------------------------------- | :---------------------------------------------- |
 | Miles Mosweu | [@Timbar09](https://github.com/Timbar09) | [@Milez09](https://twitter.com/Milez09) | [@miles09](https://www.linkedin.com/in/miles09) |
-| Shakir | [@shakir]() | [@shakir]() | [@shakir]() |
+| Shakir       | [@shakir]()                              | [@shakir]()                             | [@shakir]()                                     |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Implement more functionality.**
+- **Add the dragons page**
+- **Add user authentication**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
