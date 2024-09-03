@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 
 import ThemeToggleButton from './ThemeToggleButton';
@@ -16,8 +16,15 @@ import styles from './index.module.css';
  */
 
 function NavMobileMenu({ handleMenuToggle }) {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
   return (
-    <ul className={`${styles.mobileNav} d-md-none py-4 position-absolute w-100 text-center`}>
+    <ul
+      className={`${styles.mobileNav} ${
+        isHomePage ? styles.mobileHomeNav : ''
+      } d-md-none py-4 position-absolute w-100 text-center`}
+    >
       <Container>
         <li className="mb-2 d-flex justify-content-end px-1">
           <ThemeToggleButton />
@@ -27,7 +34,8 @@ function NavMobileMenu({ handleMenuToggle }) {
           <li key={link.text}>
             <NavLink
               to={link.path}
-              className={`${({ isActive }) => (isActive ? 'active' : undefined)} ${
+              className={`${({ isActive }) =>
+                isActive ? 'active' : undefined} ${
                 styles.option
               } p-2 mb-2 rounded fs-3 w-100`}
               onClick={handleMenuToggle}
