@@ -1,35 +1,1309 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Missions test > should render Missions 1`] = `
+exports[`Mission Component > should render Missions 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="_loading_aeebc7 container padding"
+        class="_missionPage_d58619 py-4 px-3 container"
       >
-        <div
-          class="_spinner_aeebc7"
+        <header
+          class="_pageHeader_a62537 _pageHeader_d58619 flex-column gap-1"
         >
-          <span />
-          <span />
-          <span />
-          <span />
+          <h1
+            class="_pageHeaderHeading_a62537 py-5 text-center position-relative"
+          >
+            Featured Missions
+          </h1>
+          <p
+            class="_pageHeaderDescription_a62537 mx-auto text-center"
+          >
+            Explore our exciting space missions and discover the universe with us! Join us in our journey to explore the universe.
+          </p>
+        </header>
+        <ul
+          class="_missionList_d58619 list-unstyled"
+        >
+          <li
+            class="_missionCard_d58619 p-3 rounded d-md-flex gap-3 position-relative"
+            data-reserved="false"
+          >
+            <div
+              class="mb-3 mb-md-0"
+            >
+              <header
+                class="_missionCardHeader_d58619 d-flex align-items-center gap-3 py-2"
+              >
+                <h3>
+                  Mission 1
+                </h3>
+                <span
+                  class="_missionCardBadge_d58619 px-2 py-1 rounded-1 d-inline-flex align-items-center gap-1"
+                  data-reserved="false"
+                >
+                  <span>
+                    Not a Member
+                  </span>
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479z"
+                    />
+                  </svg>
+                </span>
+              </header>
+              <p
+                class="_missionCardDescription_d58619 ps-4"
+              >
+                Description 1 
+              </p>
+            </div>
+            <footer
+              class="_missionCardFooter_d58619 p-2 rounded-2 d-flex flex-md-column-reverse justify-content-between align-items-center align-items-md-end justify-content-md-end gap-2"
+            >
+              <ul
+                class="d-flex gap-2 align-items-center"
+              >
+                <li>
+                  <a
+                    aria-label=""
+                    class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                    data-bs-dismiss=""
+                    data-bs-target=""
+                    data-bs-toggle=""
+                    href="https://wikipedia.org/mission1"
+                    rel="noreferrer"
+                    target="_blank"
+                    title="Visit wikipedia.org"
+                    type="button"
+                  >
+                    <span>
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        role="img"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.09 13.119c-.936 1.932-2.217 4.548-2.853 5.728-.616 1.074-1.127.931-1.532.029-1.406-3.321-4.293-9.144-5.651-12.409-.251-.601-.441-.987-.619-1.139-.181-.15-.554-.24-1.122-.271C.103 5.033 0 4.982 0 4.898v-.455l.052-.045c.924-.005 5.401 0 5.401 0l.051.045v.434c0 .119-.075.176-.225.176l-.564.031c-.485.029-.727.164-.727.436 0 .135.053.33.166.601 1.082 2.646 4.818 10.521 4.818 10.521l.136.046 2.411-4.81-.482-1.067-1.658-3.264s-.318-.654-.428-.872c-.728-1.443-.712-1.518-1.447-1.617-.207-.023-.313-.05-.313-.149v-.468l.06-.045h4.292l.113.037v.451c0 .105-.076.15-.227.15l-.308.047c-.792.061-.661.381-.136 1.422l1.582 3.252 1.758-3.504c.293-.64.233-.801.111-.947-.07-.084-.305-.22-.812-.24l-.201-.021c-.052 0-.098-.015-.145-.051-.045-.031-.067-.076-.067-.129v-.427l.061-.045c1.247-.008 4.043 0 4.043 0l.059.045v.436c0 .121-.059.178-.193.178-.646.03-.782.095-1.023.439-.12.186-.375.589-.646 1.039l-2.301 4.273-.065.135 2.792 5.712.17.048 4.396-10.438c.154-.422.129-.722-.064-.895-.197-.172-.346-.273-.857-.295l-.42-.016c-.061 0-.105-.014-.152-.045-.043-.029-.072-.075-.072-.119v-.436l.059-.045h4.961l.041.045v.437c0 .119-.074.18-.209.18-.648.03-1.127.18-1.443.421-.314.255-.557.616-.736 1.067 0 0-4.043 9.258-5.426 12.339-.525 1.007-1.053.917-1.503-.031-.571-1.171-1.773-3.786-2.646-5.71l.053-.036z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label=""
+                    class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                    data-bs-dismiss=""
+                    data-bs-target=""
+                    data-bs-toggle=""
+                    href="https://twitter.com/mission1"
+                    rel="noreferrer"
+                    target="_blank"
+                    title="Visit twitter.com"
+                    type="button"
+                  >
+                    <span>
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label=""
+                    class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                    data-bs-dismiss=""
+                    data-bs-target=""
+                    data-bs-toggle=""
+                    href="https://mission1.com"
+                    rel="noreferrer"
+                    target="_blank"
+                    title="Visit mission1.com"
+                    type="button"
+                  >
+                    <span>
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                        />
+                        <path
+                          d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <button
+                aria-label="Join Mission"
+                class="_button_29f8d0 
+       _primary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                data-bs-dismiss=""
+                data-bs-target="#waiverModal"
+                data-bs-toggle="modal"
+                href=""
+                rel=""
+                title=""
+                type="button"
+              >
+                <span>
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M250.375 21.25c-38.192 0-68.97 30.744-68.97 68.938 0 38.193 30.778 68.968 68.97 68.968s68.938-30.775 68.938-68.97c0-38.192-30.746-68.936-68.938-68.936zm-2.625 33.78c.115-.003.23.005.344 0-26.85 53.803 52.427 66.62 40.656 9.032 4.272 1.793 8.76 3.838 13.53 6.157 3.816 15.258 3.55 30.828-2.342 46.093-46.683 11.007-54.054 11.028-98.375-1.594-5.345-14.747-6.03-29.762-2.344-44.5 19.356-9.562 34.072-14.612 48.53-15.19zM345.188 121c-1.26-.03-4.597.75-9.657 4.625-.006.006-.022-.006-.03 0-2.61 2.002-5.202 3.89-7.78 5.688-14.765 27.642-43.906 46.53-77.345 46.53-33.4 0-62.523-18.846-77.313-46.437-3.012-1.64-6.038-3.325-9.093-5.062-4.647-2.642-7.37-2.825-8.657-2.594-1.29.23-2.174.692-3.657 3-2.966 4.616-5.316 16.393-4.656 30.03.66 13.64 3.802 29.176 8.75 42.314 4.948 13.138 11.957 23.675 18.156 27.97 50.81 35.192 99.385 27.478 151.5-.533 6.386-3.43 13.912-13.767 19.125-27.468 5.215-13.7 8.4-30.338 8.94-44.843.538-14.506-2.292-26.98-5.22-31.095-1.464-2.058-1.8-2.096-3.063-2.125zM128.25 144.875c-20.632 9.24-36.958 25.827-49.656 48.594 4.41.183 8.78.842 13 1.968 12.22 3.26 22.512 10.243 30.062 19.375 4.587-5.04 9.565-9.652 14.938-13.844-4.718-13.954-7.597-29.14-8.28-43.282-.214-4.392-.26-8.68-.064-12.813zm242.72 24.25c-1.58 12.405-4.592 25.058-8.97 36.563-2.413 6.342-5.193 12.393-8.5 17.843 3.59 4.06 6.944 8.37 10.03 12.97 2.334-3.646 5.037-7.03 8.064-10.063v-.03c8.18-8.18 18.247-13.41 28.844-15.75-8.07-16.84-17.822-30.79-29.47-41.532zM76.31 212.155c-10.683.044-21.528 4.17-28.312 12.282-7.128 8.523-11.038 22.262-5.188 43.375.136-.093.27-.19.407-.28 8.11-5.473 18.242-8.57 29.186-8.063 3.648.168 7.398.733 11.188 1.75 10.622 2.845 19.157 8.536 25.28 15.717 7.454-9.93 9.21-20.875 7.314-31.156-2.767-14.987-13.905-28.145-29.407-32.28-3.373-.9-6.906-1.358-10.468-1.344zm336.5 15.782c-.71.013-1.413.045-2.125.094-9.48.653-18.78 4.502-25.875 11.595-9.865 9.887-14.718 25.822-9.875 39.063 3.82 10.44 13.742 20.698 34.97 26.187-.015-.177-.05-.354-.063-.53-.91-13.01 3.634-26.97 14.72-38.064l-.002-.03c7.774-7.767 16.973-12.288 26.25-14-4.87-11.43-13.457-18.44-23.312-21.938-4.712-1.67-9.704-2.465-14.688-2.375zm-101.437 25.97c-39.896 16.718-81.177 21.096-121.78 3.312l-10.064 39.31c8.908 2.755 16.417 7.827 22 14.25 7.355 8.462 11.61 18.985 12.876 29.814 25.23-39.572 70.19-24.214 81.906 29.187-30.148 24.312-31.025 78.51 2.47 99.97 13.98-17.626 34.203-29.69 55.312-32.75 3.026-.44 6.09-.66 9.156-.688 1.022-.008 2.042-.006 3.063.032 7.237.266 14.457 1.735 21.312 4.562 5.298-16.073 4.073-34.643-3.188-50.156-7.642 4.648-17.087 7.406-27.843 7.406-16.64 0-30.15-6.565-38.688-16.594C309.37 371.534 305.66 358.6 306 345.938c.34-12.662 4.69-25.31 13.25-35.156 1.444-1.66 3.026-3.222 4.72-4.686l-12.595-52.188zm146.938 16.218c-7.058.166-13.97 2.75-20.563 9.344-7.534 7.533-9.85 15.483-9.28 23.592.566 8.11 4.486 16.41 10.436 22.688 5.95 6.28 13.738 10.374 21.53 11 7.795.626 15.888-1.73 24.377-10.22 8.488-8.488 10.845-16.58 10.218-24.374-.625-7.793-4.72-15.58-11-21.53-6.278-5.95-14.577-9.87-22.686-10.438-1.014-.07-2.023-.087-3.03-.063zM70.156 278c-6.352-.102-11.73 1.835-16.47 5.03-6.738 4.547-11.973 12.083-14.436 20.376-2.463 8.293-2.136 17.063 1.22 24.125 3.353 7.064 9.465 12.925 21.06 16.033 11.597 3.107 19.784 1.064 26.22-3.375 6.436-4.44 11.112-11.868 13.125-20.282 2.013-8.413 1.25-17.568-2.313-24.875-3.563-7.305-9.52-12.99-19.812-15.75-2.573-.688-5.007-1.084-7.313-1.217-.432-.025-.857-.056-1.28-.063zm94.03 34.938c-10.654 0-17.916 3.958-23.25 10.093-5.33 6.137-8.422 14.76-8.655 23.408-.232 8.647 2.37 17.046 7.44 23 5.067 5.953 12.462 10.03 24.468 10.03 12.005 0 19.4-4.077 24.468-10.03 5.068-5.954 7.67-14.353 7.438-23-.233-8.648-3.355-17.27-8.688-23.407-5.333-6.134-12.563-10.092-23.22-10.092zm192.408 0c-10.656 0-17.917 3.958-23.25 10.093-5.333 6.137-8.424 14.76-8.656 23.408-.233 8.647 2.37 17.046 7.437 23 5.068 5.953 12.463 10.03 24.47 10.03 12.004 0 19.4-4.077 24.467-10.03 5.07-5.954 7.67-14.353 7.438-23-.233-8.648-3.355-17.27-8.688-23.407-5.332-6.134-12.563-10.092-23.218-10.092zM121.22 375.656c-15.115 16.632-20.037 41.93-13.75 63.313 5.18-1.573 10.525-2.43 15.874-2.626 1.02-.038 2.04-.04 3.062-.03 3.065.025 6.13.247 9.156.686 22.062 3.2 43.178 16.216 57.188 35.156 34.58-17.894 37.7-67.857 13.75-95.5-1.098 1.69-2.296 3.345-3.625 4.906-8.537 10.03-22.048 16.594-38.688 16.594-16.64 0-30.15-6.565-38.687-16.594-1.59-1.87-3.02-3.855-4.28-5.906zm2.81 79.313c-8.685.26-16.853 2.96-24.124 8.592-7.895 6.116-14.975 16.094-19.72 31.344h104.25c-10.196-20.804-31.273-36.464-51.56-39.406-2.995-.434-5.95-.618-8.845-.53zm239.407 0c-2.192.034-4.41.204-6.656.53-20.287 2.942-41.364 18.602-51.56 39.406h104.25c-4.745-15.25-11.824-25.228-19.72-31.344-7.27-5.63-15.44-8.333-24.125-8.593-.724-.023-1.457-.013-2.188 0z"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  Join Mission
+                </span>
+              </button>
+            </footer>
+          </li>
+          <li
+            class="_missionCard_d58619 p-3 rounded d-md-flex gap-3 position-relative"
+            data-reserved="true"
+          >
+            <div
+              class="mb-3 mb-md-0"
+            >
+              <header
+                class="_missionCardHeader_d58619 d-flex align-items-center gap-3 py-2"
+              >
+                <h3>
+                  Mission 2
+                </h3>
+                <span
+                  class="_missionCardBadge_d58619 px-2 py-1 rounded-1 d-inline-flex align-items-center gap-1"
+                  data-reserved="true"
+                >
+                  <span>
+                    Active Member
+                  </span>
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z"
+                    />
+                  </svg>
+                </span>
+              </header>
+              <p
+                class="_missionCardDescription_d58619 ps-4"
+              >
+                Description 2 
+              </p>
+            </div>
+            <footer
+              class="_missionCardFooter_d58619 p-2 rounded-2 d-flex flex-md-column-reverse justify-content-between align-items-center align-items-md-end justify-content-md-end gap-2"
+            >
+              <ul
+                class="d-flex gap-2 align-items-center"
+              >
+                <li>
+                  <a
+                    aria-label=""
+                    class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                    data-bs-dismiss=""
+                    data-bs-target=""
+                    data-bs-toggle=""
+                    href="https://wikipedia.org/mission2"
+                    rel="noreferrer"
+                    target="_blank"
+                    title="Visit wikipedia.org"
+                    type="button"
+                  >
+                    <span>
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        role="img"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.09 13.119c-.936 1.932-2.217 4.548-2.853 5.728-.616 1.074-1.127.931-1.532.029-1.406-3.321-4.293-9.144-5.651-12.409-.251-.601-.441-.987-.619-1.139-.181-.15-.554-.24-1.122-.271C.103 5.033 0 4.982 0 4.898v-.455l.052-.045c.924-.005 5.401 0 5.401 0l.051.045v.434c0 .119-.075.176-.225.176l-.564.031c-.485.029-.727.164-.727.436 0 .135.053.33.166.601 1.082 2.646 4.818 10.521 4.818 10.521l.136.046 2.411-4.81-.482-1.067-1.658-3.264s-.318-.654-.428-.872c-.728-1.443-.712-1.518-1.447-1.617-.207-.023-.313-.05-.313-.149v-.468l.06-.045h4.292l.113.037v.451c0 .105-.076.15-.227.15l-.308.047c-.792.061-.661.381-.136 1.422l1.582 3.252 1.758-3.504c.293-.64.233-.801.111-.947-.07-.084-.305-.22-.812-.24l-.201-.021c-.052 0-.098-.015-.145-.051-.045-.031-.067-.076-.067-.129v-.427l.061-.045c1.247-.008 4.043 0 4.043 0l.059.045v.436c0 .121-.059.178-.193.178-.646.03-.782.095-1.023.439-.12.186-.375.589-.646 1.039l-2.301 4.273-.065.135 2.792 5.712.17.048 4.396-10.438c.154-.422.129-.722-.064-.895-.197-.172-.346-.273-.857-.295l-.42-.016c-.061 0-.105-.014-.152-.045-.043-.029-.072-.075-.072-.119v-.436l.059-.045h4.961l.041.045v.437c0 .119-.074.18-.209.18-.648.03-1.127.18-1.443.421-.314.255-.557.616-.736 1.067 0 0-4.043 9.258-5.426 12.339-.525 1.007-1.053.917-1.503-.031-.571-1.171-1.773-3.786-2.646-5.71l.053-.036z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label=""
+                    class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                    data-bs-dismiss=""
+                    data-bs-target=""
+                    data-bs-toggle=""
+                    href="https://twitter.com/mission2"
+                    rel="noreferrer"
+                    target="_blank"
+                    title="Visit twitter.com"
+                    type="button"
+                  >
+                    <span>
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label=""
+                    class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                    data-bs-dismiss=""
+                    data-bs-target=""
+                    data-bs-toggle=""
+                    href="https://mission2.com"
+                    rel="noreferrer"
+                    target="_blank"
+                    title="Visit mission2.com"
+                    type="button"
+                  >
+                    <span>
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                        />
+                        <path
+                          d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <button
+                aria-label="Leave Mission"
+                class="_button_29f8d0 _tertiaryDanger_29f8d0
+       _tertiary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                data-bs-dismiss=""
+                data-bs-target="#leaveModal"
+                data-bs-toggle="modal"
+                href=""
+                rel=""
+                title=""
+                type="button"
+              >
+                <span>
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M372.97 24.938c-8.67.168-17.816 3.644-26.69 10.28-12.618 9.44-24.074 25.203-30.5 44.844-6.424 19.642-6.48 39.12-1.874 54.157 4.608 15.036 13.375 25.225 24.97 29 11.593 3.772 24.724.72 37.343-8.72 12.618-9.44 24.074-25.234 30.5-44.875 6.424-19.642 6.512-39.12 1.905-54.156-4.607-15.038-13.404-25.196-25-28.97-2.9-.944-5.88-1.465-8.938-1.563-.573-.018-1.14-.01-1.718 0zm-155.69 69.78c-21.696.024-43.394 2.203-65.093 7.094-24.91 29.824-43.848 60.255-52.875 98.47l37.376 17.812c8.273-30.735 21.485-53.817 43.375-77 22.706-7.844 45.418-6.237 68.125 1.5-74.24 65.137-51.17 120.676-80.344 226.47-42.653 17.867-85.098 20.53-123.25-.002L23 415.625c59.418 27.09 125.736 29.818 190.844 0 20.368-43.443 27.214-88.603 25-132.906C295.31 354.663 323.11 398.2 338.78 498.56h57.94c-3.12-14.706-6.21-28.394-9.345-41.218-22.522-92.133-47.263-139.63-100.22-198.406 9.695-36.13 22.143-59.665 52.44-74.282 11.167 19.767 29.982 36.682 51.092 48.906l97.375 1.563.47-41.03L402 191.968c-8.05-5.556-14.925-11.73-20.75-18.314-14.886 9.08-32.024 12.563-48.156 7.313-18.422-5.997-31.143-21.962-37.063-41.282-3.482-11.37-4.742-24.05-3.686-37.25-25.017-4.884-50.047-7.746-75.063-7.72z"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  Leave Mission
+                </span>
+              </button>
+            </footer>
+          </li>
+        </ul>
+        <div
+          aria-hidden="true"
+          aria-labelledby="waiverModalLabel"
+          class="_modalOverlay_a024cf modal fade"
+          id="waiverModal"
+          tabindex="-1"
+        >
+          <div
+            class="modal-dialog modal-lg"
+          >
+            <div
+              class="_modal_a024cf modal-content"
+            >
+              <div
+                class="_header_a024cf modal-header d-flex justify-content-between"
+              >
+                <h1
+                  class="modal-title fs-5"
+                  id="waiverModalLabel"
+                >
+                  Waiver of Liability
+                </h1>
+                <button
+                  aria-label=""
+                  class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss="modal"
+                  data-bs-target=""
+                  data-bs-toggle=""
+                  href=""
+                  rel=""
+                  title=""
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="none"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                class="_modalBody_a024cf modal-body"
+              >
+                <div
+                  class="_modalContent_d58619"
+                >
+                  <p
+                    class="mb-2"
+                  >
+                    By participating in any of the featured missions organized by our space exploration team, you acknowledge and agree to the following terms:
+                  </p>
+                  <ol>
+                    <li
+                      class="mb-2"
+                    >
+                      <strong>
+                        Assumption of Risk
+                      </strong>
+                      <span>
+                        : You understand that space missions involve inherent risks, including but not limited to physical injury, psychological stress, and potential loss of life. You voluntarily assume all such risks associated with participation.
+                      </span>
+                    </li>
+                    <li
+                      class="mb-2"
+                    >
+                      <strong>
+                        Release of Liability
+                      </strong>
+                      <span>
+                        : You hereby release and hold harmless our organization, its affiliates, officers, employees, and agents from any and all claims, demands, or causes of action arising out of or related to any loss, damage, or injury, including death, that may be sustained by you while participating in the missions.
+                      </span>
+                    </li>
+                    <li
+                      class="mb-2"
+                    >
+                      <strong>
+                        Medical Fitness
+                      </strong>
+                      <span>
+                        : You certify that you are in good health and have no medical conditions that would prevent you from safely participating in the missions. You agree to undergo any necessary medical examinations and provide truthful information regarding your health.
+                      </span>
+                    </li>
+                    <li
+                      class="mb-2"
+                    >
+                      <strong>
+                        Compliance with Instructions
+                      </strong>
+                      <span>
+                        : You agree to follow all instructions and safety guidelines provided by our team. Failure to comply with these instructions may result in your removal from the mission and forfeiture of any fees paid.
+                      </span>
+                    </li>
+                    <li
+                      class="mb-2"
+                    >
+                      <strong>
+                        Use of Likeness
+                      </strong>
+                      <span>
+                        : You grant our organization the right to use your name, likeness, and any photographs or videos taken during the missions for promotional and educational purposes.
+                      </span>
+                    </li>
+                    <li>
+                      <strong>
+                        Governing Law
+                      </strong>
+                      <span>
+                        : This waiver shall be governed by and construed in accordance with the laws of the jurisdiction in which our organization is based.
+                      </span>
+                    </li>
+                  </ol>
+                  <p
+                    class="mt-2"
+                  >
+                    By clicking "Accept and Join Mission" below, you acknowledge that you have read and understood this waiver of liability and agree to its terms.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="_footer_a024cf modal-footer"
+              >
+                <button
+                  aria-label="Accept and Join Mission"
+                  class="_button_29f8d0 
+       _primary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss="modal"
+                  data-bs-target=""
+                  data-bs-toggle=""
+                  href=""
+                  rel=""
+                  title=""
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M20 3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM10 17H5v-2h5v2zm0-4H5v-2h5v2zm0-4H5V7h5v2zm4.82 6L12 12.16l1.41-1.41 1.41 1.42L17.99 9l1.42 1.42L14.82 15z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    Accept and Join Mission
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-hidden="true"
+          aria-labelledby="leaveModalLabel"
+          class="_modalOverlay_a024cf modal fade"
+          id="leaveModal"
+          tabindex="-1"
+        >
+          <div
+            class="modal-dialog "
+          >
+            <div
+              class="_modal_a024cf modal-content"
+            >
+              <div
+                class="_leaveMissionModalContent_d58619 p-3"
+              >
+                <h1
+                  class="fs-4"
+                >
+                  Leave this mission
+                </h1>
+                <p
+                  class="my-3 py-3"
+                >
+                  Are you sure you want to leave this mission?
+                </p>
+                <div
+                  class="d-flex justify-content-end gap-3"
+                >
+                  <button
+                    aria-label="Cancel"
+                    class="_button_29f8d0 
+       _tertiary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                    data-bs-dismiss="modal"
+                    data-bs-target=""
+                    data-bs-toggle=""
+                    href=""
+                    rel=""
+                    title=""
+                    type="button"
+                  >
+                    <span>
+                      <svg
+                        fill="none"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </span>
+                    <span>
+                      Cancel
+                    </span>
+                  </button>
+                  <button
+                    aria-label="Leave Mission"
+                    class="_button_29f8d0 _secondaryDanger_29f8d0
+       _secondary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                    data-bs-dismiss="modal"
+                    data-bs-target=""
+                    data-bs-toggle=""
+                    href=""
+                    rel=""
+                    title=""
+                    type="button"
+                  >
+                    <span>
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        style="transform: rotateY(180deg);"
+                        viewBox="0 0 512 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M372.97 24.938c-8.67.168-17.816 3.644-26.69 10.28-12.618 9.44-24.074 25.203-30.5 44.844-6.424 19.642-6.48 39.12-1.874 54.157 4.608 15.036 13.375 25.225 24.97 29 11.593 3.772 24.724.72 37.343-8.72 12.618-9.44 24.074-25.234 30.5-44.875 6.424-19.642 6.512-39.12 1.905-54.156-4.607-15.038-13.404-25.196-25-28.97-2.9-.944-5.88-1.465-8.938-1.563-.573-.018-1.14-.01-1.718 0zm-155.69 69.78c-21.696.024-43.394 2.203-65.093 7.094-24.91 29.824-43.848 60.255-52.875 98.47l37.376 17.812c8.273-30.735 21.485-53.817 43.375-77 22.706-7.844 45.418-6.237 68.125 1.5-74.24 65.137-51.17 120.676-80.344 226.47-42.653 17.867-85.098 20.53-123.25-.002L23 415.625c59.418 27.09 125.736 29.818 190.844 0 20.368-43.443 27.214-88.603 25-132.906C295.31 354.663 323.11 398.2 338.78 498.56h57.94c-3.12-14.706-6.21-28.394-9.345-41.218-22.522-92.133-47.263-139.63-100.22-198.406 9.695-36.13 22.143-59.665 52.44-74.282 11.167 19.767 29.982 36.682 51.092 48.906l97.375 1.563.47-41.03L402 191.968c-8.05-5.556-14.925-11.73-20.75-18.314-14.886 9.08-32.024 12.563-48.156 7.313-18.422-5.997-31.143-21.962-37.063-41.282-3.482-11.37-4.742-24.05-3.686-37.25-25.017-4.884-50.047-7.746-75.063-7.72z"
+                        />
+                      </svg>
+                    </span>
+                    <span>
+                      Leave Mission
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="_loading_aeebc7 container padding"
+      class="_missionPage_d58619 py-4 px-3 container"
     >
-      <div
-        class="_spinner_aeebc7"
+      <header
+        class="_pageHeader_a62537 _pageHeader_d58619 flex-column gap-1"
       >
-        <span />
-        <span />
-        <span />
-        <span />
+        <h1
+          class="_pageHeaderHeading_a62537 py-5 text-center position-relative"
+        >
+          Featured Missions
+        </h1>
+        <p
+          class="_pageHeaderDescription_a62537 mx-auto text-center"
+        >
+          Explore our exciting space missions and discover the universe with us! Join us in our journey to explore the universe.
+        </p>
+      </header>
+      <ul
+        class="_missionList_d58619 list-unstyled"
+      >
+        <li
+          class="_missionCard_d58619 p-3 rounded d-md-flex gap-3 position-relative"
+          data-reserved="false"
+        >
+          <div
+            class="mb-3 mb-md-0"
+          >
+            <header
+              class="_missionCardHeader_d58619 d-flex align-items-center gap-3 py-2"
+            >
+              <h3>
+                Mission 1
+              </h3>
+              <span
+                class="_missionCardBadge_d58619 px-2 py-1 rounded-1 d-inline-flex align-items-center gap-1"
+                data-reserved="false"
+              >
+                <span>
+                  Not a Member
+                </span>
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479z"
+                  />
+                </svg>
+              </span>
+            </header>
+            <p
+              class="_missionCardDescription_d58619 ps-4"
+            >
+              Description 1 
+            </p>
+          </div>
+          <footer
+            class="_missionCardFooter_d58619 p-2 rounded-2 d-flex flex-md-column-reverse justify-content-between align-items-center align-items-md-end justify-content-md-end gap-2"
+          >
+            <ul
+              class="d-flex gap-2 align-items-center"
+            >
+              <li>
+                <a
+                  aria-label=""
+                  class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss=""
+                  data-bs-target=""
+                  data-bs-toggle=""
+                  href="https://wikipedia.org/mission1"
+                  rel="noreferrer"
+                  target="_blank"
+                  title="Visit wikipedia.org"
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      role="img"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.09 13.119c-.936 1.932-2.217 4.548-2.853 5.728-.616 1.074-1.127.931-1.532.029-1.406-3.321-4.293-9.144-5.651-12.409-.251-.601-.441-.987-.619-1.139-.181-.15-.554-.24-1.122-.271C.103 5.033 0 4.982 0 4.898v-.455l.052-.045c.924-.005 5.401 0 5.401 0l.051.045v.434c0 .119-.075.176-.225.176l-.564.031c-.485.029-.727.164-.727.436 0 .135.053.33.166.601 1.082 2.646 4.818 10.521 4.818 10.521l.136.046 2.411-4.81-.482-1.067-1.658-3.264s-.318-.654-.428-.872c-.728-1.443-.712-1.518-1.447-1.617-.207-.023-.313-.05-.313-.149v-.468l.06-.045h4.292l.113.037v.451c0 .105-.076.15-.227.15l-.308.047c-.792.061-.661.381-.136 1.422l1.582 3.252 1.758-3.504c.293-.64.233-.801.111-.947-.07-.084-.305-.22-.812-.24l-.201-.021c-.052 0-.098-.015-.145-.051-.045-.031-.067-.076-.067-.129v-.427l.061-.045c1.247-.008 4.043 0 4.043 0l.059.045v.436c0 .121-.059.178-.193.178-.646.03-.782.095-1.023.439-.12.186-.375.589-.646 1.039l-2.301 4.273-.065.135 2.792 5.712.17.048 4.396-10.438c.154-.422.129-.722-.064-.895-.197-.172-.346-.273-.857-.295l-.42-.016c-.061 0-.105-.014-.152-.045-.043-.029-.072-.075-.072-.119v-.436l.059-.045h4.961l.041.045v.437c0 .119-.074.18-.209.18-.648.03-1.127.18-1.443.421-.314.255-.557.616-.736 1.067 0 0-4.043 9.258-5.426 12.339-.525 1.007-1.053.917-1.503-.031-.571-1.171-1.773-3.786-2.646-5.71l.053-.036z"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label=""
+                  class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss=""
+                  data-bs-target=""
+                  data-bs-toggle=""
+                  href="https://twitter.com/mission1"
+                  rel="noreferrer"
+                  target="_blank"
+                  title="Visit twitter.com"
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label=""
+                  class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss=""
+                  data-bs-target=""
+                  data-bs-toggle=""
+                  href="https://mission1.com"
+                  rel="noreferrer"
+                  target="_blank"
+                  title="Visit mission1.com"
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                      />
+                      <path
+                        d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <button
+              aria-label="Join Mission"
+              class="_button_29f8d0 
+       _primary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+              data-bs-dismiss=""
+              data-bs-target="#waiverModal"
+              data-bs-toggle="modal"
+              href=""
+              rel=""
+              title=""
+              type="button"
+            >
+              <span>
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M250.375 21.25c-38.192 0-68.97 30.744-68.97 68.938 0 38.193 30.778 68.968 68.97 68.968s68.938-30.775 68.938-68.97c0-38.192-30.746-68.936-68.938-68.936zm-2.625 33.78c.115-.003.23.005.344 0-26.85 53.803 52.427 66.62 40.656 9.032 4.272 1.793 8.76 3.838 13.53 6.157 3.816 15.258 3.55 30.828-2.342 46.093-46.683 11.007-54.054 11.028-98.375-1.594-5.345-14.747-6.03-29.762-2.344-44.5 19.356-9.562 34.072-14.612 48.53-15.19zM345.188 121c-1.26-.03-4.597.75-9.657 4.625-.006.006-.022-.006-.03 0-2.61 2.002-5.202 3.89-7.78 5.688-14.765 27.642-43.906 46.53-77.345 46.53-33.4 0-62.523-18.846-77.313-46.437-3.012-1.64-6.038-3.325-9.093-5.062-4.647-2.642-7.37-2.825-8.657-2.594-1.29.23-2.174.692-3.657 3-2.966 4.616-5.316 16.393-4.656 30.03.66 13.64 3.802 29.176 8.75 42.314 4.948 13.138 11.957 23.675 18.156 27.97 50.81 35.192 99.385 27.478 151.5-.533 6.386-3.43 13.912-13.767 19.125-27.468 5.215-13.7 8.4-30.338 8.94-44.843.538-14.506-2.292-26.98-5.22-31.095-1.464-2.058-1.8-2.096-3.063-2.125zM128.25 144.875c-20.632 9.24-36.958 25.827-49.656 48.594 4.41.183 8.78.842 13 1.968 12.22 3.26 22.512 10.243 30.062 19.375 4.587-5.04 9.565-9.652 14.938-13.844-4.718-13.954-7.597-29.14-8.28-43.282-.214-4.392-.26-8.68-.064-12.813zm242.72 24.25c-1.58 12.405-4.592 25.058-8.97 36.563-2.413 6.342-5.193 12.393-8.5 17.843 3.59 4.06 6.944 8.37 10.03 12.97 2.334-3.646 5.037-7.03 8.064-10.063v-.03c8.18-8.18 18.247-13.41 28.844-15.75-8.07-16.84-17.822-30.79-29.47-41.532zM76.31 212.155c-10.683.044-21.528 4.17-28.312 12.282-7.128 8.523-11.038 22.262-5.188 43.375.136-.093.27-.19.407-.28 8.11-5.473 18.242-8.57 29.186-8.063 3.648.168 7.398.733 11.188 1.75 10.622 2.845 19.157 8.536 25.28 15.717 7.454-9.93 9.21-20.875 7.314-31.156-2.767-14.987-13.905-28.145-29.407-32.28-3.373-.9-6.906-1.358-10.468-1.344zm336.5 15.782c-.71.013-1.413.045-2.125.094-9.48.653-18.78 4.502-25.875 11.595-9.865 9.887-14.718 25.822-9.875 39.063 3.82 10.44 13.742 20.698 34.97 26.187-.015-.177-.05-.354-.063-.53-.91-13.01 3.634-26.97 14.72-38.064l-.002-.03c7.774-7.767 16.973-12.288 26.25-14-4.87-11.43-13.457-18.44-23.312-21.938-4.712-1.67-9.704-2.465-14.688-2.375zm-101.437 25.97c-39.896 16.718-81.177 21.096-121.78 3.312l-10.064 39.31c8.908 2.755 16.417 7.827 22 14.25 7.355 8.462 11.61 18.985 12.876 29.814 25.23-39.572 70.19-24.214 81.906 29.187-30.148 24.312-31.025 78.51 2.47 99.97 13.98-17.626 34.203-29.69 55.312-32.75 3.026-.44 6.09-.66 9.156-.688 1.022-.008 2.042-.006 3.063.032 7.237.266 14.457 1.735 21.312 4.562 5.298-16.073 4.073-34.643-3.188-50.156-7.642 4.648-17.087 7.406-27.843 7.406-16.64 0-30.15-6.565-38.688-16.594C309.37 371.534 305.66 358.6 306 345.938c.34-12.662 4.69-25.31 13.25-35.156 1.444-1.66 3.026-3.222 4.72-4.686l-12.595-52.188zm146.938 16.218c-7.058.166-13.97 2.75-20.563 9.344-7.534 7.533-9.85 15.483-9.28 23.592.566 8.11 4.486 16.41 10.436 22.688 5.95 6.28 13.738 10.374 21.53 11 7.795.626 15.888-1.73 24.377-10.22 8.488-8.488 10.845-16.58 10.218-24.374-.625-7.793-4.72-15.58-11-21.53-6.278-5.95-14.577-9.87-22.686-10.438-1.014-.07-2.023-.087-3.03-.063zM70.156 278c-6.352-.102-11.73 1.835-16.47 5.03-6.738 4.547-11.973 12.083-14.436 20.376-2.463 8.293-2.136 17.063 1.22 24.125 3.353 7.064 9.465 12.925 21.06 16.033 11.597 3.107 19.784 1.064 26.22-3.375 6.436-4.44 11.112-11.868 13.125-20.282 2.013-8.413 1.25-17.568-2.313-24.875-3.563-7.305-9.52-12.99-19.812-15.75-2.573-.688-5.007-1.084-7.313-1.217-.432-.025-.857-.056-1.28-.063zm94.03 34.938c-10.654 0-17.916 3.958-23.25 10.093-5.33 6.137-8.422 14.76-8.655 23.408-.232 8.647 2.37 17.046 7.44 23 5.067 5.953 12.462 10.03 24.468 10.03 12.005 0 19.4-4.077 24.468-10.03 5.068-5.954 7.67-14.353 7.438-23-.233-8.648-3.355-17.27-8.688-23.407-5.333-6.134-12.563-10.092-23.22-10.092zm192.408 0c-10.656 0-17.917 3.958-23.25 10.093-5.333 6.137-8.424 14.76-8.656 23.408-.233 8.647 2.37 17.046 7.437 23 5.068 5.953 12.463 10.03 24.47 10.03 12.004 0 19.4-4.077 24.467-10.03 5.07-5.954 7.67-14.353 7.438-23-.233-8.648-3.355-17.27-8.688-23.407-5.332-6.134-12.563-10.092-23.218-10.092zM121.22 375.656c-15.115 16.632-20.037 41.93-13.75 63.313 5.18-1.573 10.525-2.43 15.874-2.626 1.02-.038 2.04-.04 3.062-.03 3.065.025 6.13.247 9.156.686 22.062 3.2 43.178 16.216 57.188 35.156 34.58-17.894 37.7-67.857 13.75-95.5-1.098 1.69-2.296 3.345-3.625 4.906-8.537 10.03-22.048 16.594-38.688 16.594-16.64 0-30.15-6.565-38.687-16.594-1.59-1.87-3.02-3.855-4.28-5.906zm2.81 79.313c-8.685.26-16.853 2.96-24.124 8.592-7.895 6.116-14.975 16.094-19.72 31.344h104.25c-10.196-20.804-31.273-36.464-51.56-39.406-2.995-.434-5.95-.618-8.845-.53zm239.407 0c-2.192.034-4.41.204-6.656.53-20.287 2.942-41.364 18.602-51.56 39.406h104.25c-4.745-15.25-11.824-25.228-19.72-31.344-7.27-5.63-15.44-8.333-24.125-8.593-.724-.023-1.457-.013-2.188 0z"
+                  />
+                </svg>
+              </span>
+              <span>
+                Join Mission
+              </span>
+            </button>
+          </footer>
+        </li>
+        <li
+          class="_missionCard_d58619 p-3 rounded d-md-flex gap-3 position-relative"
+          data-reserved="true"
+        >
+          <div
+            class="mb-3 mb-md-0"
+          >
+            <header
+              class="_missionCardHeader_d58619 d-flex align-items-center gap-3 py-2"
+            >
+              <h3>
+                Mission 2
+              </h3>
+              <span
+                class="_missionCardBadge_d58619 px-2 py-1 rounded-1 d-inline-flex align-items-center gap-1"
+                data-reserved="true"
+              >
+                <span>
+                  Active Member
+                </span>
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z"
+                  />
+                </svg>
+              </span>
+            </header>
+            <p
+              class="_missionCardDescription_d58619 ps-4"
+            >
+              Description 2 
+            </p>
+          </div>
+          <footer
+            class="_missionCardFooter_d58619 p-2 rounded-2 d-flex flex-md-column-reverse justify-content-between align-items-center align-items-md-end justify-content-md-end gap-2"
+          >
+            <ul
+              class="d-flex gap-2 align-items-center"
+            >
+              <li>
+                <a
+                  aria-label=""
+                  class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss=""
+                  data-bs-target=""
+                  data-bs-toggle=""
+                  href="https://wikipedia.org/mission2"
+                  rel="noreferrer"
+                  target="_blank"
+                  title="Visit wikipedia.org"
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      role="img"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.09 13.119c-.936 1.932-2.217 4.548-2.853 5.728-.616 1.074-1.127.931-1.532.029-1.406-3.321-4.293-9.144-5.651-12.409-.251-.601-.441-.987-.619-1.139-.181-.15-.554-.24-1.122-.271C.103 5.033 0 4.982 0 4.898v-.455l.052-.045c.924-.005 5.401 0 5.401 0l.051.045v.434c0 .119-.075.176-.225.176l-.564.031c-.485.029-.727.164-.727.436 0 .135.053.33.166.601 1.082 2.646 4.818 10.521 4.818 10.521l.136.046 2.411-4.81-.482-1.067-1.658-3.264s-.318-.654-.428-.872c-.728-1.443-.712-1.518-1.447-1.617-.207-.023-.313-.05-.313-.149v-.468l.06-.045h4.292l.113.037v.451c0 .105-.076.15-.227.15l-.308.047c-.792.061-.661.381-.136 1.422l1.582 3.252 1.758-3.504c.293-.64.233-.801.111-.947-.07-.084-.305-.22-.812-.24l-.201-.021c-.052 0-.098-.015-.145-.051-.045-.031-.067-.076-.067-.129v-.427l.061-.045c1.247-.008 4.043 0 4.043 0l.059.045v.436c0 .121-.059.178-.193.178-.646.03-.782.095-1.023.439-.12.186-.375.589-.646 1.039l-2.301 4.273-.065.135 2.792 5.712.17.048 4.396-10.438c.154-.422.129-.722-.064-.895-.197-.172-.346-.273-.857-.295l-.42-.016c-.061 0-.105-.014-.152-.045-.043-.029-.072-.075-.072-.119v-.436l.059-.045h4.961l.041.045v.437c0 .119-.074.18-.209.18-.648.03-1.127.18-1.443.421-.314.255-.557.616-.736 1.067 0 0-4.043 9.258-5.426 12.339-.525 1.007-1.053.917-1.503-.031-.571-1.171-1.773-3.786-2.646-5.71l.053-.036z"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label=""
+                  class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss=""
+                  data-bs-target=""
+                  data-bs-toggle=""
+                  href="https://twitter.com/mission2"
+                  rel="noreferrer"
+                  target="_blank"
+                  title="Visit twitter.com"
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label=""
+                  class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss=""
+                  data-bs-target=""
+                  data-bs-toggle=""
+                  href="https://mission2.com"
+                  rel="noreferrer"
+                  target="_blank"
+                  title="Visit mission2.com"
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"
+                      />
+                      <path
+                        d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <button
+              aria-label="Leave Mission"
+              class="_button_29f8d0 _tertiaryDanger_29f8d0
+       _tertiary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+              data-bs-dismiss=""
+              data-bs-target="#leaveModal"
+              data-bs-toggle="modal"
+              href=""
+              rel=""
+              title=""
+              type="button"
+            >
+              <span>
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M372.97 24.938c-8.67.168-17.816 3.644-26.69 10.28-12.618 9.44-24.074 25.203-30.5 44.844-6.424 19.642-6.48 39.12-1.874 54.157 4.608 15.036 13.375 25.225 24.97 29 11.593 3.772 24.724.72 37.343-8.72 12.618-9.44 24.074-25.234 30.5-44.875 6.424-19.642 6.512-39.12 1.905-54.156-4.607-15.038-13.404-25.196-25-28.97-2.9-.944-5.88-1.465-8.938-1.563-.573-.018-1.14-.01-1.718 0zm-155.69 69.78c-21.696.024-43.394 2.203-65.093 7.094-24.91 29.824-43.848 60.255-52.875 98.47l37.376 17.812c8.273-30.735 21.485-53.817 43.375-77 22.706-7.844 45.418-6.237 68.125 1.5-74.24 65.137-51.17 120.676-80.344 226.47-42.653 17.867-85.098 20.53-123.25-.002L23 415.625c59.418 27.09 125.736 29.818 190.844 0 20.368-43.443 27.214-88.603 25-132.906C295.31 354.663 323.11 398.2 338.78 498.56h57.94c-3.12-14.706-6.21-28.394-9.345-41.218-22.522-92.133-47.263-139.63-100.22-198.406 9.695-36.13 22.143-59.665 52.44-74.282 11.167 19.767 29.982 36.682 51.092 48.906l97.375 1.563.47-41.03L402 191.968c-8.05-5.556-14.925-11.73-20.75-18.314-14.886 9.08-32.024 12.563-48.156 7.313-18.422-5.997-31.143-21.962-37.063-41.282-3.482-11.37-4.742-24.05-3.686-37.25-25.017-4.884-50.047-7.746-75.063-7.72z"
+                  />
+                </svg>
+              </span>
+              <span>
+                Leave Mission
+              </span>
+            </button>
+          </footer>
+        </li>
+      </ul>
+      <div
+        aria-hidden="true"
+        aria-labelledby="waiverModalLabel"
+        class="_modalOverlay_a024cf modal fade"
+        id="waiverModal"
+        tabindex="-1"
+      >
+        <div
+          class="modal-dialog modal-lg"
+        >
+          <div
+            class="_modal_a024cf modal-content"
+          >
+            <div
+              class="_header_a024cf modal-header d-flex justify-content-between"
+            >
+              <h1
+                class="modal-title fs-5"
+                id="waiverModalLabel"
+              >
+                Waiver of Liability
+              </h1>
+              <button
+                aria-label=""
+                class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                data-bs-dismiss="modal"
+                data-bs-target=""
+                data-bs-toggle=""
+                href=""
+                rel=""
+                title=""
+                type="button"
+              >
+                <span>
+                  <svg
+                    fill="none"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div
+              class="_modalBody_a024cf modal-body"
+            >
+              <div
+                class="_modalContent_d58619"
+              >
+                <p
+                  class="mb-2"
+                >
+                  By participating in any of the featured missions organized by our space exploration team, you acknowledge and agree to the following terms:
+                </p>
+                <ol>
+                  <li
+                    class="mb-2"
+                  >
+                    <strong>
+                      Assumption of Risk
+                    </strong>
+                    <span>
+                      : You understand that space missions involve inherent risks, including but not limited to physical injury, psychological stress, and potential loss of life. You voluntarily assume all such risks associated with participation.
+                    </span>
+                  </li>
+                  <li
+                    class="mb-2"
+                  >
+                    <strong>
+                      Release of Liability
+                    </strong>
+                    <span>
+                      : You hereby release and hold harmless our organization, its affiliates, officers, employees, and agents from any and all claims, demands, or causes of action arising out of or related to any loss, damage, or injury, including death, that may be sustained by you while participating in the missions.
+                    </span>
+                  </li>
+                  <li
+                    class="mb-2"
+                  >
+                    <strong>
+                      Medical Fitness
+                    </strong>
+                    <span>
+                      : You certify that you are in good health and have no medical conditions that would prevent you from safely participating in the missions. You agree to undergo any necessary medical examinations and provide truthful information regarding your health.
+                    </span>
+                  </li>
+                  <li
+                    class="mb-2"
+                  >
+                    <strong>
+                      Compliance with Instructions
+                    </strong>
+                    <span>
+                      : You agree to follow all instructions and safety guidelines provided by our team. Failure to comply with these instructions may result in your removal from the mission and forfeiture of any fees paid.
+                    </span>
+                  </li>
+                  <li
+                    class="mb-2"
+                  >
+                    <strong>
+                      Use of Likeness
+                    </strong>
+                    <span>
+                      : You grant our organization the right to use your name, likeness, and any photographs or videos taken during the missions for promotional and educational purposes.
+                    </span>
+                  </li>
+                  <li>
+                    <strong>
+                      Governing Law
+                    </strong>
+                    <span>
+                      : This waiver shall be governed by and construed in accordance with the laws of the jurisdiction in which our organization is based.
+                    </span>
+                  </li>
+                </ol>
+                <p
+                  class="mt-2"
+                >
+                  By clicking "Accept and Join Mission" below, you acknowledge that you have read and understood this waiver of liability and agree to its terms.
+                </p>
+              </div>
+            </div>
+            <div
+              class="_footer_a024cf modal-footer"
+            >
+              <button
+                aria-label="Accept and Join Mission"
+                class="_button_29f8d0 
+       _primary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                data-bs-dismiss="modal"
+                data-bs-target=""
+                data-bs-toggle=""
+                href=""
+                rel=""
+                title=""
+                type="button"
+              >
+                <span>
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20 3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM10 17H5v-2h5v2zm0-4H5v-2h5v2zm0-4H5V7h5v2zm4.82 6L12 12.16l1.41-1.41 1.41 1.42L17.99 9l1.42 1.42L14.82 15z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  Accept and Join Mission
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        aria-labelledby="leaveModalLabel"
+        class="_modalOverlay_a024cf modal fade"
+        id="leaveModal"
+        tabindex="-1"
+      >
+        <div
+          class="modal-dialog "
+        >
+          <div
+            class="_modal_a024cf modal-content"
+          >
+            <div
+              class="_leaveMissionModalContent_d58619 p-3"
+            >
+              <h1
+                class="fs-4"
+              >
+                Leave this mission
+              </h1>
+              <p
+                class="my-3 py-3"
+              >
+                Are you sure you want to leave this mission?
+              </p>
+              <div
+                class="d-flex justify-content-end gap-3"
+              >
+                <button
+                  aria-label="Cancel"
+                  class="_button_29f8d0 
+       _tertiary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss="modal"
+                  data-bs-target=""
+                  data-bs-toggle=""
+                  href=""
+                  rel=""
+                  title=""
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="none"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    Cancel
+                  </span>
+                </button>
+                <button
+                  aria-label="Leave Mission"
+                  class="_button_29f8d0 _secondaryDanger_29f8d0
+       _secondary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss="modal"
+                  data-bs-target=""
+                  data-bs-toggle=""
+                  href=""
+                  rel=""
+                  title=""
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      style="transform: rotateY(180deg);"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M372.97 24.938c-8.67.168-17.816 3.644-26.69 10.28-12.618 9.44-24.074 25.203-30.5 44.844-6.424 19.642-6.48 39.12-1.874 54.157 4.608 15.036 13.375 25.225 24.97 29 11.593 3.772 24.724.72 37.343-8.72 12.618-9.44 24.074-25.234 30.5-44.875 6.424-19.642 6.512-39.12 1.905-54.156-4.607-15.038-13.404-25.196-25-28.97-2.9-.944-5.88-1.465-8.938-1.563-.573-.018-1.14-.01-1.718 0zm-155.69 69.78c-21.696.024-43.394 2.203-65.093 7.094-24.91 29.824-43.848 60.255-52.875 98.47l37.376 17.812c8.273-30.735 21.485-53.817 43.375-77 22.706-7.844 45.418-6.237 68.125 1.5-74.24 65.137-51.17 120.676-80.344 226.47-42.653 17.867-85.098 20.53-123.25-.002L23 415.625c59.418 27.09 125.736 29.818 190.844 0 20.368-43.443 27.214-88.603 25-132.906C295.31 354.663 323.11 398.2 338.78 498.56h57.94c-3.12-14.706-6.21-28.394-9.345-41.218-22.522-92.133-47.263-139.63-100.22-198.406 9.695-36.13 22.143-59.665 52.44-74.282 11.167 19.767 29.982 36.682 51.092 48.906l97.375 1.563.47-41.03L402 191.968c-8.05-5.556-14.925-11.73-20.75-18.314-14.886 9.08-32.024 12.563-48.156 7.313-18.422-5.997-31.143-21.962-37.063-41.282-3.482-11.37-4.742-24.05-3.686-37.25-25.017-4.884-50.047-7.746-75.063-7.72z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    Leave Mission
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>,
