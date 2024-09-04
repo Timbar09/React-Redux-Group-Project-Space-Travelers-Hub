@@ -1,11 +1,10 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
+import '@testing-library/jest-dom';
 
 import Mission from '../components/Mission';
-// import store from '../redux/store';
 
 const mockStore = configureStore([]);
 
@@ -74,7 +73,9 @@ describe('Mission Component', () => {
     const missionCard = screen.getByText('Mission 2');
     fireEvent.click(missionCard);
 
-    expect(screen.getByText('Leave this mission')).toBeInTheDocument();
+    expect(
+      screen.getByText('Are you sure you want to leave this mission?'),
+    ).toBeInTheDocument();
   });
 
   test('should render Missions', () => {

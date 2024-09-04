@@ -1,0 +1,2676 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Rocket Component > should render a snapshot of the Rocket component 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="_missionPage_09d020 py-4 px-3 container"
+      >
+        <header
+          class="_pageHeader_a62537 _pageHeader_09d020 flex-column gap-1"
+        >
+          <h1
+            class="_pageHeaderHeading_a62537 py-5 text-center position-relative"
+          >
+            Featured Rockets
+          </h1>
+          <p
+            class="_pageHeaderDescription_a62537 mx-auto text-center"
+          >
+            Explore our exciting rockets and discover the universe with us! Join us in our journey to explore the universe.
+          </p>
+        </header>
+        <ul
+          class="_rocketList_09d020 d-flex flex-column gap-3"
+        >
+          <li
+            class="_card_09d020 rounded-2 d-lg-flex p-2 position-relative"
+            data-reserved="false"
+          >
+            <div
+              class="_imageCarousel_09d020"
+            >
+              <div
+                class="swiper swiper-creative swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress _slider_0b3ffb"
+                style="--swiper-navigation-color: var(--primary); --swiper-pagination-color: var(--primary);"
+              >
+                <ul
+                  class="swiper-wrapper"
+                  style="transition-duration: 0ms; transition-delay: 0ms;"
+                >
+                  <li
+                    class="swiper-slide _slide_0b3ffb"
+                    data-swiper-slide-index="0"
+                  >
+                    <div
+                      class="_imageCarouselSlide_09d020 d-flex justify-content-center"
+                    >
+                      <img
+                        alt="https://www.example.com/rocket1.jpg,https://www.example.com/rocket1.jpg"
+                        class="_imageCarouselImage_09d020"
+                        src="https://www.example.com/rocket1.jpg"
+                      />
+                    </div>
+                  </li>
+                  <li
+                    class="swiper-slide _slide_0b3ffb"
+                    data-swiper-slide-index="1"
+                  >
+                    <div
+                      class="_imageCarouselSlide_09d020 d-flex justify-content-center"
+                    >
+                      <img
+                        alt="https://www.example.com/rocket1.jpg,https://www.example.com/rocket1.jpg"
+                        class="_imageCarouselImage_09d020"
+                        src="https://www.example.com/rocket1.jpg"
+                      />
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+                >
+                  <span
+                    class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                  />
+                  <span
+                    class="swiper-pagination-bullet"
+                  />
+                </div>
+                <button
+                  aria-label="Slide to the previous slide"
+                  class="_sliderArrowButton_0b3ffb _previous_0b3ffb border-0 p-2"
+                  type="button"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 320 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  aria-label="Slide to the next slide"
+                  class="_sliderArrowButton_0b3ffb _next_0b3ffb border-0 p-2"
+                  type="button"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 320 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="_cardBody_09d020 p-3"
+            >
+              <header
+                class="_cardHeader_09d020 d-flex flex-wrap justify-content-between align-items-center gap-1 pb-2 mb-2"
+              >
+                <h3>
+                  Rocket 1
+                </h3>
+                <div
+                  class="d-flex gap-2 align-items-center"
+                >
+                  <span
+                    class="d-none d-lg-inline"
+                  >
+                    <div
+                      class="_tooltip_0a1ab8 position-relative"
+                    >
+                      <button
+                        class="_tooltipTitle_0a1ab8 rounded-1 py-1 px-2"
+                        type="button"
+                      >
+                        <svg
+                          fill="currentColor"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 16 16"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0"
+                          />
+                        </svg>
+                      </button>
+                      <div
+                        class="_tooltipContent_0a1ab8 p-3 rounded-2"
+                        hidden=""
+                      >
+                        <ul
+                          class="_cardMetrics_09d020 d-flex gap-3"
+                        >
+                          <li
+                            class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                          >
+                            <span
+                              class="d-inline-block position-relative rounded-1"
+                            >
+                              <svg
+                                fill="none"
+                                height="1em"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                                />
+                                <path
+                                  d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                                />
+                                <path
+                                  d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                                />
+                                <path
+                                  d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                                />
+                                <path
+                                  d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                                />
+                              </svg>
+                              <span
+                                class="_cardMetricValue_09d020 position-absolute"
+                              >
+                                1
+                              </span>
+                            </span>
+                            <span
+                              class=""
+                            >
+                              Cost / Launch
+                            </span>
+                          </li>
+                          <li
+                            class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                          >
+                            <span
+                              class="d-inline-block position-relative rounded-1"
+                            >
+                              <svg
+                                fill="none"
+                                height="1em"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                                />
+                                <path
+                                  d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                                />
+                                <path
+                                  d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                                />
+                                <path
+                                  d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                                />
+                                <path
+                                  d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                                />
+                              </svg>
+                              <span
+                                class="_cardMetricValue_09d020 position-absolute"
+                              >
+                                1
+                              </span>
+                            </span>
+                            <span
+                              class=""
+                            >
+                              Boosters
+                            </span>
+                          </li>
+                          <li
+                            class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                          >
+                            <span
+                              class="d-inline-block position-relative rounded-1"
+                            >
+                              <svg
+                                fill="none"
+                                height="1em"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                                />
+                                <path
+                                  d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                                />
+                                <path
+                                  d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                                />
+                                <path
+                                  d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                                />
+                                <path
+                                  d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                                />
+                              </svg>
+                              <span
+                                class="_cardMetricValue_09d020 position-absolute"
+                              >
+                                1.0m
+                              </span>
+                            </span>
+                            <span
+                              class=""
+                            >
+                              Diameter
+                            </span>
+                          </li>
+                          <li
+                            class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                          >
+                            <span
+                              class="d-inline-block position-relative rounded-1"
+                            >
+                              <svg
+                                fill="none"
+                                height="1em"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                                />
+                                <path
+                                  d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                                />
+                                <path
+                                  d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                                />
+                                <path
+                                  d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                                />
+                                <path
+                                  d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                                />
+                              </svg>
+                              <span
+                                class="_cardMetricValue_09d020 position-absolute"
+                              >
+                                25%
+                              </span>
+                            </span>
+                            <span
+                              class=""
+                            >
+                              Success Rate
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </span>
+                  <a
+                    aria-label=""
+                    class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                    data-bs-dismiss=""
+                    data-bs-target=""
+                    data-bs-toggle=""
+                    href=""
+                    rel=""
+                    target="_self"
+                    title=""
+                    type="button"
+                  >
+                    <span>
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        role="img"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.09 13.119c-.936 1.932-2.217 4.548-2.853 5.728-.616 1.074-1.127.931-1.532.029-1.406-3.321-4.293-9.144-5.651-12.409-.251-.601-.441-.987-.619-1.139-.181-.15-.554-.24-1.122-.271C.103 5.033 0 4.982 0 4.898v-.455l.052-.045c.924-.005 5.401 0 5.401 0l.051.045v.434c0 .119-.075.176-.225.176l-.564.031c-.485.029-.727.164-.727.436 0 .135.053.33.166.601 1.082 2.646 4.818 10.521 4.818 10.521l.136.046 2.411-4.81-.482-1.067-1.658-3.264s-.318-.654-.428-.872c-.728-1.443-.712-1.518-1.447-1.617-.207-.023-.313-.05-.313-.149v-.468l.06-.045h4.292l.113.037v.451c0 .105-.076.15-.227.15l-.308.047c-.792.061-.661.381-.136 1.422l1.582 3.252 1.758-3.504c.293-.64.233-.801.111-.947-.07-.084-.305-.22-.812-.24l-.201-.021c-.052 0-.098-.015-.145-.051-.045-.031-.067-.076-.067-.129v-.427l.061-.045c1.247-.008 4.043 0 4.043 0l.059.045v.436c0 .121-.059.178-.193.178-.646.03-.782.095-1.023.439-.12.186-.375.589-.646 1.039l-2.301 4.273-.065.135 2.792 5.712.17.048 4.396-10.438c.154-.422.129-.722-.064-.895-.197-.172-.346-.273-.857-.295l-.42-.016c-.061 0-.105-.014-.152-.045-.043-.029-.072-.075-.072-.119v-.436l.059-.045h4.961l.041.045v.437c0 .119-.074.18-.209.18-.648.03-1.127.18-1.443.421-.314.255-.557.616-.736 1.067 0 0-4.043 9.258-5.426 12.339-.525 1.007-1.053.917-1.503-.031-.571-1.171-1.773-3.786-2.646-5.71l.053-.036z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                  <button
+                    aria-label="Reserve Rocket"
+                    class="_button_29f8d0 
+       _primary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                    data-bs-dismiss=""
+                    data-bs-target=""
+                    data-bs-toggle=""
+                    href=""
+                    rel=""
+                    title=""
+                    type="button"
+                  >
+                    <span>
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M256 421.6c-18.1 0-33.2-6.8-42.9-10.9-5.4-2.3-11.3 1.8-10.9 7.6l3.5 51c.2 3.1 3.8 4.7 6.3 2.8l14.5-11c1.8-1.4 4.5-.9 5.7 1l20.5 32.1c1.5 2.4 5.1 2.4 6.6 0l20.5-32.1c1.2-1.9 3.9-2.4 5.7-1l14.5 11c2.5 1.9 6.1.3 6.3-2.8l3.5-51c.4-5.8-5.5-10-10.9-7.6-9.8 4.1-24.8 10.9-42.9 10.9z"
+                        />
+                        <path
+                          d="M397.7 293.1l-48-49.1c0-158-93.2-228-93.2-228s-94.1 70-94.1 228l-48 49.1c-1.8 1.8-2.6 4.5-2.2 7.1L130.6 412c.9 5.7 7.1 8.5 11.8 5.4l67.1-45.4s20.7 20 47.1 20c26.4 0 46.1-20 46.1-20l67.1 45.4c4.6 3.1 10.8.3 11.8-5.4l18.5-111.9c.2-2.6-.6-5.2-2.4-7zM256.5 192c-17 0-30.7-14.3-30.7-32s13.8-32 30.7-32c17 0 30.7 14.3 30.7 32s-13.7 32-30.7 32z"
+                        />
+                      </svg>
+                    </span>
+                    <span>
+                      Reserve Rocket
+                    </span>
+                  </button>
+                </div>
+              </header>
+              <p>
+                Description 1
+              </p>
+              <footer
+                class="_cardFooter_09d020 d-flex flex-wrap gap-3 rounded-2 mt-2 p-3 d-lg-none"
+              >
+                <ul
+                  class="_cardMetrics_09d020 d-flex gap-3"
+                >
+                  <li
+                    class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                  >
+                    <span
+                      class="d-inline-block position-relative rounded-1"
+                    >
+                      <svg
+                        fill="none"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                        />
+                        <path
+                          d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                        />
+                        <path
+                          d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                        />
+                        <path
+                          d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                        />
+                        <path
+                          d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                        />
+                      </svg>
+                      <span
+                        class="_cardMetricValue_09d020 position-absolute"
+                      >
+                        1
+                      </span>
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Cost / Launch
+                    </span>
+                  </li>
+                  <li
+                    class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                  >
+                    <span
+                      class="d-inline-block position-relative rounded-1"
+                    >
+                      <svg
+                        fill="none"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                        />
+                        <path
+                          d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                        />
+                        <path
+                          d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                        />
+                        <path
+                          d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                        />
+                        <path
+                          d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                        />
+                      </svg>
+                      <span
+                        class="_cardMetricValue_09d020 position-absolute"
+                      >
+                        1
+                      </span>
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Boosters
+                    </span>
+                  </li>
+                  <li
+                    class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                  >
+                    <span
+                      class="d-inline-block position-relative rounded-1"
+                    >
+                      <svg
+                        fill="none"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                        />
+                        <path
+                          d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                        />
+                        <path
+                          d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                        />
+                        <path
+                          d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                        />
+                        <path
+                          d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                        />
+                      </svg>
+                      <span
+                        class="_cardMetricValue_09d020 position-absolute"
+                      >
+                        1.0m
+                      </span>
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Diameter
+                    </span>
+                  </li>
+                  <li
+                    class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                  >
+                    <span
+                      class="d-inline-block position-relative rounded-1"
+                    >
+                      <svg
+                        fill="none"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                        />
+                        <path
+                          d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                        />
+                        <path
+                          d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                        />
+                        <path
+                          d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                        />
+                        <path
+                          d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                        />
+                      </svg>
+                      <span
+                        class="_cardMetricValue_09d020 position-absolute"
+                      >
+                        25%
+                      </span>
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Success Rate
+                    </span>
+                  </li>
+                </ul>
+              </footer>
+            </div>
+          </li>
+          <li
+            class="_card_09d020 rounded-2 d-lg-flex p-2 position-relative"
+            data-reserved="true"
+          >
+            <div
+              class="_imageCarousel_09d020"
+            >
+              <div
+                class="swiper swiper-creative swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress _slider_0b3ffb"
+                style="--swiper-navigation-color: var(--primary); --swiper-pagination-color: var(--primary);"
+              >
+                <ul
+                  class="swiper-wrapper"
+                  style="transition-duration: 0ms; transition-delay: 0ms;"
+                >
+                  <li
+                    class="swiper-slide _slide_0b3ffb"
+                    data-swiper-slide-index="0"
+                  >
+                    <div
+                      class="_imageCarouselSlide_09d020 d-flex justify-content-center"
+                    >
+                      <img
+                        alt="https://www.example.com/rocket2.jpg,https://www.example.com/rocket2.jpg"
+                        class="_imageCarouselImage_09d020"
+                        src="https://www.example.com/rocket2.jpg"
+                      />
+                    </div>
+                  </li>
+                  <li
+                    class="swiper-slide _slide_0b3ffb"
+                    data-swiper-slide-index="1"
+                  >
+                    <div
+                      class="_imageCarouselSlide_09d020 d-flex justify-content-center"
+                    >
+                      <img
+                        alt="https://www.example.com/rocket2.jpg,https://www.example.com/rocket2.jpg"
+                        class="_imageCarouselImage_09d020"
+                        src="https://www.example.com/rocket2.jpg"
+                      />
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+                >
+                  <span
+                    class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                  />
+                  <span
+                    class="swiper-pagination-bullet"
+                  />
+                </div>
+                <button
+                  aria-label="Slide to the previous slide"
+                  class="_sliderArrowButton_0b3ffb _previous_0b3ffb border-0 p-2"
+                  type="button"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 320 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  aria-label="Slide to the next slide"
+                  class="_sliderArrowButton_0b3ffb _next_0b3ffb border-0 p-2"
+                  type="button"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 320 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="_cardBody_09d020 p-3"
+            >
+              <header
+                class="_cardHeader_09d020 d-flex flex-wrap justify-content-between align-items-center gap-1 pb-2 mb-2"
+              >
+                <h3>
+                  Rocket 2
+                </h3>
+                <div
+                  class="d-flex gap-2 align-items-center"
+                >
+                  <span
+                    class="d-none d-lg-inline"
+                  >
+                    <div
+                      class="_tooltip_0a1ab8 position-relative"
+                    >
+                      <button
+                        class="_tooltipTitle_0a1ab8 rounded-1 py-1 px-2"
+                        type="button"
+                      >
+                        <svg
+                          fill="currentColor"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 16 16"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0"
+                          />
+                        </svg>
+                      </button>
+                      <div
+                        class="_tooltipContent_0a1ab8 p-3 rounded-2"
+                        hidden=""
+                      >
+                        <ul
+                          class="_cardMetrics_09d020 d-flex gap-3"
+                        >
+                          <li
+                            class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                          >
+                            <span
+                              class="d-inline-block position-relative rounded-1"
+                            >
+                              <svg
+                                fill="none"
+                                height="1em"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                                />
+                                <path
+                                  d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                                />
+                                <path
+                                  d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                                />
+                                <path
+                                  d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                                />
+                                <path
+                                  d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                                />
+                              </svg>
+                              <span
+                                class="_cardMetricValue_09d020 position-absolute"
+                              >
+                                2
+                              </span>
+                            </span>
+                            <span
+                              class=""
+                            >
+                              Cost / Launch
+                            </span>
+                          </li>
+                          <li
+                            class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                          >
+                            <span
+                              class="d-inline-block position-relative rounded-1"
+                            >
+                              <svg
+                                fill="none"
+                                height="1em"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                                />
+                                <path
+                                  d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                                />
+                                <path
+                                  d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                                />
+                                <path
+                                  d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                                />
+                                <path
+                                  d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                                />
+                              </svg>
+                              <span
+                                class="_cardMetricValue_09d020 position-absolute"
+                              >
+                                2
+                              </span>
+                            </span>
+                            <span
+                              class=""
+                            >
+                              Boosters
+                            </span>
+                          </li>
+                          <li
+                            class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                          >
+                            <span
+                              class="d-inline-block position-relative rounded-1"
+                            >
+                              <svg
+                                fill="none"
+                                height="1em"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                                />
+                                <path
+                                  d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                                />
+                                <path
+                                  d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                                />
+                                <path
+                                  d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                                />
+                                <path
+                                  d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                                />
+                              </svg>
+                              <span
+                                class="_cardMetricValue_09d020 position-absolute"
+                              >
+                                2.0m
+                              </span>
+                            </span>
+                            <span
+                              class=""
+                            >
+                              Diameter
+                            </span>
+                          </li>
+                          <li
+                            class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                          >
+                            <span
+                              class="d-inline-block position-relative rounded-1"
+                            >
+                              <svg
+                                fill="none"
+                                height="1em"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                                />
+                                <path
+                                  d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                                />
+                                <path
+                                  d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                                />
+                                <path
+                                  d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                                />
+                                <path
+                                  d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                                />
+                              </svg>
+                              <span
+                                class="_cardMetricValue_09d020 position-absolute"
+                              >
+                                50%
+                              </span>
+                            </span>
+                            <span
+                              class=""
+                            >
+                              Success Rate
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </span>
+                  <a
+                    aria-label=""
+                    class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                    data-bs-dismiss=""
+                    data-bs-target=""
+                    data-bs-toggle=""
+                    href=""
+                    rel=""
+                    target="_self"
+                    title=""
+                    type="button"
+                  >
+                    <span>
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        role="img"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.09 13.119c-.936 1.932-2.217 4.548-2.853 5.728-.616 1.074-1.127.931-1.532.029-1.406-3.321-4.293-9.144-5.651-12.409-.251-.601-.441-.987-.619-1.139-.181-.15-.554-.24-1.122-.271C.103 5.033 0 4.982 0 4.898v-.455l.052-.045c.924-.005 5.401 0 5.401 0l.051.045v.434c0 .119-.075.176-.225.176l-.564.031c-.485.029-.727.164-.727.436 0 .135.053.33.166.601 1.082 2.646 4.818 10.521 4.818 10.521l.136.046 2.411-4.81-.482-1.067-1.658-3.264s-.318-.654-.428-.872c-.728-1.443-.712-1.518-1.447-1.617-.207-.023-.313-.05-.313-.149v-.468l.06-.045h4.292l.113.037v.451c0 .105-.076.15-.227.15l-.308.047c-.792.061-.661.381-.136 1.422l1.582 3.252 1.758-3.504c.293-.64.233-.801.111-.947-.07-.084-.305-.22-.812-.24l-.201-.021c-.052 0-.098-.015-.145-.051-.045-.031-.067-.076-.067-.129v-.427l.061-.045c1.247-.008 4.043 0 4.043 0l.059.045v.436c0 .121-.059.178-.193.178-.646.03-.782.095-1.023.439-.12.186-.375.589-.646 1.039l-2.301 4.273-.065.135 2.792 5.712.17.048 4.396-10.438c.154-.422.129-.722-.064-.895-.197-.172-.346-.273-.857-.295l-.42-.016c-.061 0-.105-.014-.152-.045-.043-.029-.072-.075-.072-.119v-.436l.059-.045h4.961l.041.045v.437c0 .119-.074.18-.209.18-.648.03-1.127.18-1.443.421-.314.255-.557.616-.736 1.067 0 0-4.043 9.258-5.426 12.339-.525 1.007-1.053.917-1.503-.031-.571-1.171-1.773-3.786-2.646-5.71l.053-.036z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                  <button
+                    aria-label="Cancel Reservation"
+                    class="_button_29f8d0 _tertiaryDanger_29f8d0
+       _tertiary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                    data-bs-dismiss=""
+                    data-bs-target="#cancelRocketModal"
+                    data-bs-toggle="modal"
+                    href=""
+                    rel=""
+                    title=""
+                    type="button"
+                  >
+                    <span>
+                      <svg
+                        fill="none"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.29 9.275a9.03 9.03 0 0 0 -.29 .725a6 6 0 0 0 -5 3a8 8 0 0 1 7 7a6 6 0 0 0 3 -5c.241 -.085 .478 -.18 .708 -.283m2.428 -1.61a9 9 0 0 0 2.864 -6.107a3 3 0 0 0 -3 -3a9 9 0 0 0 -6.107 2.864"
+                        />
+                        <path
+                          d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3"
+                        />
+                        <path
+                          d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"
+                        />
+                        <path
+                          d="M3 3l18 18"
+                        />
+                      </svg>
+                    </span>
+                    <span>
+                      Cancel Reservation
+                    </span>
+                  </button>
+                </div>
+              </header>
+              <p>
+                <span
+                  class="_cardBadge_09d020 px-2 rounded-1 d-inline-flex align-items-center gap-1 me-2"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m490.18 181.4-44.13-44.13a20 20 0 0 0-27-1 30.81 30.81 0 0 1-41.68-1.6 30.81 30.81 0 0 1-1.6-41.67 20 20 0 0 0-1-27L330.6 21.82a19.91 19.91 0 0 0-28.13 0l-70.35 70.34a39.87 39.87 0 0 0-9.57 15.5 7.71 7.71 0 0 1-4.83 4.83 39.78 39.78 0 0 0-15.5 9.58l-180.4 180.4a19.91 19.91 0 0 0 0 28.13L66 374.73a20 20 0 0 0 27 1 30.69 30.69 0 0 1 43.28 43.28 20 20 0 0 0 1 27l44.13 44.13a19.91 19.91 0 0 0 28.13 0l180.4-180.4a39.82 39.82 0 0 0 9.58-15.49 7.69 7.69 0 0 1 4.84-4.84 39.84 39.84 0 0 0 15.49-9.57l70.34-70.35a19.91 19.91 0 0 0-.01-28.09zm-228.37-29.65a16 16 0 0 1-22.63 0l-11.51-11.51a16 16 0 0 1 22.63-22.62l11.51 11.5a16 16 0 0 1 0 22.63zm44 44a16 16 0 0 1-22.62 0l-11-11a16 16 0 1 1 22.63-22.63l11 11a16 16 0 0 1 .01 22.66zm44 44a16 16 0 0 1-22.63 0l-11-11a16 16 0 0 1 22.63-22.62l11 11a16 16 0 0 1 .05 22.67zm44.43 44.54a16 16 0 0 1-22.63 0l-11.44-11.5a16 16 0 1 1 22.68-22.57l11.45 11.49a16 16 0 0 1-.01 22.63z"
+                    />
+                  </svg>
+                  Reserved
+                </span>
+                Description 2
+              </p>
+              <footer
+                class="_cardFooter_09d020 d-flex flex-wrap gap-3 rounded-2 mt-2 p-3 d-lg-none"
+              >
+                <ul
+                  class="_cardMetrics_09d020 d-flex gap-3"
+                >
+                  <li
+                    class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                  >
+                    <span
+                      class="d-inline-block position-relative rounded-1"
+                    >
+                      <svg
+                        fill="none"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                        />
+                        <path
+                          d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                        />
+                        <path
+                          d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                        />
+                        <path
+                          d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                        />
+                        <path
+                          d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                        />
+                      </svg>
+                      <span
+                        class="_cardMetricValue_09d020 position-absolute"
+                      >
+                        2
+                      </span>
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Cost / Launch
+                    </span>
+                  </li>
+                  <li
+                    class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                  >
+                    <span
+                      class="d-inline-block position-relative rounded-1"
+                    >
+                      <svg
+                        fill="none"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                        />
+                        <path
+                          d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                        />
+                        <path
+                          d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                        />
+                        <path
+                          d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                        />
+                        <path
+                          d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                        />
+                      </svg>
+                      <span
+                        class="_cardMetricValue_09d020 position-absolute"
+                      >
+                        2
+                      </span>
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Boosters
+                    </span>
+                  </li>
+                  <li
+                    class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                  >
+                    <span
+                      class="d-inline-block position-relative rounded-1"
+                    >
+                      <svg
+                        fill="none"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                        />
+                        <path
+                          d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                        />
+                        <path
+                          d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                        />
+                        <path
+                          d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                        />
+                        <path
+                          d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                        />
+                      </svg>
+                      <span
+                        class="_cardMetricValue_09d020 position-absolute"
+                      >
+                        2.0m
+                      </span>
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Diameter
+                    </span>
+                  </li>
+                  <li
+                    class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                  >
+                    <span
+                      class="d-inline-block position-relative rounded-1"
+                    >
+                      <svg
+                        fill="none"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                        />
+                        <path
+                          d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                        />
+                        <path
+                          d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                        />
+                        <path
+                          d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                        />
+                        <path
+                          d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                        />
+                      </svg>
+                      <span
+                        class="_cardMetricValue_09d020 position-absolute"
+                      >
+                        50%
+                      </span>
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Success Rate
+                    </span>
+                  </li>
+                </ul>
+              </footer>
+            </div>
+          </li>
+        </ul>
+        <div
+          aria-hidden="true"
+          aria-labelledby="cancelRocketModalLabel"
+          class="_modalOverlay_a024cf modal fade"
+          id="cancelRocketModal"
+          tabindex="-1"
+        >
+          <div
+            class="modal-dialog "
+          >
+            <div
+              class="_modal_a024cf modal-content"
+            >
+              <div
+                class="_cancelRocketModalContent_09d020 p-3"
+              >
+                <h1
+                  class="fs-4"
+                >
+                  Cancel Rocket Reservation
+                </h1>
+                <p
+                  class="my-3 py-3"
+                >
+                  Are you sure you want to cancel this reservation?
+                </p>
+                <div
+                  class="d-flex justify-content-end gap-3"
+                >
+                  <button
+                    aria-label="Cancel"
+                    class="_button_29f8d0 
+       _tertiary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                    data-bs-dismiss="modal"
+                    data-bs-target=""
+                    data-bs-toggle=""
+                    href=""
+                    rel=""
+                    title=""
+                    type="button"
+                  >
+                    <span>
+                      <svg
+                        fill="none"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </span>
+                    <span>
+                      Cancel
+                    </span>
+                  </button>
+                  <button
+                    aria-label="Cancel Reservation"
+                    class="_button_29f8d0 _secondaryDanger_29f8d0
+       _secondary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                    data-bs-dismiss="modal"
+                    data-bs-target=""
+                    data-bs-toggle=""
+                    href=""
+                    rel=""
+                    title=""
+                    type="button"
+                  >
+                    <span>
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        style="transform: rotateY(180deg);"
+                        viewBox="0 0 512 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M372.97 24.938c-8.67.168-17.816 3.644-26.69 10.28-12.618 9.44-24.074 25.203-30.5 44.844-6.424 19.642-6.48 39.12-1.874 54.157 4.608 15.036 13.375 25.225 24.97 29 11.593 3.772 24.724.72 37.343-8.72 12.618-9.44 24.074-25.234 30.5-44.875 6.424-19.642 6.512-39.12 1.905-54.156-4.607-15.038-13.404-25.196-25-28.97-2.9-.944-5.88-1.465-8.938-1.563-.573-.018-1.14-.01-1.718 0zm-155.69 69.78c-21.696.024-43.394 2.203-65.093 7.094-24.91 29.824-43.848 60.255-52.875 98.47l37.376 17.812c8.273-30.735 21.485-53.817 43.375-77 22.706-7.844 45.418-6.237 68.125 1.5-74.24 65.137-51.17 120.676-80.344 226.47-42.653 17.867-85.098 20.53-123.25-.002L23 415.625c59.418 27.09 125.736 29.818 190.844 0 20.368-43.443 27.214-88.603 25-132.906C295.31 354.663 323.11 398.2 338.78 498.56h57.94c-3.12-14.706-6.21-28.394-9.345-41.218-22.522-92.133-47.263-139.63-100.22-198.406 9.695-36.13 22.143-59.665 52.44-74.282 11.167 19.767 29.982 36.682 51.092 48.906l97.375 1.563.47-41.03L402 191.968c-8.05-5.556-14.925-11.73-20.75-18.314-14.886 9.08-32.024 12.563-48.156 7.313-18.422-5.997-31.143-21.962-37.063-41.282-3.482-11.37-4.742-24.05-3.686-37.25-25.017-4.884-50.047-7.746-75.063-7.72z"
+                        />
+                      </svg>
+                    </span>
+                    <span>
+                      Cancel Reservation
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="_missionPage_09d020 py-4 px-3 container"
+    >
+      <header
+        class="_pageHeader_a62537 _pageHeader_09d020 flex-column gap-1"
+      >
+        <h1
+          class="_pageHeaderHeading_a62537 py-5 text-center position-relative"
+        >
+          Featured Rockets
+        </h1>
+        <p
+          class="_pageHeaderDescription_a62537 mx-auto text-center"
+        >
+          Explore our exciting rockets and discover the universe with us! Join us in our journey to explore the universe.
+        </p>
+      </header>
+      <ul
+        class="_rocketList_09d020 d-flex flex-column gap-3"
+      >
+        <li
+          class="_card_09d020 rounded-2 d-lg-flex p-2 position-relative"
+          data-reserved="false"
+        >
+          <div
+            class="_imageCarousel_09d020"
+          >
+            <div
+              class="swiper swiper-creative swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress _slider_0b3ffb"
+              style="--swiper-navigation-color: var(--primary); --swiper-pagination-color: var(--primary);"
+            >
+              <ul
+                class="swiper-wrapper"
+                style="transition-duration: 0ms; transition-delay: 0ms;"
+              >
+                <li
+                  class="swiper-slide _slide_0b3ffb"
+                  data-swiper-slide-index="0"
+                >
+                  <div
+                    class="_imageCarouselSlide_09d020 d-flex justify-content-center"
+                  >
+                    <img
+                      alt="https://www.example.com/rocket1.jpg,https://www.example.com/rocket1.jpg"
+                      class="_imageCarouselImage_09d020"
+                      src="https://www.example.com/rocket1.jpg"
+                    />
+                  </div>
+                </li>
+                <li
+                  class="swiper-slide _slide_0b3ffb"
+                  data-swiper-slide-index="1"
+                >
+                  <div
+                    class="_imageCarouselSlide_09d020 d-flex justify-content-center"
+                  >
+                    <img
+                      alt="https://www.example.com/rocket1.jpg,https://www.example.com/rocket1.jpg"
+                      class="_imageCarouselImage_09d020"
+                      src="https://www.example.com/rocket1.jpg"
+                    />
+                  </div>
+                </li>
+              </ul>
+              <div
+                class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+              >
+                <span
+                  class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                />
+                <span
+                  class="swiper-pagination-bullet"
+                />
+              </div>
+              <button
+                aria-label="Slide to the previous slide"
+                class="_sliderArrowButton_0b3ffb _previous_0b3ffb border-0 p-2"
+                type="button"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 320 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                  />
+                </svg>
+              </button>
+              <button
+                aria-label="Slide to the next slide"
+                class="_sliderArrowButton_0b3ffb _next_0b3ffb border-0 p-2"
+                type="button"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 320 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            class="_cardBody_09d020 p-3"
+          >
+            <header
+              class="_cardHeader_09d020 d-flex flex-wrap justify-content-between align-items-center gap-1 pb-2 mb-2"
+            >
+              <h3>
+                Rocket 1
+              </h3>
+              <div
+                class="d-flex gap-2 align-items-center"
+              >
+                <span
+                  class="d-none d-lg-inline"
+                >
+                  <div
+                    class="_tooltip_0a1ab8 position-relative"
+                  >
+                    <button
+                      class="_tooltipTitle_0a1ab8 rounded-1 py-1 px-2"
+                      type="button"
+                    >
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 16 16"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0"
+                        />
+                      </svg>
+                    </button>
+                    <div
+                      class="_tooltipContent_0a1ab8 p-3 rounded-2"
+                      hidden=""
+                    >
+                      <ul
+                        class="_cardMetrics_09d020 d-flex gap-3"
+                      >
+                        <li
+                          class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                        >
+                          <span
+                            class="d-inline-block position-relative rounded-1"
+                          >
+                            <svg
+                              fill="none"
+                              height="1em"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                              />
+                              <path
+                                d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                              />
+                              <path
+                                d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                              />
+                              <path
+                                d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                              />
+                              <path
+                                d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                              />
+                            </svg>
+                            <span
+                              class="_cardMetricValue_09d020 position-absolute"
+                            >
+                              1
+                            </span>
+                          </span>
+                          <span
+                            class=""
+                          >
+                            Cost / Launch
+                          </span>
+                        </li>
+                        <li
+                          class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                        >
+                          <span
+                            class="d-inline-block position-relative rounded-1"
+                          >
+                            <svg
+                              fill="none"
+                              height="1em"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                              />
+                              <path
+                                d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                              />
+                              <path
+                                d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                              />
+                              <path
+                                d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                              />
+                              <path
+                                d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                              />
+                            </svg>
+                            <span
+                              class="_cardMetricValue_09d020 position-absolute"
+                            >
+                              1
+                            </span>
+                          </span>
+                          <span
+                            class=""
+                          >
+                            Boosters
+                          </span>
+                        </li>
+                        <li
+                          class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                        >
+                          <span
+                            class="d-inline-block position-relative rounded-1"
+                          >
+                            <svg
+                              fill="none"
+                              height="1em"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                              />
+                              <path
+                                d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                              />
+                              <path
+                                d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                              />
+                              <path
+                                d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                              />
+                              <path
+                                d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                              />
+                            </svg>
+                            <span
+                              class="_cardMetricValue_09d020 position-absolute"
+                            >
+                              1.0m
+                            </span>
+                          </span>
+                          <span
+                            class=""
+                          >
+                            Diameter
+                          </span>
+                        </li>
+                        <li
+                          class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                        >
+                          <span
+                            class="d-inline-block position-relative rounded-1"
+                          >
+                            <svg
+                              fill="none"
+                              height="1em"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                              />
+                              <path
+                                d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                              />
+                              <path
+                                d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                              />
+                              <path
+                                d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                              />
+                              <path
+                                d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                              />
+                            </svg>
+                            <span
+                              class="_cardMetricValue_09d020 position-absolute"
+                            >
+                              25%
+                            </span>
+                          </span>
+                          <span
+                            class=""
+                          >
+                            Success Rate
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </span>
+                <a
+                  aria-label=""
+                  class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss=""
+                  data-bs-target=""
+                  data-bs-toggle=""
+                  href=""
+                  rel=""
+                  target="_self"
+                  title=""
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      role="img"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.09 13.119c-.936 1.932-2.217 4.548-2.853 5.728-.616 1.074-1.127.931-1.532.029-1.406-3.321-4.293-9.144-5.651-12.409-.251-.601-.441-.987-.619-1.139-.181-.15-.554-.24-1.122-.271C.103 5.033 0 4.982 0 4.898v-.455l.052-.045c.924-.005 5.401 0 5.401 0l.051.045v.434c0 .119-.075.176-.225.176l-.564.031c-.485.029-.727.164-.727.436 0 .135.053.33.166.601 1.082 2.646 4.818 10.521 4.818 10.521l.136.046 2.411-4.81-.482-1.067-1.658-3.264s-.318-.654-.428-.872c-.728-1.443-.712-1.518-1.447-1.617-.207-.023-.313-.05-.313-.149v-.468l.06-.045h4.292l.113.037v.451c0 .105-.076.15-.227.15l-.308.047c-.792.061-.661.381-.136 1.422l1.582 3.252 1.758-3.504c.293-.64.233-.801.111-.947-.07-.084-.305-.22-.812-.24l-.201-.021c-.052 0-.098-.015-.145-.051-.045-.031-.067-.076-.067-.129v-.427l.061-.045c1.247-.008 4.043 0 4.043 0l.059.045v.436c0 .121-.059.178-.193.178-.646.03-.782.095-1.023.439-.12.186-.375.589-.646 1.039l-2.301 4.273-.065.135 2.792 5.712.17.048 4.396-10.438c.154-.422.129-.722-.064-.895-.197-.172-.346-.273-.857-.295l-.42-.016c-.061 0-.105-.014-.152-.045-.043-.029-.072-.075-.072-.119v-.436l.059-.045h4.961l.041.045v.437c0 .119-.074.18-.209.18-.648.03-1.127.18-1.443.421-.314.255-.557.616-.736 1.067 0 0-4.043 9.258-5.426 12.339-.525 1.007-1.053.917-1.503-.031-.571-1.171-1.773-3.786-2.646-5.71l.053-.036z"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <button
+                  aria-label="Reserve Rocket"
+                  class="_button_29f8d0 
+       _primary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss=""
+                  data-bs-target=""
+                  data-bs-toggle=""
+                  href=""
+                  rel=""
+                  title=""
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 421.6c-18.1 0-33.2-6.8-42.9-10.9-5.4-2.3-11.3 1.8-10.9 7.6l3.5 51c.2 3.1 3.8 4.7 6.3 2.8l14.5-11c1.8-1.4 4.5-.9 5.7 1l20.5 32.1c1.5 2.4 5.1 2.4 6.6 0l20.5-32.1c1.2-1.9 3.9-2.4 5.7-1l14.5 11c2.5 1.9 6.1.3 6.3-2.8l3.5-51c.4-5.8-5.5-10-10.9-7.6-9.8 4.1-24.8 10.9-42.9 10.9z"
+                      />
+                      <path
+                        d="M397.7 293.1l-48-49.1c0-158-93.2-228-93.2-228s-94.1 70-94.1 228l-48 49.1c-1.8 1.8-2.6 4.5-2.2 7.1L130.6 412c.9 5.7 7.1 8.5 11.8 5.4l67.1-45.4s20.7 20 47.1 20c26.4 0 46.1-20 46.1-20l67.1 45.4c4.6 3.1 10.8.3 11.8-5.4l18.5-111.9c.2-2.6-.6-5.2-2.4-7zM256.5 192c-17 0-30.7-14.3-30.7-32s13.8-32 30.7-32c17 0 30.7 14.3 30.7 32s-13.7 32-30.7 32z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    Reserve Rocket
+                  </span>
+                </button>
+              </div>
+            </header>
+            <p>
+              Description 1
+            </p>
+            <footer
+              class="_cardFooter_09d020 d-flex flex-wrap gap-3 rounded-2 mt-2 p-3 d-lg-none"
+            >
+              <ul
+                class="_cardMetrics_09d020 d-flex gap-3"
+              >
+                <li
+                  class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                >
+                  <span
+                    class="d-inline-block position-relative rounded-1"
+                  >
+                    <svg
+                      fill="none"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                      />
+                      <path
+                        d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                      />
+                      <path
+                        d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                      />
+                      <path
+                        d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                      />
+                      <path
+                        d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                      />
+                    </svg>
+                    <span
+                      class="_cardMetricValue_09d020 position-absolute"
+                    >
+                      1
+                    </span>
+                  </span>
+                  <span
+                    class=""
+                  >
+                    Cost / Launch
+                  </span>
+                </li>
+                <li
+                  class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                >
+                  <span
+                    class="d-inline-block position-relative rounded-1"
+                  >
+                    <svg
+                      fill="none"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                      />
+                      <path
+                        d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                      />
+                      <path
+                        d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                      />
+                      <path
+                        d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                      />
+                      <path
+                        d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                      />
+                    </svg>
+                    <span
+                      class="_cardMetricValue_09d020 position-absolute"
+                    >
+                      1
+                    </span>
+                  </span>
+                  <span
+                    class=""
+                  >
+                    Boosters
+                  </span>
+                </li>
+                <li
+                  class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                >
+                  <span
+                    class="d-inline-block position-relative rounded-1"
+                  >
+                    <svg
+                      fill="none"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                      />
+                      <path
+                        d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                      />
+                      <path
+                        d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                      />
+                      <path
+                        d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                      />
+                      <path
+                        d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                      />
+                    </svg>
+                    <span
+                      class="_cardMetricValue_09d020 position-absolute"
+                    >
+                      1.0m
+                    </span>
+                  </span>
+                  <span
+                    class=""
+                  >
+                    Diameter
+                  </span>
+                </li>
+                <li
+                  class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                >
+                  <span
+                    class="d-inline-block position-relative rounded-1"
+                  >
+                    <svg
+                      fill="none"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                      />
+                      <path
+                        d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                      />
+                      <path
+                        d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                      />
+                      <path
+                        d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                      />
+                      <path
+                        d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                      />
+                    </svg>
+                    <span
+                      class="_cardMetricValue_09d020 position-absolute"
+                    >
+                      25%
+                    </span>
+                  </span>
+                  <span
+                    class=""
+                  >
+                    Success Rate
+                  </span>
+                </li>
+              </ul>
+            </footer>
+          </div>
+        </li>
+        <li
+          class="_card_09d020 rounded-2 d-lg-flex p-2 position-relative"
+          data-reserved="true"
+        >
+          <div
+            class="_imageCarousel_09d020"
+          >
+            <div
+              class="swiper swiper-creative swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress _slider_0b3ffb"
+              style="--swiper-navigation-color: var(--primary); --swiper-pagination-color: var(--primary);"
+            >
+              <ul
+                class="swiper-wrapper"
+                style="transition-duration: 0ms; transition-delay: 0ms;"
+              >
+                <li
+                  class="swiper-slide _slide_0b3ffb"
+                  data-swiper-slide-index="0"
+                >
+                  <div
+                    class="_imageCarouselSlide_09d020 d-flex justify-content-center"
+                  >
+                    <img
+                      alt="https://www.example.com/rocket2.jpg,https://www.example.com/rocket2.jpg"
+                      class="_imageCarouselImage_09d020"
+                      src="https://www.example.com/rocket2.jpg"
+                    />
+                  </div>
+                </li>
+                <li
+                  class="swiper-slide _slide_0b3ffb"
+                  data-swiper-slide-index="1"
+                >
+                  <div
+                    class="_imageCarouselSlide_09d020 d-flex justify-content-center"
+                  >
+                    <img
+                      alt="https://www.example.com/rocket2.jpg,https://www.example.com/rocket2.jpg"
+                      class="_imageCarouselImage_09d020"
+                      src="https://www.example.com/rocket2.jpg"
+                    />
+                  </div>
+                </li>
+              </ul>
+              <div
+                class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+              >
+                <span
+                  class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                />
+                <span
+                  class="swiper-pagination-bullet"
+                />
+              </div>
+              <button
+                aria-label="Slide to the previous slide"
+                class="_sliderArrowButton_0b3ffb _previous_0b3ffb border-0 p-2"
+                type="button"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 320 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                  />
+                </svg>
+              </button>
+              <button
+                aria-label="Slide to the next slide"
+                class="_sliderArrowButton_0b3ffb _next_0b3ffb border-0 p-2"
+                type="button"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 320 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            class="_cardBody_09d020 p-3"
+          >
+            <header
+              class="_cardHeader_09d020 d-flex flex-wrap justify-content-between align-items-center gap-1 pb-2 mb-2"
+            >
+              <h3>
+                Rocket 2
+              </h3>
+              <div
+                class="d-flex gap-2 align-items-center"
+              >
+                <span
+                  class="d-none d-lg-inline"
+                >
+                  <div
+                    class="_tooltip_0a1ab8 position-relative"
+                  >
+                    <button
+                      class="_tooltipTitle_0a1ab8 rounded-1 py-1 px-2"
+                      type="button"
+                    >
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 16 16"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0"
+                        />
+                      </svg>
+                    </button>
+                    <div
+                      class="_tooltipContent_0a1ab8 p-3 rounded-2"
+                      hidden=""
+                    >
+                      <ul
+                        class="_cardMetrics_09d020 d-flex gap-3"
+                      >
+                        <li
+                          class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                        >
+                          <span
+                            class="d-inline-block position-relative rounded-1"
+                          >
+                            <svg
+                              fill="none"
+                              height="1em"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                              />
+                              <path
+                                d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                              />
+                              <path
+                                d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                              />
+                              <path
+                                d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                              />
+                              <path
+                                d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                              />
+                            </svg>
+                            <span
+                              class="_cardMetricValue_09d020 position-absolute"
+                            >
+                              2
+                            </span>
+                          </span>
+                          <span
+                            class=""
+                          >
+                            Cost / Launch
+                          </span>
+                        </li>
+                        <li
+                          class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                        >
+                          <span
+                            class="d-inline-block position-relative rounded-1"
+                          >
+                            <svg
+                              fill="none"
+                              height="1em"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                              />
+                              <path
+                                d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                              />
+                              <path
+                                d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                              />
+                              <path
+                                d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                              />
+                              <path
+                                d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                              />
+                            </svg>
+                            <span
+                              class="_cardMetricValue_09d020 position-absolute"
+                            >
+                              2
+                            </span>
+                          </span>
+                          <span
+                            class=""
+                          >
+                            Boosters
+                          </span>
+                        </li>
+                        <li
+                          class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                        >
+                          <span
+                            class="d-inline-block position-relative rounded-1"
+                          >
+                            <svg
+                              fill="none"
+                              height="1em"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                              />
+                              <path
+                                d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                              />
+                              <path
+                                d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                              />
+                              <path
+                                d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                              />
+                              <path
+                                d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                              />
+                            </svg>
+                            <span
+                              class="_cardMetricValue_09d020 position-absolute"
+                            >
+                              2.0m
+                            </span>
+                          </span>
+                          <span
+                            class=""
+                          >
+                            Diameter
+                          </span>
+                        </li>
+                        <li
+                          class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                        >
+                          <span
+                            class="d-inline-block position-relative rounded-1"
+                          >
+                            <svg
+                              fill="none"
+                              height="1em"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                              />
+                              <path
+                                d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                              />
+                              <path
+                                d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                              />
+                              <path
+                                d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                              />
+                              <path
+                                d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                              />
+                            </svg>
+                            <span
+                              class="_cardMetricValue_09d020 position-absolute"
+                            >
+                              50%
+                            </span>
+                          </span>
+                          <span
+                            class=""
+                          >
+                            Success Rate
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </span>
+                <a
+                  aria-label=""
+                  class="_button_29f8d0 
+       _tertiary_29f8d0 px-2 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss=""
+                  data-bs-target=""
+                  data-bs-toggle=""
+                  href=""
+                  rel=""
+                  target="_self"
+                  title=""
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      role="img"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.09 13.119c-.936 1.932-2.217 4.548-2.853 5.728-.616 1.074-1.127.931-1.532.029-1.406-3.321-4.293-9.144-5.651-12.409-.251-.601-.441-.987-.619-1.139-.181-.15-.554-.24-1.122-.271C.103 5.033 0 4.982 0 4.898v-.455l.052-.045c.924-.005 5.401 0 5.401 0l.051.045v.434c0 .119-.075.176-.225.176l-.564.031c-.485.029-.727.164-.727.436 0 .135.053.33.166.601 1.082 2.646 4.818 10.521 4.818 10.521l.136.046 2.411-4.81-.482-1.067-1.658-3.264s-.318-.654-.428-.872c-.728-1.443-.712-1.518-1.447-1.617-.207-.023-.313-.05-.313-.149v-.468l.06-.045h4.292l.113.037v.451c0 .105-.076.15-.227.15l-.308.047c-.792.061-.661.381-.136 1.422l1.582 3.252 1.758-3.504c.293-.64.233-.801.111-.947-.07-.084-.305-.22-.812-.24l-.201-.021c-.052 0-.098-.015-.145-.051-.045-.031-.067-.076-.067-.129v-.427l.061-.045c1.247-.008 4.043 0 4.043 0l.059.045v.436c0 .121-.059.178-.193.178-.646.03-.782.095-1.023.439-.12.186-.375.589-.646 1.039l-2.301 4.273-.065.135 2.792 5.712.17.048 4.396-10.438c.154-.422.129-.722-.064-.895-.197-.172-.346-.273-.857-.295l-.42-.016c-.061 0-.105-.014-.152-.045-.043-.029-.072-.075-.072-.119v-.436l.059-.045h4.961l.041.045v.437c0 .119-.074.18-.209.18-.648.03-1.127.18-1.443.421-.314.255-.557.616-.736 1.067 0 0-4.043 9.258-5.426 12.339-.525 1.007-1.053.917-1.503-.031-.571-1.171-1.773-3.786-2.646-5.71l.053-.036z"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <button
+                  aria-label="Cancel Reservation"
+                  class="_button_29f8d0 _tertiaryDanger_29f8d0
+       _tertiary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss=""
+                  data-bs-target="#cancelRocketModal"
+                  data-bs-toggle="modal"
+                  href=""
+                  rel=""
+                  title=""
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="none"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.29 9.275a9.03 9.03 0 0 0 -.29 .725a6 6 0 0 0 -5 3a8 8 0 0 1 7 7a6 6 0 0 0 3 -5c.241 -.085 .478 -.18 .708 -.283m2.428 -1.61a9 9 0 0 0 2.864 -6.107a3 3 0 0 0 -3 -3a9 9 0 0 0 -6.107 2.864"
+                      />
+                      <path
+                        d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3"
+                      />
+                      <path
+                        d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"
+                      />
+                      <path
+                        d="M3 3l18 18"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    Cancel Reservation
+                  </span>
+                </button>
+              </div>
+            </header>
+            <p>
+              <span
+                class="_cardBadge_09d020 px-2 rounded-1 d-inline-flex align-items-center gap-1 me-2"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m490.18 181.4-44.13-44.13a20 20 0 0 0-27-1 30.81 30.81 0 0 1-41.68-1.6 30.81 30.81 0 0 1-1.6-41.67 20 20 0 0 0-1-27L330.6 21.82a19.91 19.91 0 0 0-28.13 0l-70.35 70.34a39.87 39.87 0 0 0-9.57 15.5 7.71 7.71 0 0 1-4.83 4.83 39.78 39.78 0 0 0-15.5 9.58l-180.4 180.4a19.91 19.91 0 0 0 0 28.13L66 374.73a20 20 0 0 0 27 1 30.69 30.69 0 0 1 43.28 43.28 20 20 0 0 0 1 27l44.13 44.13a19.91 19.91 0 0 0 28.13 0l180.4-180.4a39.82 39.82 0 0 0 9.58-15.49 7.69 7.69 0 0 1 4.84-4.84 39.84 39.84 0 0 0 15.49-9.57l70.34-70.35a19.91 19.91 0 0 0-.01-28.09zm-228.37-29.65a16 16 0 0 1-22.63 0l-11.51-11.51a16 16 0 0 1 22.63-22.62l11.51 11.5a16 16 0 0 1 0 22.63zm44 44a16 16 0 0 1-22.62 0l-11-11a16 16 0 1 1 22.63-22.63l11 11a16 16 0 0 1 .01 22.66zm44 44a16 16 0 0 1-22.63 0l-11-11a16 16 0 0 1 22.63-22.62l11 11a16 16 0 0 1 .05 22.67zm44.43 44.54a16 16 0 0 1-22.63 0l-11.44-11.5a16 16 0 1 1 22.68-22.57l11.45 11.49a16 16 0 0 1-.01 22.63z"
+                  />
+                </svg>
+                Reserved
+              </span>
+              Description 2
+            </p>
+            <footer
+              class="_cardFooter_09d020 d-flex flex-wrap gap-3 rounded-2 mt-2 p-3 d-lg-none"
+            >
+              <ul
+                class="_cardMetrics_09d020 d-flex gap-3"
+              >
+                <li
+                  class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                >
+                  <span
+                    class="d-inline-block position-relative rounded-1"
+                  >
+                    <svg
+                      fill="none"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                      />
+                      <path
+                        d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                      />
+                      <path
+                        d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                      />
+                      <path
+                        d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                      />
+                      <path
+                        d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                      />
+                    </svg>
+                    <span
+                      class="_cardMetricValue_09d020 position-absolute"
+                    >
+                      2
+                    </span>
+                  </span>
+                  <span
+                    class=""
+                  >
+                    Cost / Launch
+                  </span>
+                </li>
+                <li
+                  class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                >
+                  <span
+                    class="d-inline-block position-relative rounded-1"
+                  >
+                    <svg
+                      fill="none"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                      />
+                      <path
+                        d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                      />
+                      <path
+                        d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                      />
+                      <path
+                        d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                      />
+                      <path
+                        d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                      />
+                    </svg>
+                    <span
+                      class="_cardMetricValue_09d020 position-absolute"
+                    >
+                      2
+                    </span>
+                  </span>
+                  <span
+                    class=""
+                  >
+                    Boosters
+                  </span>
+                </li>
+                <li
+                  class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                >
+                  <span
+                    class="d-inline-block position-relative rounded-1"
+                  >
+                    <svg
+                      fill="none"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                      />
+                      <path
+                        d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                      />
+                      <path
+                        d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                      />
+                      <path
+                        d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                      />
+                      <path
+                        d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                      />
+                    </svg>
+                    <span
+                      class="_cardMetricValue_09d020 position-absolute"
+                    >
+                      2.0m
+                    </span>
+                  </span>
+                  <span
+                    class=""
+                  >
+                    Diameter
+                  </span>
+                </li>
+                <li
+                  class="_cardMetric_09d020 d-flex flex-column align-items-center gap-1"
+                >
+                  <span
+                    class="d-inline-block position-relative rounded-1"
+                  >
+                    <svg
+                      fill="none"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969"
+                      />
+                      <path
+                        d="M14 3.223a9.003 9.003 0 0 1 0 17.554"
+                      />
+                      <path
+                        d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592"
+                      />
+                      <path
+                        d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
+                      />
+                      <path
+                        d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356"
+                      />
+                    </svg>
+                    <span
+                      class="_cardMetricValue_09d020 position-absolute"
+                    >
+                      50%
+                    </span>
+                  </span>
+                  <span
+                    class=""
+                  >
+                    Success Rate
+                  </span>
+                </li>
+              </ul>
+            </footer>
+          </div>
+        </li>
+      </ul>
+      <div
+        aria-hidden="true"
+        aria-labelledby="cancelRocketModalLabel"
+        class="_modalOverlay_a024cf modal fade"
+        id="cancelRocketModal"
+        tabindex="-1"
+      >
+        <div
+          class="modal-dialog "
+        >
+          <div
+            class="_modal_a024cf modal-content"
+          >
+            <div
+              class="_cancelRocketModalContent_09d020 p-3"
+            >
+              <h1
+                class="fs-4"
+              >
+                Cancel Rocket Reservation
+              </h1>
+              <p
+                class="my-3 py-3"
+              >
+                Are you sure you want to cancel this reservation?
+              </p>
+              <div
+                class="d-flex justify-content-end gap-3"
+              >
+                <button
+                  aria-label="Cancel"
+                  class="_button_29f8d0 
+       _tertiary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss="modal"
+                  data-bs-target=""
+                  data-bs-toggle=""
+                  href=""
+                  rel=""
+                  title=""
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="none"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    Cancel
+                  </span>
+                </button>
+                <button
+                  aria-label="Cancel Reservation"
+                  class="_button_29f8d0 _secondaryDanger_29f8d0
+       _secondary_29f8d0 px-3 d-inline-flex align-items-center gap-2 rounded-1 "
+                  data-bs-dismiss="modal"
+                  data-bs-target=""
+                  data-bs-toggle=""
+                  href=""
+                  rel=""
+                  title=""
+                  type="button"
+                >
+                  <span>
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      style="transform: rotateY(180deg);"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M372.97 24.938c-8.67.168-17.816 3.644-26.69 10.28-12.618 9.44-24.074 25.203-30.5 44.844-6.424 19.642-6.48 39.12-1.874 54.157 4.608 15.036 13.375 25.225 24.97 29 11.593 3.772 24.724.72 37.343-8.72 12.618-9.44 24.074-25.234 30.5-44.875 6.424-19.642 6.512-39.12 1.905-54.156-4.607-15.038-13.404-25.196-25-28.97-2.9-.944-5.88-1.465-8.938-1.563-.573-.018-1.14-.01-1.718 0zm-155.69 69.78c-21.696.024-43.394 2.203-65.093 7.094-24.91 29.824-43.848 60.255-52.875 98.47l37.376 17.812c8.273-30.735 21.485-53.817 43.375-77 22.706-7.844 45.418-6.237 68.125 1.5-74.24 65.137-51.17 120.676-80.344 226.47-42.653 17.867-85.098 20.53-123.25-.002L23 415.625c59.418 27.09 125.736 29.818 190.844 0 20.368-43.443 27.214-88.603 25-132.906C295.31 354.663 323.11 398.2 338.78 498.56h57.94c-3.12-14.706-6.21-28.394-9.345-41.218-22.522-92.133-47.263-139.63-100.22-198.406 9.695-36.13 22.143-59.665 52.44-74.282 11.167 19.767 29.982 36.682 51.092 48.906l97.375 1.563.47-41.03L402 191.968c-8.05-5.556-14.925-11.73-20.75-18.314-14.886 9.08-32.024 12.563-48.156 7.313-18.422-5.997-31.143-21.962-37.063-41.282-3.482-11.37-4.742-24.05-3.686-37.25-25.017-4.884-50.047-7.746-75.063-7.72z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    Cancel Reservation
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
