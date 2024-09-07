@@ -24,6 +24,7 @@ function NavMobileMenu({ handleMenuToggle }) {
       className={`${styles.mobileNav} ${
         isHomePage ? styles.mobileHomeNav : ''
       } d-md-none py-4 position-absolute w-100 text-center`}
+      role="menu"
     >
       <Container>
         <li className="mb-2 d-flex justify-content-end px-1">

@@ -13,10 +13,12 @@ import styles from './index.module.css';
 function HamburgerButton({ isMenuOpen, handleMenuToggle }) {
   return (
     <button
-      className={`${styles.hamburger} ${isMenuOpen ? styles.open : styles.close} d-md-none`}
+      className={`${styles.hamburger} ${
+        isMenuOpen ? styles.open : styles.close
+      } d-md-none`}
       type="button"
       onClick={handleMenuToggle}
-      aria-label="Menu"
+      aria-label="Menu Toggle"
     >
       <span className={`${styles.stroke} ${styles.stroke1}`} />
       <span className={`${styles.stroke} ${styles.stroke2}`} />
