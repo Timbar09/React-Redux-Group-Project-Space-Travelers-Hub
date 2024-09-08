@@ -20,6 +20,7 @@ function MyProfileItem({ item, activeTab }) {
     <li
       key={`myItem-${item.id}`}
       className={`${styles.myProfileTabItem} d-flex align-items-center justify-content-between gap-3 p-3 rounded-2`}
+      data-testid={item.id}
     >
       <div className="d-flex align-items-center gap-2">
         {activeTab === 'missions' ? (
