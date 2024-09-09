@@ -12,7 +12,8 @@
   font-size: 1em;
   margin: 4px 2px;
   cursor: pointer;
-  transition: opacity var(--transition-100) ease-in-out,
+  transition:
+    opacity var(--transition-100) ease-in-out,
     transform var(--transition-100) ease-in-out,
     box-shadow var(--transition-100) ease-in-out,
     border var(--transition-100) ease-in-out,

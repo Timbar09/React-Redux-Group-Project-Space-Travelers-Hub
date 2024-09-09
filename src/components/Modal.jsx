@@ -22,7 +22,9 @@ import styles from './Modal.module.css';
  * @returns {JSX.Element} Rendered Modal component.
  */
 
-function Modal({ modalId, title, Content, itemId, blank, size }) {
+function Modal({
+  modalId, title, Content, itemId, blank, size,
+}) {
   const dispatch = useDispatch();
 
   return (

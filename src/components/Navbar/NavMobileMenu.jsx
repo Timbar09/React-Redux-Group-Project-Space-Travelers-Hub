@@ -35,8 +35,7 @@ function NavMobileMenu({ handleMenuToggle }) {
           <li key={link.text}>
             <NavLink
               to={link.path}
-              className={`${({ isActive }) =>
-                isActive ? 'active' : undefined} ${
+              className={`${({ isActive }) => (isActive ? 'active' : undefined)} ${
                 styles.option
               } p-2 mb-2 rounded fs-3 w-100`}
               onClick={handleMenuToggle}

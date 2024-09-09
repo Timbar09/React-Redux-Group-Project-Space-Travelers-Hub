@@ -2,7 +2,8 @@
   border: 0;
   color: var(--text-200);
   background-color: var(--opaque-50);
-  transition: color var(--transition-100) ease-in-out,
+  transition:
+    color var(--transition-100) ease-in-out,
     background-color var(--transition-100) ease-in-out;
 }
 

@@ -33,7 +33,7 @@ body[data-theme='dark'] .pageHeader {
   transition: width 10ms ease-in-out, opacity 0.3s 20ms ease-in-out;
 }
 
-.card[data-reserved='true']:before {
+.card[data-reserved='true']::before {
   width: 100%;
   opacity: 1;
 }

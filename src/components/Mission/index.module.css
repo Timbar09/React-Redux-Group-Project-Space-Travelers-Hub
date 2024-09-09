@@ -49,18 +49,14 @@ body[data-theme='dark'] .pageHeader {
   opacity: 1;
 }
 
-.missionCard[data-reserved='true'] .missionCardBadge {
-  border-color: var(--primary);
-}
-
-.missionCard[data-reserved='true'] .missionCardFooter {
-  background-color: var(--bg-200);
-}
-
 .missionCardBadge {
   background-color: var(--bg-200);
   border: solid 0.1rem transparent;
   z-index: 1;
+}
+
+.missionCard[data-reserved='true'] .missionCardBadge {
+  border-color: var(--primary);
 }
 
 .missionCard:hover::before {
@@ -94,6 +90,10 @@ body[data-theme='dark'] .pageHeader {
 }
 
 .missionCardFooter {
+  background-color: var(--bg-200);
+}
+
+.missionCard[data-reserved='true'] .missionCardFooter {
   background-color: var(--bg-200);
 }
 

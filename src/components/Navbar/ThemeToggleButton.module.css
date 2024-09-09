@@ -19,15 +19,19 @@
   height: var(--dimension);
   border-radius: inherit;
   background-color: var(--sun-bg);
-  -webkit-box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61)
-      inset,
-    0em -0.062em 0.062em 0em #a1872a inset;
-  box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61) inset,
-    0em -0.062em 0.062em 0em #a1872a inset;
-  -webkit-filter: drop-shadow(0.062em 0.125em 0.125em rgba(0, 0, 0, 0.25))
-    drop-shadow(0em 0.062em 0.125em rgba(0, 0, 0, 0.25));
-  filter: drop-shadow(0.062em 0.125em 0.125em rgba(0, 0, 0, 0.25))
-    drop-shadow(0em 0.062em 0.125em rgba(0, 0, 0, 0.25));
+  -webkit-box-shadow:
+    0.062em 0.062em 0.062em 0 rgba(254, 255, 239, 0.61)
+    inset,
+    0 -0.062em 0.062em 0 #a1872a inset;
+  box-shadow:
+    0.062em 0.062em 0.062em 0 rgba(254, 255, 239, 0.61) inset,
+    0 -0.062em 0.062em 0 #a1872a inset;
+  -webkit-filter:
+    drop-shadow(0.062em 0.125em 0.125em rgba(0, 0, 0, 0.25))
+    drop-shadow(0 0.062em 0.125em rgba(0, 0, 0, 0.25));
+  filter:
+    drop-shadow(0.062em 0.125em 0.125em rgba(0, 0, 0, 0.25))
+    drop-shadow(0 0.062em 0.125em rgba(0, 0, 0, 0.25));
   overflow: hidden;
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
@@ -44,11 +48,13 @@
   height: 100%;
   background-color: var(--moon-bg);
   border-radius: inherit;
-  -webkit-box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61)
-      inset,
-    0em -0.062em 0.062em 0em #969696 inset;
-  box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61) inset,
-    0em -0.062em 0.062em 0em #969696 inset;
+  -webkit-box-shadow:
+    0.062em 0.062em 0.062em 0 rgba(254, 255, 239, 0.61)
+    inset,
+    0 -0.062em 0.062em 0 #969696 inset;
+  box-shadow:
+    0.062em 0.062em 0.062em 0 rgba(254, 255, 239, 0.61) inset,
+    0 -0.062em 0.062em 0 #969696 inset;
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
@@ -69,8 +75,8 @@
   height: 0.75em;
   border-radius: 6.25em;
   background-color: #959db1;
-  -webkit-box-shadow: 0em 0.0312em 0.062em rgba(0, 0, 0, 0.25) inset;
-  box-shadow: 0em 0.0312em 0.062em rgba(0, 0, 0, 0.25) inset;
+  -webkit-box-shadow: 0 0.0312em 0.062em rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 0.0312em 0.062em rgba(0, 0, 0, 0.25) inset;
 }
 
 .themeToggleCrater:nth-of-type(2) {

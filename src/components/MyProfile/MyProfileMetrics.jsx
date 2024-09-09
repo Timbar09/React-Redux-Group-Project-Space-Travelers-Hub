@@ -21,7 +21,7 @@ function MyProfileMetrics({ metrics }) {
             </span>
           </span>
 
-          <span className="">{metric.name}</span>
+          <span className={styles.myProfileMetricName}>{metric.name}</span>
         </li>
       ))}
     </ul>

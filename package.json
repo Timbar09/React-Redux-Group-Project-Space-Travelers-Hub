@@ -10,7 +10,8 @@
     "test": "vitest",
     "linters": "eslint \"**/*.{js,jsx}\" & stylelint \"**/*.{css,scss}\"",
     "eslint": "eslint \"**/*.{js,jsx}\" --fix",
-    "style": "stylelint \"**/*.{css,scss}\" --fix"
+    "style": "stylelint \"**/*.{css,scss}\" --fix",
+    "fix": "npm run eslint && npm run style"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",

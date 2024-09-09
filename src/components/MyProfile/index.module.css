@@ -27,7 +27,7 @@
   font-size: 0.75rem;
 }
 
-.myProfileMetric > span:last-child {
+.myProfileMetricName {
   font-size: 0.75em;
 }
 
@@ -51,6 +51,7 @@
   background-color: var(--bg-100);
   border: solid 0.1em var(--opaque-50);
 }
+
 .myProfileTabHeader {
   position: relative;
   background: linear-gradient(180deg, var(--bg-300) 50%, var(--bg-100) 50%);
@@ -62,7 +63,8 @@
   letter-spacing: 0.1em;
   color: var(--opaque-100);
   background-color: var(--bg-300);
-  transition: color var(--transition-100) ease-in-out,
+  transition:
+    color var(--transition-100) ease-in-out,
     background-color var(--transition-100) ease-in-out;
 }
 

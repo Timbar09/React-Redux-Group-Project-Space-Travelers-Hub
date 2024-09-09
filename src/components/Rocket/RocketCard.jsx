@@ -31,7 +31,7 @@ function RocketCard({ rocket, handleModal }) {
     {
       id: 'boosters000',
       name: 'Cost / Launch',
-      value: shortenNumber(rocket.costPerLaunch),
+      value: `$${shortenNumber(rocket.costPerLaunch)}`,
     },
     {
       id: 'boosters001',

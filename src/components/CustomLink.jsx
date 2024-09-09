@@ -14,7 +14,9 @@ import styles from './CustomLink.module.css';
  * @returns {JSX.Element} Rendered CustomLink component.
  */
 
-function CustomLink({ to, text, target, handleClick }) {
+function CustomLink({
+  to, text, target, handleClick,
+}) {
   return (
     <a
       href={to}

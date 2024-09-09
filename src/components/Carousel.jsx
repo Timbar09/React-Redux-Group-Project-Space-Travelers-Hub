@@ -7,11 +7,6 @@ import {
   FaChevronRight as NextArrowIcon,
 } from 'react-icons/fa6';
 
-import image1 from '../assets/images/missions-bg-dark.webp';
-import image2 from '../assets/images/missions-bg-light.webp';
-import image3 from '../assets/images/rockets-bg-dark.webp';
-import image4 from '../assets/images/rockets-bg-light.webp';
-
 import 'slick-carousel/slick/slick.css';
 
 import styles from './Carousel.module.css';
