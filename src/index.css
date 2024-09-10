@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 html {
   font-size: 100%;
@@ -12,25 +13,67 @@ html {
 }
 
 body {
-  --clr-dark: rgb(27, 27, 27);
-  --clr-dark-grey: rgb(81, 81, 81);
-  --clr-grey: rgb(128, 128, 128);
-  --clr-light-grey: rgb(230, 230, 230);
-  --clr-light: rgb(249, 249, 249);
-  --clr-white: rgb(255, 255, 255);
+  /* FONTS */
+  --ff-mukta-vaani: 'Mukta Vaani', 'Segoe UI', sans-serif;
+  --ff-orbitron: 'Orbitron', system-ui;
+
+  /* COLORS */
+  --primary-dark: rgb(4, 167, 164);
+  --primary: rgb(0, 213, 196);
+  --gold: rgb(255, 193, 7);
+  --danger: rgb(255, 0, 0);
+  --dark: rgb(27, 27, 27);
+  --darkest-grey: rgb(32, 32, 32);
+  --darker-grey: rgb(38, 38, 38);
+  --dark-grey: rgb(50, 50, 50);
+  --grey: rgb(135, 135, 135);
+  --light-grey: rgb(230, 230, 230);
+  --lighter-grey: rgb(244, 244, 244);
+  --lightest-grey: rgb(249, 249, 249);
+  --white: rgb(255, 255, 255);
+  --bg-100: var(--white);
+  --bg-200: var(--lightest-grey);
+  --bg-300: var(--lighter-grey);
+  --bg-400: var(--light-grey);
+  --text-100: var(--darkest-grey);
+  --text-200: var(--dark-grey);
+  --text-300: var(--grey);
+  --opaque-50: rgba(27, 27, 27, 0.05);
+  --opaque-100: rgba(27, 27, 27, 0.1);
+  --opaque-200: rgba(27, 27, 27, 0.3);
+  --opaque-contrast-200: rgba(249, 249, 249, 0.3);
+  --opaque-contrast-300: rgba(249, 249, 249, 0.5);
+  --shadow-100: 2px 2px 8px rgba(0, 0, 0, 0.125);
+  --shadow-200: 4px 4px 16px rgba(0, 0, 0, 0.175);
+  --transition-100: 100ms;
+  --transition-200: 150ms;
 
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: 'Mukta Vaani', 'Segoe UI', sans-serif;
+  font-family: var(--ff-mukta-vaani);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 0.95em;
   font-weight: 400;
   line-height: 1.4;
-  color: var(--clr-grey);
-  min-width: 400px;
-  background-color: var(--clr-light);
+  color: var(--text-300);
+  min-width: 23.4375em; /* 375px */
+  background-color: var(--bg-200);
+}
+
+body[data-theme='dark'] {
+  --bg-100: var(--dark);
+  --bg-200: var(--darkest-grey);
+  --bg-300: var(--darker-grey);
+  --bg-400: var(--dark-grey);
+  --text-100: var(--lightest-grey);
+  --text-200: var(--light-grey);
+  --opaque-50: rgba(249, 249, 249, 0.05);
+  --opaque-100: rgba(249, 249, 249, 0.1);
+  --opaque-200: rgba(249, 249, 249, 0.3);
+  --opaque-contrast-200: rgba(27, 27, 27, 0.3);
+  --opaque-contrast-300: rgba(27, 27, 27, 0.5);
 }
 
 @media (min-width: 64em) {
@@ -48,7 +91,11 @@ h2,
 h3,
 h4 {
   margin: 0;
-  color: var(--clr-dark);
+  font-family: var(--ff-orbitron);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--text-100);
 }
 
 p {
@@ -68,22 +115,58 @@ a {
   display: inline-block;
 }
 
-@media (min-width: 768px) {
-  .active {
-    border-bottom: solid 3px var(--clr-dark);
-    color: var(--clr-dark);
-  }
-}
-
 .main {
-  padding-top: 7rem;
-  background-color: var(--clr-light);
+  background-color: var(--bg-200);
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
   backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 10;
+  z-index: -1;
+}
+
+/* slick-carouse */
+.slick-active button {
+  background-color: var(--primary) !important;
+}
+
+@media (min-width: 768px) {
+  .active {
+    color: var(--text-100);
+  }
+
+  .active::before {
+    background-color: var(--text-100);
+    width: 100%;
+  }
+
+  .active .myProfile svg {
+    border-radius: 50%;
+    outline: solid 0.075rem var(--text-100);
+    outline-offset: 3px;
+    transition: outline-offset 100ms ease-in-out;
+  }
+
+  .myProfile {
+    display: inline-block;
+    position: relative;
+  }
+
+  .myProfileText {
+    font-size: 0.35em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 0;
+    width: max-content;
+    opacity: 0;
+    transition: bottom 100ms ease-in-out;
+  }
+
+  .active .myProfileText {
+    bottom: -1.625em;
+    opacity: 1;
+  }
 }

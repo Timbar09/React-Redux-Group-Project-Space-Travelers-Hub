@@ -1,0 +1,154 @@
+.pageHeader {
+  background-image: url('/src/assets/images/rockets-bg-light.webp');
+}
+
+body[data-theme='dark'] .pageHeader {
+  background-image: url('/src/assets/images/rockets-bg-dark.webp');
+}
+
+.card {
+  background-color: var(--bg-100);
+  border: solid 0.1rem var(--opaque-50);
+  box-shadow: var(--shadow-100);
+}
+
+.card[data-reserved='true'] {
+  border-color: transparent;
+  background-color: var(--bg-300);
+  box-shadow: none;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50% 0;
+  bottom: 0;
+  width: 0;
+  opacity: 0;
+  background-color: var(--opaque-contrast-300);
+  border-radius: inherit;
+  z-index: 5;
+  transition: width 10ms ease-in-out, opacity 0.3s 20ms ease-in-out;
+}
+
+.card[data-reserved='true']::before {
+  width: 100%;
+  opacity: 1;
+}
+
+.card:hover::before {
+  width: 0;
+  opacity: 0;
+  transition: width 10ms 0.3s ease-in-out, opacity 0.3s 0s ease-in-out;
+}
+
+.imageCarousel {
+  background-color: var(--bg-200);
+}
+
+.imageCarouselImage {
+  border-radius: 0.25em 0.25em 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  aspect-ratio: 16 / 9;
+}
+
+.cardHeader {
+  border-bottom: solid 0.1rem var(--opaque-50);
+}
+
+.cardBadge {
+  position: relative;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
+  color: var(--text-200);
+  background-color: var(--bg-200);
+  border: solid 0.1rem var(--primary);
+  z-index: 5;
+}
+
+.cardBadge svg {
+  color: var(--gold);
+}
+
+.cardFooter {
+  background-color: var(--bg-200);
+}
+
+.costPerLaunch {
+  background-color: var(--bg-100);
+}
+
+.costPerLaunch span:first-child {
+  font-size: 0.85em;
+  border-bottom: solid 0.1rem var(--opaque-50);
+}
+
+.costPerLaunch span:last-child {
+  font-size: 1.5em;
+  color: var(--primary);
+}
+
+.cardMetric > span:first-child {
+  background-color: var(--bg-100);
+}
+
+.cardMetric > span:last-child {
+  font-size: 0.75em;
+}
+
+.cardMetric svg {
+  font-size: 3.5em;
+  color: var(--primary);
+  stroke-width: 1;
+}
+
+.card[data-reserved='true'] .cardMetric svg,
+.card[data-reserved='true'] .costPerLaunch span:last-child {
+  color: var(--text-300);
+}
+
+.cardMetricValue {
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.cancelRocketModalContent p {
+  color: var(--danger);
+  border-top: 0.1em solid var(--opaque-50);
+  border-bottom: 0.1em solid var(--opaque-50);
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 30em;
+    margin: 0 auto;
+  }
+
+  .imageCarousel {
+    max-width: 30em;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    max-width: 65em;
+    width: 100%;
+  }
+
+  .imageCarouselImage {
+    border-radius: 0.25em 0 0 0.25em;
+  }
+
+  .cardBody {
+    flex: min-content;
+  }
+}

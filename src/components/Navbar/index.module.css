@@ -1,0 +1,163 @@
+.nav {
+  --padding: 0.35rem;
+
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+  background-color: var(--bg-100);
+  border-bottom: solid 0.125rem var(--opaque-100);
+}
+
+.homePageNav {
+  --text-100: var(--lightest-grey);
+
+  background-color: transparent;
+  border-bottom: none;
+}
+
+.logo {
+  font-family: var(--ff-orbitron);
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--text-100);
+  padding: 0.25em 0;
+}
+
+.logo img {
+  width: 1.75em;
+}
+
+.logoName {
+  display: inline-block;
+  margin-left: 1rem;
+  letter-spacing: 0.125em;
+}
+
+.logoName span:last-child {
+  font-size: 0.375em;
+  letter-spacing: 0.125em;
+}
+
+.navList li:last-child {
+  position: relative;
+}
+
+.navList li:last-child::before {
+  content: '|';
+  position: absolute;
+  left: -0.85em;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.link {
+  transition: color var(--transition-100) ease-in-out;
+}
+
+.link::before {
+  --dimension: 0.125rem;
+
+  content: '';
+  position: absolute;
+  bottom: -1.25em;
+  left: 50%;
+  translate: -50% 0;
+  width: var(--dimension);
+  height: var(--dimension);
+  transition: background-color 100ms ease-in-out, width 200ms ease-in-out;
+}
+
+.link:hover {
+  color: var(--text-100);
+}
+
+.navList li:last-child .link {
+  font-size: 1.5em;
+}
+
+.navList li:last-child .link:last-child::before {
+  display: none;
+}
+
+.mobileNav {
+  padding: 1em 0 2em;
+  top: 100%;
+  right: 0;
+  background-color: var(--bg-100);
+}
+
+.mobileHomeNav {
+  --text-200: var(--lightest-grey);
+  --bg-100: var(--darkest-grey);
+  --bg-200: var(--darkest-grey);
+  --opaque-50: rgba(255, 255, 255, 0.0125);
+
+  background-color: rgb(0, 0, 2);
+}
+
+.option {
+  color: var(--text-200);
+  background-color: var(--bg-200);
+  border: solid 0.075em var(--opaque-50);
+}
+
+.option:hover {
+  --transition: calc(var(--transition-100) / 4);
+
+  color: var(--primary);
+  background-color: var(--opaque-50);
+  transition:
+    color var(--transition-100) ease-in-out,
+    background-color var(--transition-100) ease-in-out;
+}
+
+.option:active {
+  color: var(--text-100);
+  background-color: var(--bg-100);
+}
+
+.hamburger {
+  border: 0;
+  background-color: transparent;
+}
+
+.stroke {
+  display: block;
+  position: relative;
+  width: 2rem;
+  height: 0.25rem;
+  background-color: var(--text-100);
+}
+
+.stroke:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+.open .stroke1 {
+  top: 0.5rem;
+  rotate: -45deg;
+}
+
+.open .stroke2 {
+  opacity: 0;
+}
+
+.open .stroke3 {
+  top: -0.5rem;
+  rotate: 45deg;
+}
+
+.close .stroke1 {
+  top: 0;
+  rotate: 0deg;
+}
+
+.close .stroke2 {
+  opacity: 1;
+}
+
+.close .stroke3 {
+  top: 0;
+  rotate: 0deg;
+}

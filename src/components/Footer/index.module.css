@@ -1,0 +1,39 @@
+.footer {
+  --footer-color: var(--dark-grey);
+
+  color: var(--footer-color);
+  background-color: var(--primary-dark);
+  margin-top: 2em;
+}
+
+.footer > div {
+  border-top: solid 0.05rem var(--opaque-100);
+  padding: 2em 0 10em;
+}
+
+.homeFooter {
+  --footer-color: var(--grey);
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 98;
+}
+
+.homeFooter > div {
+  padding: 1em 0;
+}
+
+.footer a {
+  color: var(--footer-color);
+}
+
+.footer a:hover {
+  --footer-color: var(--dark);
+}
+
+.homeFooter a:hover {
+  --footer-color: var(--primary);
+}

@@ -1,0 +1,32 @@
+.slide {
+  height: 100%;
+}
+
+.sliderArrowButton {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-size: 2em;
+  color: var(--primary);
+  background-color: transparent;
+  opacity: 0.5;
+  z-index: 1;
+  transition: opacity var(--transition-100) ease-in-out;
+}
+
+.sliderArrowButton svg {
+  stroke: var(--opaque-100);
+  stroke-width: 5;
+}
+
+.sliderArrowButton:hover {
+  opacity: 1;
+}
+
+.previous {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}

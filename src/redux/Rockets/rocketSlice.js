@@ -2,73 +2,69 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 import getData from '../../api';
 import { ROCKETS_URL } from '../../config';
+import { saveState, loadState } from '../../localStorage';
 
-export const getRockets = createAsyncThunk('Rockets/getRockets', async () => {
-  const items = [];
-  const res = await getData(ROCKETS_URL);
-  res.map((item) => {
-    items.push({
-      id: item.id,
-      name: item.name,
-      description: item.description,
-      images: item.flickr_images,
-      wikipedia: item.wikipedia,
-    });
-    return items;
-  });
-  return items;
-});
+const preloadedState = loadState('rockets');
 
 const initialState = {
   rocketList: [],
+  isLoading: true,
 };
 
+export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
+  const response = await getData(ROCKETS_URL);
+
+  const processedData = response.map((item) => ({
+    id: item.id,
+    name: item.name,
+    description: item.description,
+    images: item.flickr_images,
+    wikipedia: item.wikipedia,
+    isReserved: false,
+    reservedOn: null,
+    boosters: item.boosters,
+    diameter: item.diameter.meters,
+    costPerLaunch: item.cost_per_launch,
+    successRate: item.success_rate_pct,
+  }));
+
+  return processedData;
+});
+
 const rocketSlice = createSlice({
-  name: 'Rockets',
-  initialState,
-  isLoading: true,
+  name: 'rockets',
+  initialState: preloadedState || initialState,
   reducers: {
-    addReservation: (state, { payload }) => {
-      const newState = { ...state };
-      newState.rocketList = newState.rocketList.map((rocket) => {
-        if (rocket.id === payload) {
-          return { ...rocket, isReserved: true };
-        }
-        return rocket;
-      });
-      return newState;
-    },
-    remReservation: (state, { payload }) => {
-      const newState = { ...state };
-      newState.rocketList = newState.rocketList.map((rocket) => {
-        if (rocket.id === payload) {
-          return { ...rocket, isReserved: false };
-        }
-        return rocket;
-      });
-      return newState;
+    AddRemoveReservationToggle: (state, { payload }) => {
+      const rocket = state.rocketList.find((rocket) => rocket.id === payload);
+      if (rocket) {
+        rocket.isReserved = !rocket.isReserved;
+        rocket.reservedOn = rocket.isReserved
+          ? new Date().toLocaleString()
+          : null;
+        saveState('rockets', { rocketList: state.rocketList });
+      }
     },
   },
   extraReducers: (builder) => {
     builder
       .addCase(getRockets.pending, (state) => {
-        const newState = { ...state };
-        newState.isLoading = true;
-        return newState;
+        state.isLoading = true;
       })
-      .addCase(getRockets.fulfilled, (state, action) => {
-        const newState = { ...state };
-        newState.isLoading = false;
-        newState.rocketList = action.payload;
-        return newState;
+      .addCase(getRockets.fulfilled, (state, { payload }) => {
+        state.isLoading = false;
+        state.rocketList = payload;
+        saveState('rockets', { rocketList: state.rocketList });
       })
-      .addCase(getRockets.rejected, (state) => {
-        const newState = { ...state };
-        newState.isLoading = false;
-        return newState;
+      .addCase(getRockets.rejected, (state, { error }) => {
+        state.isLoading = false;
+        state.rocketList = [];
+        saveState('rockets', { rocketList: state.rocketList });
+        state.error = error.message;
       });
   },
 });
 
-export const { addReservation, remReservation } = rocketSlice.actions;
+export const { AddRemoveReservationToggle } = rocketSlice.actions;
+
 export default rocketSlice.reducer;
