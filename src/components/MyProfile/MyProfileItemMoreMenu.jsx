@@ -7,7 +7,7 @@ import { TbRocketOff as CancelIcon } from 'react-icons/tb';
 import { IoMdMore as MoreIcon } from 'react-icons/io';
 
 import { joinLeaveMissionToggle } from '../../redux/missions/missionSlice';
-import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
+import { AddRemoveReservationToggle } from '../../redux/rockets-temp/rocketSlice';
 
 import Button from '../Button';
 

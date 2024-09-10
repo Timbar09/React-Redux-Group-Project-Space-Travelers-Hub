@@ -7,7 +7,7 @@ import { IoTicket as BadgeIcon } from 'react-icons/io5';
 import { SiWikipedia as WikipediaIcon } from 'react-icons/si';
 import { BsInfoLg as InfoIcon } from 'react-icons/bs';
 
-import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
+import { AddRemoveReservationToggle } from '../../redux/rockets-temp/rocketSlice';
 
 import RocketImageCarousel from './RocketImageCarousel';
 import Button from '../Button';

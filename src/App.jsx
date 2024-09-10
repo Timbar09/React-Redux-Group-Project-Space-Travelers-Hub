@@ -10,7 +10,7 @@ import MyProfile from './routes/MyProfile';
 import NotMatch from './routes/NotMatch';
 
 import { fetchMissions } from './redux/missions/missionSlice';
-import { getRockets } from './redux/rockets/rocketSlice';
+import { getRockets } from './redux/rockets-temp/rocketSlice';
 
 function App() {
   const dispatch = useDispatch();

@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { CgClose as CancelIcon } from 'react-icons/cg';
 import { GiRun as LeaveIcon } from 'react-icons/gi';
 
-import { AddRemoveReservationToggle } from '../../redux/rockets/rocketSlice';
+import { AddRemoveReservationToggle } from '../../redux/rockets-temp/rocketSlice';
 
 import Button from '../Button';
 
