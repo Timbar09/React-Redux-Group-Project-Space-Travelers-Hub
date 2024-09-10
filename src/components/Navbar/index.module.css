@@ -24,6 +24,10 @@
   padding: 0.25em 0;
 }
 
+.logo:hover {
+  color: var(--text-100);
+}
+
 .logo img {
   width: 1.75em;
 }
@@ -107,8 +111,7 @@
 
   color: var(--primary);
   background-color: var(--opaque-50);
-  transition:
-    color var(--transition-100) ease-in-out,
+  transition: color var(--transition-100) ease-in-out,
     background-color var(--transition-100) ease-in-out;
 }
 
